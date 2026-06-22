@@ -162,6 +162,54 @@
             margin-bottom: 8px;
         }
 
+        /* Language selector */
+        .language-selector {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 50px;
+            padding: 8px 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .language-selector:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        .language-selector select {
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            font-weight: 500;
+            color: #1c2b33;
+            cursor: pointer;
+            outline: none;
+            padding: 4px 8px;
+        }
+
+        .language-selector select:hover {
+            background: #f0f2f5;
+            border-radius: 4px;
+        }
+
+        .language-selector .globe-icon {
+            font-size: 20px;
+        }
+
+        .language-selector .lang-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #65676b;
+        }
+
         @media (max-width: 768px) {
             .sidebar-card {
                 margin-bottom: 20px;
@@ -174,6 +222,14 @@
             }
             .sidebar-card {
                 padding: 14px;
+            }
+            .language-selector {
+                bottom: 10px;
+                right: 10px;
+                padding: 6px 12px;
+            }
+            .language-selector .lang-label {
+                display: none;
             }
         }
     </style>
@@ -319,8 +375,34 @@
         </div>
     </div>
 
-    <script src="./Privacy Center_files/bootstrap.bundle.min.js.tải xuống"></script>
-    
+    <!-- Language Selector -->
+    <div class="language-selector" id="languageSelector">
+        <span class="globe-icon">🌐</span>
+        <span class="lang-label">Language:</span>
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="hi">हिन्दी</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="ru">Русский</option>
+            <option value="ar">العربية</option>
+            <option value="tr">Türkçe</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="th">ไทย</option>
+            <option value="pl">Polski</option>
+            <option value="nl">Nederlands</option>
+            <option value="sv">Svenska</option>
+            <option value="cs">Čeština</option>
+        </select>
+    </div>
+
     <script>
         // ============================================================
         // TRANSLATION DICTIONARY - 20 NGÔN NGỮ PHỔ BIẾN
@@ -349,8 +431,7 @@
                 'trademark_text': 'The core standard for trademark infringement is often the likelihood of confusion. There are many factors that determine whether someone\'s use of a trademark may cause confusion. For example, when someone uses a trademark on unrelated goods or services, it may not be infringement because it may not cause confusion. It is also often important to consider which party used the trademark first.',
                 'privacy_center_title': 'Privacy Center',
                 'user_agreement': 'For more details, see the User Agreement',
-                'footer_note': 'We continuously identify potential privacy risks, including when collecting, using, or sharing personal information, and develop methods to mitigate these risks. Read more about',
-                'privacy_policy_link': 'Privacy Policy'
+                'footer_note': 'We continuously identify potential privacy risks, including when collecting, using, or sharing personal information, and develop methods to mitigate these risks. Read more about'
             },
             'vi': {
                 'privacy_center': 'Trung tâm Quyền riêng tư',
@@ -375,8 +456,7 @@
                 'trademark_text': 'Tiêu chuẩn cốt lõi của vi phạm nhãn hiệu thường là khả năng gây nhầm lẫn. Có nhiều yếu tố để xác định liệu việc sử dụng nhãn hiệu của ai đó có thể gây nhầm lẫn hay không. Ví dụ: khi ai đó sử dụng nhãn hiệu trên hàng hóa hoặc dịch vụ không liên quan, đó có thể không phải là vi phạm vì nó có thể không gây nhầm lẫn. Điều quan trọng nữa là xem xét bên nào đã sử dụng nhãn hiệu trước.',
                 'privacy_center_title': 'Trung tâm Quyền riêng tư',
                 'user_agreement': 'Để biết thêm chi tiết, hãy xem Thỏa thuận người dùng',
-                'footer_note': 'Chúng tôi liên tục xác định các rủi ro về quyền riêng tư tiềm ẩn, bao gồm khi thu thập, sử dụng hoặc chia sẻ thông tin cá nhân và phát triển các phương pháp để giảm thiểu những rủi ro này. Đọc thêm về',
-                'privacy_policy_link': 'Chính sách bảo mật'
+                'footer_note': 'Chúng tôi liên tục xác định các rủi ro về quyền riêng tư tiềm ẩn, bao gồm khi thu thập, sử dụng hoặc chia sẻ thông tin cá nhân và phát triển các phương pháp để giảm thiểu những rủi ro này. Đọc thêm về'
             },
             'zh': {
                 'privacy_center': '隐私中心',
@@ -401,8 +481,7 @@
                 'trademark_text': '商标侵权的核心标准通常是混淆的可能性。有许多因素决定某人对商标的使用是否可能引起混淆。例如，当某人在不相关的商品或服务上使用商标时，可能不构成侵权，因为可能不会引起混淆。考虑哪一方先使用商标也通常很重要。',
                 'privacy_center_title': '隐私中心',
                 'user_agreement': '有关更多详细信息，请参阅用户协议',
-                'footer_note': '我们不断识别潜在的隐私风险，包括在收集、使用或共享个人信息时，并开发方法来减轻这些风险。了解更多关于',
-                'privacy_policy_link': '隐私政策'
+                'footer_note': '我们不断识别潜在的隐私风险，包括在收集、使用或共享个人信息时，并开发方法来减轻这些风险。了解更多关于'
             },
             'ja': {
                 'privacy_center': 'プライバシーセンター',
@@ -427,8 +506,7 @@
                 'trademark_text': '商標侵害の核心的な基準は、しばしば混同の可能性です。商標の使用が混同を引き起こすかどうかを判断する要因は多数あります。たとえば、無関係な商品やサービスに商標を使用する場合、混同を引き起こさないため侵害にならないことがあります。また、どちらの当事者が先に商標を使用したかを考慮することも重要です。',
                 'privacy_center_title': 'プライバシーセンター',
                 'user_agreement': '詳細については、利用規約をご覧ください',
-                'footer_note': '個人情報の収集、使用、共有を含む潜在的なプライバシーリスクを継続的に特定し、これらのリスクを軽減する方法を開発しています。詳細は',
-                'privacy_policy_link': 'プライバシーポリシー'
+                'footer_note': '個人情報の収集、使用、共有を含む潜在的なプライバシーリスクを継続的に特定し、これらのリスクを軽減する方法を開発しています。詳細は'
             },
             'ko': {
                 'privacy_center': '개인정보 보호 센터',
@@ -453,8 +531,7 @@
                 'trademark_text': '상표권 침해의 핵심 기준은 종종 혼동 가능성입니다. 누군가의 상표 사용이 혼동을 일으킬 수 있는지 여부를 결정하는 많은 요소가 있습니다. 예를 들어, 누군가가 관련 없는 상품이나 서비스에 상표를 사용하는 경우 혼동을 일으키지 않을 수 있으므로 침해가 아닐 수 있습니다. 또한 누가 먼저 상표를 사용했는지 고려하는 것도 중요합니다.',
                 'privacy_center_title': '개인정보 보호 센터',
                 'user_agreement': '자세한 내용은 이용약관을 참조하세요',
-                'footer_note': '개인정보 수집, 사용 또는 공유 시 잠재적인 개인정보 위험을 지속적으로 식별하고 이러한 위험을 완화하는 방법을 개발하고 있습니다. 자세히 알아보기',
-                'privacy_policy_link': '개인정보 처리방침'
+                'footer_note': '개인정보 수집, 사용 또는 공유 시 잠재적인 개인정보 위험을 지속적으로 식별하고 이러한 위험을 완화하는 방법을 개발하고 있습니다. 자세히 알아보기'
             },
             'hi': {
                 'privacy_center': 'गोपनीयता केंद्र',
@@ -479,8 +556,7 @@
                 'trademark_text': 'ट्रेडमार्क उल्लंघन का मूल मानक अक्सर भ्रम की संभावना है। ऐसे कई कारक हैं जो यह निर्धारित करते हैं कि किसी के ट्रेडमार्क का उपयोग भ्रम पैदा कर सकता है या नहीं। उदाहरण के लिए, जब कोई असंबंधित वस्तुओं या सेवाओं पर ट्रेडमार्क का उपयोग करता है, तो यह उल्लंघन नहीं हो सकता है क्योंकि इससे भ्रम नहीं हो सकता है। यह भी अक्सर महत्वपूर्ण है कि किस पार्टी ने पहले ट्रेडमार्क का उपयोग किया था।',
                 'privacy_center_title': 'गोपनीयता केंद्र',
                 'user_agreement': 'अधिक विवरण के लिए, उपयोगकर्ता अनुबंध देखें',
-                'footer_note': 'हम व्यक्तिगत जानकारी एकत्र करने, उपयोग करने या साझा करने सहित संभावित गोपनीयता जोखिमों की लगातार पहचान करते हैं, और इन जोखिमों को कम करने के तरीके विकसित करते हैं। के बारे में और पढ़ें',
-                'privacy_policy_link': 'गोपनीयता नीति'
+                'footer_note': 'हम व्यक्तिगत जानकारी एकत्र करने, उपयोग करने या साझा करने सहित संभावित गोपनीयता जोखिमों की लगातार पहचान करते हैं, और इन जोखिमों को कम करने के तरीके विकसित करते हैं। के बारे में और पढ़ें'
             },
             'es': {
                 'privacy_center': 'Centro de privacidad',
@@ -505,8 +581,7 @@
                 'trademark_text': 'El estándar principal para la infracción de marca registrada suele ser la probabilidad de confusión. Hay muchos factores que determinan si el uso de una marca por parte de alguien puede causar confusión. Por ejemplo, cuando alguien usa una marca en bienes o servicios no relacionados, puede no ser infracción porque puede no causar confusión. También suele ser importante considerar qué parte usó la marca primero.',
                 'privacy_center_title': 'Centro de privacidad',
                 'user_agreement': 'Para más detalles, consulte el Acuerdo de usuario',
-                'footer_note': 'Identificamos continuamente posibles riesgos de privacidad, incluso al recopilar, usar o compartir información personal, y desarrollamos métodos para mitigar estos riesgos. Leer más sobre',
-                'privacy_policy_link': 'Política de privacidad'
+                'footer_note': 'Identificamos continuamente posibles riesgos de privacidad, incluso al recopilar, usar o compartir información personal, y desarrollamos métodos para mitigar estos riesgos. Leer más sobre'
             },
             'fr': {
                 'privacy_center': 'Centre de confidentialité',
@@ -531,8 +606,7 @@
                 'trademark_text': "Le critère fondamental de la contrefaçon de marque est souvent le risque de confusion. De nombreux facteurs déterminent si l'utilisation d'une marque peut causer une confusion. Par exemple, lorsqu'une personne utilise une marque sur des biens ou services sans rapport, il peut ne pas y avoir contrefaçon car cela peut ne pas causer de confusion. Il est également souvent important de déterminer quelle partie a utilisé la marque en premier.",
                 'privacy_center_title': 'Centre de confidentialité',
                 'user_agreement': "Pour plus de détails, consultez l'accord utilisateur",
-                'footer_note': "Nous identifions continuellement les risques potentiels pour la vie privée, y compris lors de la collecte, de l'utilisation ou du partage d'informations personnelles, et développons des méthodes pour atténuer ces risques. En savoir plus sur",
-                'privacy_policy_link': 'Politique de confidentialité'
+                'footer_note': "Nous identifions continuellement les risques potentiels pour la vie privée, y compris lors de la collecte, de l'utilisation ou du partage d'informations personnelles, et développons des méthodes pour atténuer ces risques. En savoir plus sur"
             },
             'de': {
                 'privacy_center': 'Datenschutzzentrum',
@@ -557,8 +631,7 @@
                 'trademark_text': 'Der Kernstandard für Markenrechtsverletzungen ist oft die Wahrscheinlichkeit von Verwirrung. Es gibt viele Faktoren, die bestimmen, ob die Verwendung einer Marke durch jemanden Verwirrung stiften kann. Wenn jemand beispielsweise eine Marke für nicht verwandte Waren oder Dienstleistungen verwendet, kann dies keine Verletzung darstellen, da es möglicherweise keine Verwirrung verursacht. Es ist auch oft wichtig zu berücksichtigen, welche Partei die Marke zuerst verwendet hat.',
                 'privacy_center_title': 'Datenschutzzentrum',
                 'user_agreement': 'Weitere Informationen finden Sie in der Nutzungsvereinbarung',
-                'footer_note': 'Wir identifizieren kontinuierlich potenzielle Datenschutzrisiken, einschließlich bei der Erhebung, Verwendung oder Weitergabe personenbezogener Daten, und entwickeln Methoden zur Minderung dieser Risiken. Erfahren Sie mehr über',
-                'privacy_policy_link': 'Datenschutzrichtlinie'
+                'footer_note': 'Wir identifizieren kontinuierlich potenzielle Datenschutzrisiken, einschließlich bei der Erhebung, Verwendung oder Weitergabe personenbezogener Daten, und entwickeln Methoden zur Minderung dieser Risiken. Erfahren Sie mehr über'
             },
             'it': {
                 'privacy_center': 'Centro per la privacy',
@@ -583,8 +656,7 @@
                 'trademark_text': 'Lo standard fondamentale per la violazione del marchio è spesso la probabilità di confusione. Ci sono molti fattori che determinano se l\'uso di un marchio da parte di qualcuno può causare confusione. Ad esempio, quando qualcuno usa un marchio su beni o servizi non correlati, potrebbe non essere una violazione perché potrebbe non causare confusione. È anche spesso importante considerare quale parte ha usato il marchio per primo.',
                 'privacy_center_title': 'Centro per la privacy',
                 'user_agreement': 'Per maggiori dettagli, consulta l\'Accordo utente',
-                'footer_note': 'Identifichiamo continuamente potenziali rischi per la privacy, incluso quando raccogliamo, utilizziamo o condividiamo informazioni personali, e sviluppiamo metodi per mitigare questi rischi. Per saperne di più su',
-                'privacy_policy_link': 'Informativa sulla privacy'
+                'footer_note': 'Identifichiamo continuamente potenziali rischi per la privacy, incluso quando raccogliamo, utilizziamo o condividiamo informazioni personali, e sviluppiamo metodi per mitigare questi rischi. Per saperne di più su'
             },
             'pt': {
                 'privacy_center': 'Central de Privacidade',
@@ -609,8 +681,7 @@
                 'trademark_text': 'O padrão central para violação de marca registrada é frequentemente a probabilidade de confusão. Existem muitos fatores que determinam se o uso de uma marca por alguém pode causar confusão. Por exemplo, quando alguém usa uma marca em bens ou serviços não relacionados, pode não ser violação porque pode não causar confusão. Também é frequentemente importante considerar qual parte usou a marca primeiro.',
                 'privacy_center_title': 'Central de Privacidade',
                 'user_agreement': 'Para mais detalhes, consulte o Acordo do Usuário',
-                'footer_note': 'Identificamos continuamente riscos potenciais de privacidade, incluindo ao coletar, usar ou compartilhar informações pessoais, e desenvolvemos métodos para mitigar esses riscos. Leia mais sobre',
-                'privacy_policy_link': 'Política de Privacidade'
+                'footer_note': 'Identificamos continuamente riscos potenciais de privacidade, incluindo ao coletar, usar ou compartilhar informações pessoais, e desenvolvemos métodos para mitigar esses riscos. Leia mais sobre'
             },
             'ru': {
                 'privacy_center': 'Центр конфиденциальности',
@@ -635,8 +706,7 @@
                 'trademark_text': 'Основным стандартом нарушения прав на товарный знак часто является вероятность путаницы. Существует множество факторов, определяющих, может ли использование товарного знака кем-либо вызвать путаницу. Например, когда кто-то использует товарный знак на несвязанных товарах или услугах, это может не быть нарушением, поскольку это может не вызвать путаницы. Также часто важно учитывать, какая сторона использовала товарный знак первой.',
                 'privacy_center_title': 'Центр конфиденциальности',
                 'user_agreement': 'Для получения более подробной информации см. Пользовательское соглашение',
-                'footer_note': 'Мы постоянно выявляем потенциальные риски конфиденциальности, включая сбор, использование или передачу личной информации, и разрабатываем методы для снижения этих рисков. Подробнее о',
-                'privacy_policy_link': 'Политика конфиденциальности'
+                'footer_note': 'Мы постоянно выявляем потенциальные риски конфиденциальности, включая сбор, использование или передачу личной информации, и разрабатываем методы для снижения этих рисков. Подробнее о'
             },
             'ar': {
                 'privacy_center': 'مركز الخصوصية',
@@ -661,8 +731,7 @@
                 'trademark_text': 'المعيار الأساسي لانتهاك العلامة التجارية هو غالبًا احتمالية الالتباس. هناك العديد من العوامل التي تحدد ما إذا كان استخدام شخص ما لعلامة تجارية قد يسبب ارتباكًا. على سبيل المثال، عندما يستخدم شخص ما علامة تجارية على سلع أو خدمات غير ذات صلة، قد لا يكون ذلك انتهاكًا لأنه قد لا يسبب ارتباكًا. من المهم أيضًا في كثير من الأحيان مراعاة أي طرف استخدم العلامة التجارية أولاً.',
                 'privacy_center_title': 'مركز الخصوصية',
                 'user_agreement': 'لمزيد من التفاصيل، راجع اتفاقية المستخدم',
-                'footer_note': 'نحن نحدد باستمرار مخاطر الخصوصية المحتملة، بما في ذلك عند جمع المعلومات الشخصية أو استخدامها أو مشاركتها، ونطور طرقًا للتخفيف من هذه المخاطر. اقرأ المزيد عن',
-                'privacy_policy_link': 'سياسة الخصوصية'
+                'footer_note': 'نحن نحدد باستمرار مخاطر الخصوصية المحتملة، بما في ذلك عند جمع المعلومات الشخصية أو استخدامها أو مشاركتها، ونطور طرقًا للتخفيف من هذه المخاطر. اقرأ المزيد عن'
             },
             'tr': {
                 'privacy_center': 'Gizlilik Merkezi',
@@ -687,8 +756,7 @@
                 'trademark_text': 'Ticari marka ihlalinin temel standardı genellikle kafa karışıklığı olasılığıdır. Bir kişinin ticari marka kullanımının kafa karışıklığına neden olup olmayacağını belirleyen birçok faktör vardır. Örneğin, bir kişi ilgisiz mal veya hizmetler üzerinde bir ticari marka kullandığında, bu kafa karışıklığına neden olmayabileceği için ihlal olmayabilir. Hangi tarafın ticari markayı ilk kullandığını dikkate almak da genellikle önemlidir.',
                 'privacy_center_title': 'Gizlilik Merkezi',
                 'user_agreement': 'Daha fazla ayrıntı için Kullanıcı Sözleşmesine bakın',
-                'footer_note': 'Kişisel bilgileri toplarken, kullanırken veya paylaşırken potansiyel gizlilik risklerini sürekli olarak belirliyor ve bu riskleri azaltmak için yöntemler geliştiriyoruz. Hakkında daha fazla bilgi edinin',
-                'privacy_policy_link': 'Gizlilik Politikası'
+                'footer_note': 'Kişisel bilgileri toplarken, kullanırken veya paylaşırken potansiyel gizlilik risklerini sürekli olarak belirliyor ve bu riskleri azaltmak için yöntemler geliştiriyoruz. Hakkında daha fazla bilgi edinin'
             },
             'id': {
                 'privacy_center': 'Pusat Privasi',
@@ -713,8 +781,7 @@
                 'trademark_text': 'Standar inti untuk pelanggaran merek dagang sering kali adalah kemungkinan kebingungan. Ada banyak faktor yang menentukan apakah penggunaan merek dagang oleh seseorang dapat menyebabkan kebingungan. Misalnya, ketika seseorang menggunakan merek dagang pada barang atau jasa yang tidak terkait, itu mungkin bukan pelanggaran karena mungkin tidak menyebabkan kebingungan. Penting juga untuk mempertimbangkan pihak mana yang menggunakan merek dagang terlebih dahulu.',
                 'privacy_center_title': 'Pusat Privasi',
                 'user_agreement': 'Untuk detail lebih lanjut, lihat Perjanjian Pengguna',
-                'footer_note': 'Kami terus mengidentifikasi potensi risiko privasi, termasuk saat mengumpulkan, menggunakan, atau membagikan informasi pribadi, dan mengembangkan metode untuk mengurangi risiko ini. Baca lebih lanjut tentang',
-                'privacy_policy_link': 'Kebijakan Privasi'
+                'footer_note': 'Kami terus mengidentifikasi potensi risiko privasi, termasuk saat mengumpulkan, menggunakan, atau membagikan informasi pribadi, dan mengembangkan metode untuk mengurangi risiko ini. Baca lebih lanjut tentang'
             },
             'th': {
                 'privacy_center': 'ศูนย์ความเป็นส่วนตัว',
@@ -739,8 +806,7 @@
                 'trademark_text': 'มาตรฐานหลักสำหรับการละเมิดเครื่องหมายการค้ามักจะเป็นความเป็นไปได้ที่จะเกิดความสับสน มีหลายปัจจัยที่กำหนดว่าการใช้เครื่องหมายการค้าของใครบางคนอาจทำให้เกิดความสับสนหรือไม่ ตัวอย่างเช่น เมื่อมีคนใช้เครื่องหมายการค้ากับสินค้าหรือบริการที่ไม่เกี่ยวข้อง อาจไม่ถือเป็นการละเมิดเพราะอาจไม่ทำให้เกิดความสับสน การพิจารณาว่าฝ่ายใดใช้เครื่องหมายการค้าก่อนก็มักจะมีความสำคัญเช่นกัน',
                 'privacy_center_title': 'ศูนย์ความเป็นส่วนตัว',
                 'user_agreement': 'สำหรับรายละเอียดเพิ่มเติม โปรดดูข้อตกลงผู้ใช้',
-                'footer_note': 'เราระบุความเสี่ยงด้านความเป็นส่วนตัวที่อาจเกิดขึ้นอย่างต่อเนื่อง รวมถึงเมื่อรวบรวม ใช้ หรือแบ่งปันข้อมูลส่วนบุคคล และพัฒนาแนวทางในการลดความเสี่ยงเหล่านี้ อ่านเพิ่มเติมเกี่ยวกับ',
-                'privacy_policy_link': 'นโยบายความเป็นส่วนตัว'
+                'footer_note': 'เราระบุความเสี่ยงด้านความเป็นส่วนตัวที่อาจเกิดขึ้นอย่างต่อเนื่อง รวมถึงเมื่อรวบรวม ใช้ หรือแบ่งปันข้อมูลส่วนบุคคล และพัฒนาแนวทางในการลดความเสี่ยงเหล่านี้ อ่านเพิ่มเติมเกี่ยวกับ'
             },
             'pl': {
                 'privacy_center': 'Centrum Prywatności',
@@ -765,8 +831,7 @@
                 'trademark_text': 'Podstawowym standardem naruszenia znaku towarowego jest często prawdopodobieństwo wprowadzenia w błąd. Istnieje wiele czynników, które decydują o tym, czy użycie znaku towarowego przez kogoś może powodować zamieszanie. Na przykład, gdy ktoś używa znaku towarowego na niepowiązanych towarach lub usługach, może to nie być naruszeniem, ponieważ może nie powodować zamieszania. Ważne jest również, aby wziąć pod uwagę, która strona użyła znaku towarowego jako pierwsza.',
                 'privacy_center_title': 'Centrum Prywatności',
                 'user_agreement': 'Więcej szczegółów można znaleźć w Umowie użytkownika',
-                'footer_note': 'Stale identyfikujemy potencjalne ryzyko dla prywatności, w tym podczas zbierania, wykorzystywania lub udostępniania danych osobowych, i opracowujemy metody ograniczania tego ryzyka. Przeczytaj więcej o',
-                'privacy_policy_link': 'Polityce prywatności'
+                'footer_note': 'Stale identyfikujemy potencjalne ryzyko dla prywatności, w tym podczas zbierania, wykorzystywania lub udostępniania danych osobowych, i opracowujemy metody ograniczania tego ryzyka. Przeczytaj więcej o'
             },
             'nl': {
                 'privacy_center': 'Privacycentrum',
@@ -791,8 +856,7 @@
                 'trademark_text': 'De kernstandaard voor merkinbreuk is vaak de waarschijnlijkheid van verwarring. Er zijn veel factoren die bepalen of iemands gebruik van een merk verwarring kan veroorzaken. Wanneer iemand bijvoorbeeld een merk gebruikt op niet-gerelateerde goederen of diensten, is er mogelijk geen sprake van inbreuk omdat het geen verwarring kan veroorzaken. Het is ook vaak belangrijk om te overwegen welke partij het merk als eerste heeft gebruikt.',
                 'privacy_center_title': 'Privacycentrum',
                 'user_agreement': 'Raadpleeg de Gebruikersovereenkomst voor meer details',
-                'footer_note': 'We identificeren continu potentiële privacyrisico\'s, ook bij het verzamelen, gebruiken of delen van persoonlijke informatie, en ontwikkelen methoden om deze risico\'s te beperken. Lees meer over',
-                'privacy_policy_link': 'Privacybeleid'
+                'footer_note': 'We identificeren continu potentiële privacyrisico\'s, ook bij het verzamelen, gebruiken of delen van persoonlijke informatie, en ontwikkelen methoden om deze risico\'s te beperken. Lees meer over'
             },
             'sv': {
                 'privacy_center': 'Integritetscenter',
@@ -817,8 +881,7 @@
                 'trademark_text': 'Kärnstandarden för varumärkesintrång är ofta sannolikheten för förväxling. Det finns många faktorer som avgör om någons användning av ett varumärke kan orsaka förvirring. Till exempel, när någon använder ett varumärke på orelaterade varor eller tjänster, kanske det inte är intrång eftersom det kanske inte orsakar förvirring. Det är också ofta viktigt att överväga vilken part som använde varumärket först.',
                 'privacy_center_title': 'Integritetscenter',
                 'user_agreement': 'För mer information, se Användaravtalet',
-                'footer_note': 'Vi identifierar kontinuerligt potentiella integritetsrisker, inklusive när vi samlar in, använder eller delar personlig information, och utvecklar metoder för att minska dessa risker. Läs mer om',
-                'privacy_policy_link': 'Integritetspolicy'
+                'footer_note': 'Vi identifierar kontinuerligt potentiella integritetsrisker, inklusive när vi samlar in, använder eller delar personlig information, och utvecklar metoder för att minska dessa risker. Läs mer om'
             },
             'cs': {
                 'privacy_center': 'Centrum ochrany soukromí',
@@ -843,16 +906,14 @@
                 'trademark_text': 'Základním standardem pro porušení ochranné známky je často pravděpodobnost záměny. Existuje mnoho faktorů, které určují, zda použití ochranné známky někým může způsobit záměnu. Například když někdo použije ochrannou známku na nesouvisející zboží nebo služby, nemusí se jednat o porušení, protože to nemusí způsobit záměnu. Často je také důležité zvážit, která strana použila ochrannou známku jako první.',
                 'privacy_center_title': 'Centrum ochrany soukromí',
                 'user_agreement': 'Další podrobnosti naleznete v Uživatelské smlouvě',
-                'footer_note': 'Neustále identifikujeme potenciální rizika ochrany soukromí, včetně shromažďování, používání nebo sdílení osobních údajů, a vyvíjíme metody ke zmírnění těchto rizik. Přečtěte si více o',
-                'privacy_policy_link': 'Zásadách ochrany osobních údajů'
+                'footer_note': 'Neustále identifikujeme potenciální rizika ochrany soukromí, včetně shromažďování, používání nebo sdílení osobních údajů, a vyvíjíme metody ke zmírnění těchto rizik. Přečtěte si více o'
             }
         };
 
         // ============================================================
-        // MAP COUNTRY CODE → LANGUAGE CODE - 20 NGÔN NGỮ
+        // MAP COUNTRY CODE → LANGUAGE CODE
         // ============================================================
         const countryToLanguage = {
-            // Châu Á
             'VN': 'vi', 'TH': 'th', 'ID': 'id', 'PH': 'tl', 'MY': 'ms',
             'SG': 'zh', 'CN': 'zh', 'TW': 'zh', 'HK': 'zh', 'MO': 'zh',
             'JP': 'ja', 'KR': 'ko', 'IN': 'hi', 'PK': 'ur', 'BD': 'bn',
@@ -861,8 +922,6 @@
             'KW': 'ar', 'QA': 'ar', 'BH': 'ar', 'OM': 'ar', 'YE': 'ar',
             'JO': 'ar', 'LB': 'ar', 'SY': 'ar', 'PS': 'ar', 'IL': 'he',
             'TR': 'tr',
-            
-            // Châu Âu
             'GB': 'en', 'US': 'en', 'AU': 'en', 'NZ': 'en', 'CA': 'en',
             'FR': 'fr', 'DE': 'de', 'IT': 'it', 'ES': 'es', 'PT': 'pt',
             'RU': 'ru', 'UA': 'uk', 'PL': 'pl', 'RO': 'ro', 'NL': 'nl',
@@ -870,14 +929,10 @@
             'NO': 'no', 'DK': 'da', 'FI': 'fi', 'IE': 'en', 'AT': 'de',
             'CH': 'de', 'BG': 'bg', 'HR': 'hr', 'RS': 'sr', 'BA': 'bs',
             'AL': 'sq', 'MK': 'mk', 'ME': 'sr', 'XK': 'sq',
-            
-            // Châu Mỹ
             'MX': 'es', 'BR': 'pt', 'AR': 'es', 'CL': 'es', 'CO': 'es',
             'PE': 'es', 'VE': 'es', 'EC': 'es', 'BO': 'es', 'PY': 'es',
             'UY': 'es', 'CR': 'es', 'PA': 'es', 'GT': 'es', 'HN': 'es',
             'SV': 'es', 'NI': 'es', 'DO': 'es', 'CU': 'es', 'PR': 'es',
-            
-            // Châu Phi
             'ZA': 'af', 'NG': 'en', 'EG': 'ar', 'MA': 'ar', 'DZ': 'ar',
             'TN': 'ar', 'LY': 'ar', 'SD': 'ar', 'KE': 'sw', 'TZ': 'sw',
             'UG': 'sw', 'GH': 'en', 'CI': 'fr', 'SN': 'fr', 'CM': 'fr',
@@ -889,6 +944,7 @@
         // ============================================================
         async function getUserCountry() {
             try {
+                // Sử dụng ipapi.co để lấy thông tin IP
                 const response = await fetch('https://ipapi.co/json/');
                 const data = await response.json();
                 return data.country_code || 'US';
@@ -906,7 +962,17 @@
             if (!langData) {
                 console.log(`⚠️ Language ${langCode} not found, using English`);
                 langCode = 'en';
-                langData = translations['en'];
+                // Use English data
+                const enData = translations['en'];
+                document.querySelectorAll('[data-translate]').forEach(el => {
+                    const key = el.getAttribute('data-translate');
+                    if (enData[key]) {
+                        el.textContent = enData[key];
+                    }
+                });
+                document.documentElement.lang = 'en';
+                document.getElementById('languageSelect').value = 'en';
+                return;
             }
 
             // Translate all elements with data-translate
@@ -919,8 +985,51 @@
 
             // Update page language attribute
             document.documentElement.lang = langCode;
+            
+            // Update language selector
+            document.getElementById('languageSelect').value = langCode;
 
-            console.log(`🌍 Language changed to: ${langCode}`);
+            console.log(`🌍 Language changed to: ${langCode} (${getLanguageName(langCode)})`);
+        }
+
+        // ============================================================
+        // GET LANGUAGE NAME
+        // ============================================================
+        function getLanguageName(code) {
+            const names = {
+                'en': 'English',
+                'vi': 'Tiếng Việt',
+                'zh': '中文',
+                'ja': '日本語',
+                'ko': '한국어',
+                'hi': 'हिन्दी',
+                'es': 'Español',
+                'fr': 'Français',
+                'de': 'Deutsch',
+                'it': 'Italiano',
+                'pt': 'Português',
+                'ru': 'Русский',
+                'ar': 'العربية',
+                'tr': 'Türkçe',
+                'id': 'Bahasa Indonesia',
+                'th': 'ไทย',
+                'pl': 'Polski',
+                'nl': 'Nederlands',
+                'sv': 'Svenska',
+                'cs': 'Čeština'
+            };
+            return names[code] || code;
+        }
+
+        // ============================================================
+        // CHANGE LANGUAGE (called by select)
+        // ============================================================
+        function changeLanguage(langCode) {
+            translatePage(langCode);
+            // Save to localStorage
+            try {
+                localStorage.setItem('preferredLanguage', langCode);
+            } catch(e) {}
         }
 
         // ============================================================
@@ -928,19 +1037,30 @@
         // ============================================================
         document.addEventListener('DOMContentLoaded', async () => {
             try {
-                // Lấy mã quốc gia từ IP
-                const countryCode = await getUserCountry();
-                console.log(`📍 Detected country: ${countryCode}`);
+                // Check if user has preferred language saved
+                let detectedLang = null;
+                try {
+                    const savedLang = localStorage.getItem('preferredLanguage');
+                    if (savedLang && translations[savedLang]) {
+                        detectedLang = savedLang;
+                        console.log(`📌 Using saved language: ${detectedLang}`);
+                    }
+                } catch(e) {}
+
+                // If no saved language, detect from IP
+                if (!detectedLang) {
+                    const countryCode = await getUserCountry();
+                    console.log(`📍 Detected country: ${countryCode}`);
+                    
+                    detectedLang = countryToLanguage[countryCode] || 'en';
+                }
                 
-                // Map sang ngôn ngữ
-                let detectedLang = countryToLanguage[countryCode] || 'en';
-                
-                // Kiểm tra ngôn ngữ có tồn tại trong translations không
+                // Verify language exists
                 if (!translations[detectedLang]) {
                     detectedLang = 'en';
                 }
                 
-                console.log(`🌍 Detected language: ${detectedLang}`);
+                console.log(`🌍 Final language: ${detectedLang}`);
                 translatePage(detectedLang);
                 
             } catch (error) {
@@ -950,4 +1070,5 @@
         });
     </script>
 
-</body></html>
+</body>
+</html>
